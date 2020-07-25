@@ -1,4 +1,157 @@
-EESchema Schematic File Version 2
-EELAYER 25 0
+EESchema Schematic File Version 4
+EELAYER 30 0
 EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L RF_Module:ESP32-WROOM-32 U?
+U 1 1 5F1C7B65
+P 3500 2800
+F 0 "U?" H 3500 3200 50  0000 C CNN
+F 1 "ESP32-WROOM-32" V 2950 3300 50  0000 C CNN
+F 2 "RF_Module:ESP32-WROOM-32" H 3500 1300 50  0001 C CNN
+F 3 "https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32_datasheet_en.pdf" H 3200 2850 50  0001 C CNN
+	1    3500 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5F1CC8C2
+P 3650 1250
+F 0 "C?" H 3742 1296 50  0000 L CNN
+F 1 "0.1uF" H 3742 1205 50  0000 L CNN
+F 2 "" H 3650 1250 50  0001 C CNN
+F 3 "~" H 3650 1250 50  0001 C CNN
+	1    3650 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5F1CDDE7
+P 3350 1250
+F 0 "C?" H 3150 1300 50  0000 L CNN
+F 1 "10uF" H 3100 1200 50  0000 L CNN
+F 2 "" H 3350 1250 50  0001 C CNN
+F 3 "~" H 3350 1250 50  0001 C CNN
+	1    3350 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5F1CE5F9
+P 3500 1050
+F 0 "#PWR?" H 3500 900 50  0001 C CNN
+F 1 "+3V3" H 3515 1223 50  0000 C CNN
+F 2 "" H 3500 1050 50  0001 C CNN
+F 3 "" H 3500 1050 50  0001 C CNN
+	1    3500 1050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 1050 3500 1100
+$Comp
+L power:GND #PWR?
+U 1 1 5F1CF190
+P 3350 1350
+F 0 "#PWR?" H 3350 1100 50  0001 C CNN
+F 1 "GND" H 3200 1300 50  0000 C CNN
+F 2 "" H 3350 1350 50  0001 C CNN
+F 3 "" H 3350 1350 50  0001 C CNN
+	1    3350 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F1CF74D
+P 3650 1350
+F 0 "#PWR?" H 3650 1100 50  0001 C CNN
+F 1 "GND" H 3800 1300 50  0000 C CNN
+F 2 "" H 3650 1350 50  0001 C CNN
+F 3 "" H 3650 1350 50  0001 C CNN
+	1    3650 1350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3350 1150 3350 1100
+Wire Wire Line
+	3350 1100 3500 1100
+Connection ~ 3500 1100
+Wire Wire Line
+	3500 1100 3500 1400
+Wire Wire Line
+	3650 1150 3650 1100
+Wire Wire Line
+	3650 1100 3500 1100
+$Comp
+L power:GND #PWR?
+U 1 1 5F1CFEC1
+P 3500 4250
+F 0 "#PWR?" H 3500 4000 50  0001 C CNN
+F 1 "GND" H 3350 4200 50  0000 C CNN
+F 2 "" H 3500 4250 50  0001 C CNN
+F 3 "" H 3500 4250 50  0001 C CNN
+	1    3500 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 4250 3500 4200
+$Comp
+L Device:R R?
+U 1 1 5F1D0652
+P 2750 1350
+F 0 "R?" H 2820 1396 50  0000 L CNN
+F 1 "10k" H 2820 1305 50  0000 L CNN
+F 2 "" V 2680 1350 50  0001 C CNN
+F 3 "~" H 2750 1350 50  0001 C CNN
+	1    2750 1350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2750 1200 2750 1100
+Wire Wire Line
+	2750 1100 3350 1100
+Connection ~ 3350 1100
+Wire Wire Line
+	2750 1500 2750 1600
+Wire Wire Line
+	2750 1600 2900 1600
+$Comp
+L Device:C_Small C?
+U 1 1 5F1D1A19
+P 2500 1600
+F 0 "C?" V 2650 1500 50  0000 L CNN
+F 1 "0.1uF" V 2350 1450 50  0000 L CNN
+F 2 "" H 2500 1600 50  0001 C CNN
+F 3 "~" H 2500 1600 50  0001 C CNN
+	1    2500 1600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2600 1600 2750 1600
+Connection ~ 2750 1600
+$Comp
+L power:GND #PWR?
+U 1 1 5F1D25B5
+P 2300 1650
+F 0 "#PWR?" H 2300 1400 50  0001 C CNN
+F 1 "GND" H 2150 1600 50  0000 C CNN
+F 2 "" H 2300 1650 50  0001 C CNN
+F 3 "" H 2300 1650 50  0001 C CNN
+	1    2300 1650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2400 1600 2300 1600
+Wire Wire Line
+	2300 1600 2300 1650
 $EndSCHEMATC
