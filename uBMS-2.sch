@@ -539,9 +539,9 @@ Wire Wire Line
 Wire Wire Line
 	9200 1750 9150 1750
 Text Label 8300 1550 2    50   ~ 0
-SCL
+SCL_5V
 Text Label 8300 1650 2    50   ~ 0
-SDA
+SDA_5V
 Wire Wire Line
 	8350 1550 8300 1550
 Wire Wire Line
@@ -562,4 +562,178 @@ Wire Notes Line
 	9750 550  7800 550 
 Text Notes 9750 2300 2    50   Italic 10
 External ADC - 16-bit
+Text Label 3200 2900 0    50   ~ 0
+SCL_3V3
+Wire Wire Line
+	3200 2900 3150 2900
+Text Label 3200 2800 0    50   ~ 0
+SDA_3V3
+Wire Wire Line
+	3200 2800 3150 2800
+$Comp
+L Transistor_FET:2N7002 Q?
+U 1 1 5F21FBB7
+P 10550 950
+F 0 "Q?" V 10750 850 50  0000 C CNN
+F 1 "2N7002" V 10750 1100 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 10750 875 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7002.pdf" H 10550 950 50  0001 L CNN
+	1    10550 950 
+	0    1    1    0   
+$EndComp
+$Comp
+L Transistor_FET:2N7002 Q?
+U 1 1 5F225AE3
+P 10550 1900
+F 0 "Q?" V 10750 1800 50  0000 C CNN
+F 1 "2N7002" V 10750 2050 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 10750 1825 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7002.pdf" H 10550 1900 50  0001 L CNN
+	1    10550 1900
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5F22E404
+P 10550 700
+F 0 "#PWR?" H 10550 550 50  0001 C CNN
+F 1 "+3V3" H 10400 800 50  0000 C CNN
+F 2 "" H 10550 700 50  0001 C CNN
+F 3 "" H 10550 700 50  0001 C CNN
+	1    10550 700 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5F23078A
+P 10550 1650
+F 0 "#PWR?" H 10550 1500 50  0001 C CNN
+F 1 "+3V3" H 10565 1823 50  0000 C CNN
+F 2 "" H 10550 1650 50  0001 C CNN
+F 3 "" H 10550 1650 50  0001 C CNN
+	1    10550 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F232EC7
+P 10200 850
+F 0 "R?" H 10270 896 50  0000 L CNN
+F 1 "2.2k" H 10270 805 50  0000 L CNN
+F 2 "" V 10130 850 50  0001 C CNN
+F 3 "~" H 10200 850 50  0001 C CNN
+	1    10200 850 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F2338F8
+P 10800 850
+F 0 "R?" H 10870 896 50  0000 L CNN
+F 1 "2.2k" H 10870 805 50  0000 L CNN
+F 2 "" V 10730 850 50  0001 C CNN
+F 3 "~" H 10800 850 50  0001 C CNN
+	1    10800 850 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F2341A9
+P 10200 1800
+F 0 "R?" H 10270 1846 50  0000 L CNN
+F 1 "2.2k" H 10270 1755 50  0000 L CNN
+F 2 "" V 10130 1800 50  0001 C CNN
+F 3 "~" H 10200 1800 50  0001 C CNN
+	1    10200 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F234A5C
+P 10800 1800
+F 0 "R?" H 10870 1846 50  0000 L CNN
+F 1 "2.2k" H 10870 1755 50  0000 L CNN
+F 2 "" V 10730 1800 50  0001 C CNN
+F 3 "~" H 10800 1800 50  0001 C CNN
+	1    10800 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10200 700  10550 700 
+Wire Wire Line
+	10550 750  10550 700 
+Connection ~ 10550 700 
+Wire Wire Line
+	10550 1650 10550 1700
+Wire Wire Line
+	10550 1650 10200 1650
+Connection ~ 10550 1650
+Wire Wire Line
+	10350 2000 10200 2000
+Wire Wire Line
+	10200 2000 10200 1950
+Wire Wire Line
+	10350 1050 10200 1050
+Wire Wire Line
+	10200 1050 10200 1000
+Text Label 10150 1050 2    50   ~ 0
+SDA_3V3
+Wire Wire Line
+	10200 1050 10150 1050
+Connection ~ 10200 1050
+Text Label 10150 2000 2    50   ~ 0
+SCL_3V3
+Wire Wire Line
+	10150 2000 10200 2000
+Connection ~ 10200 2000
+$Comp
+L power:+5V #PWR?
+U 1 1 5F2416DE
+P 10800 700
+F 0 "#PWR?" H 10800 550 50  0001 C CNN
+F 1 "+5V" H 10900 800 50  0000 C CNN
+F 2 "" H 10800 700 50  0001 C CNN
+F 3 "" H 10800 700 50  0001 C CNN
+	1    10800 700 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5F241DEA
+P 10800 1650
+F 0 "#PWR?" H 10800 1500 50  0001 C CNN
+F 1 "+5V" H 10815 1823 50  0000 C CNN
+F 2 "" H 10800 1650 50  0001 C CNN
+F 3 "" H 10800 1650 50  0001 C CNN
+	1    10800 1650
+	1    0    0    -1  
+$EndComp
+Text Label 10850 1050 0    50   ~ 0
+SDA_5V
+Text Label 10850 2000 0    50   ~ 0
+SCL_5V
+Wire Wire Line
+	10750 2000 10800 2000
+Wire Wire Line
+	10800 1950 10800 2000
+Connection ~ 10800 2000
+Wire Wire Line
+	10800 2000 10850 2000
+Wire Wire Line
+	10750 1050 10800 1050
+Wire Wire Line
+	10800 1000 10800 1050
+Connection ~ 10800 1050
+Wire Wire Line
+	10800 1050 10850 1050
+Wire Notes Line
+	9800 2300 9800 550 
+Wire Notes Line
+	9800 550  11150 550 
+Wire Notes Line
+	11150 550  11150 2300
+Wire Notes Line
+	11150 2300 9800 2300
+Text Notes 11150 2300 2    50   Italic 10
+I2C Level Shifter + Pullups
 $EndSCHEMATC
