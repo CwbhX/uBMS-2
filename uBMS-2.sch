@@ -128,30 +128,177 @@ Wire Wire Line
 $Comp
 L Device:C_Small C?
 U 1 1 5F1D1A19
-P 2500 1600
-F 0 "C?" V 2650 1500 50  0000 L CNN
-F 1 "0.1uF" V 2350 1450 50  0000 L CNN
-F 2 "" H 2500 1600 50  0001 C CNN
-F 3 "~" H 2500 1600 50  0001 C CNN
-	1    2500 1600
-	0    1    1    0   
+P 2550 1700
+F 0 "C?" H 2650 1650 50  0000 L CNN
+F 1 "0.1uF" H 2650 1750 50  0000 L CNN
+F 2 "" H 2550 1700 50  0001 C CNN
+F 3 "~" H 2550 1700 50  0001 C CNN
+	1    2550 1700
+	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2600 1600 2750 1600
 Connection ~ 2750 1600
+Wire Wire Line
+	2750 1600 2550 1600
 $Comp
 L power:GND #PWR?
-U 1 1 5F1D25B5
-P 2300 1650
-F 0 "#PWR?" H 2300 1400 50  0001 C CNN
-F 1 "GND" H 2150 1600 50  0000 C CNN
-F 2 "" H 2300 1650 50  0001 C CNN
-F 3 "" H 2300 1650 50  0001 C CNN
-	1    2300 1650
+U 1 1 5F1D435E
+P 2550 1800
+F 0 "#PWR?" H 2550 1550 50  0001 C CNN
+F 1 "GND" H 2400 1750 50  0000 C CNN
+F 2 "" H 2550 1800 50  0001 C CNN
+F 3 "" H 2550 1800 50  0001 C CNN
+	1    2550 1800
+	1    0    0    -1  
+$EndComp
+Connection ~ 2550 1600
+$Comp
+L Lafayette_Electric_Car_Internals:PushButton BTN?
+U 1 1 5F1D5597
+P 2050 1600
+F 0 "BTN?" H 2050 1885 50  0000 C CNN
+F 1 "Reset" H 2050 1794 50  0000 C CNN
+F 2 "Lafayette_Electric_Car_Footprints:PushButton" H 2300 1800 50  0001 C CNN
+F 3 "https://media.digikey.com/pdf/Data%20Sheets/RAFI%20PDF's/Racon_PCB_Tactile_Switches_Cat.pdf" H 2300 1800 50  0001 C CNN
+F 4 "Digikey" H 1850 1950 50  0001 C CNN "Vendor"
+F 5 "1715-1676-1-ND" H 2000 1950 50  0001 C CNN "Vendor Part"
+F 6 "RAFI USA" H 1850 1950 50  0001 C CNN "Manufacturer"
+F 7 "1.14100.5030000" H 2000 1950 50  0001 C CNN "Manufacturer Part"
+	1    2050 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F1D6355
+P 1800 1800
+F 0 "#PWR?" H 1800 1550 50  0001 C CNN
+F 1 "GND" H 1650 1750 50  0000 C CNN
+F 2 "" H 1800 1800 50  0001 C CNN
+F 3 "" H 1800 1800 50  0001 C CNN
+	1    1800 1800
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2400 1600 2300 1600
+	1800 1800 1800 1600
 Wire Wire Line
-	2300 1600 2300 1650
+	1800 1600 1850 1600
+Wire Wire Line
+	2250 1600 2400 1600
+$Comp
+L Device:R R?
+U 1 1 5F1D799A
+P 4250 1350
+F 0 "R?" H 4320 1396 50  0000 L CNN
+F 1 "10k" H 4320 1305 50  0000 L CNN
+F 2 "" V 4180 1350 50  0001 C CNN
+F 3 "~" H 4250 1350 50  0001 C CNN
+	1    4250 1350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4250 1200 4250 1100
+Wire Wire Line
+	4250 1100 3650 1100
+Connection ~ 3650 1100
+Wire Wire Line
+	4250 1500 4250 1600
+Wire Wire Line
+	4250 1600 4100 1600
+$Comp
+L Device:D D?
+U 1 1 5F1D8E4C
+P 2400 1400
+F 0 "D?" V 2354 1479 50  0000 L CNN
+F 1 "D" V 2445 1479 50  0000 L CNN
+F 2 "" H 2400 1400 50  0001 C CNN
+F 3 "~" H 2400 1400 50  0001 C CNN
+	1    2400 1400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2400 1600 2400 1550
+Connection ~ 2400 1600
+Wire Wire Line
+	2400 1600 2550 1600
+Text Label 2400 1200 1    50   ~ 0
+PrgmNode
+Wire Wire Line
+	2400 1250 2400 1200
+$Comp
+L Device:C_Small C?
+U 1 1 5F1D9E96
+P 4450 1700
+F 0 "C?" H 4250 1700 50  0000 L CNN
+F 1 "2.2uF" H 4550 1650 50  0000 L CNN
+F 2 "" H 4450 1700 50  0001 C CNN
+F 3 "~" H 4450 1700 50  0001 C CNN
+	1    4450 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 1600 4250 1600
+Connection ~ 4250 1600
+$Comp
+L power:GND #PWR?
+U 1 1 5F1DA9A2
+P 4450 1800
+F 0 "#PWR?" H 4450 1550 50  0001 C CNN
+F 1 "GND" H 4300 1750 50  0000 C CNN
+F 2 "" H 4450 1800 50  0001 C CNN
+F 3 "" H 4450 1800 50  0001 C CNN
+	1    4450 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D?
+U 1 1 5F1DB0AD
+P 4700 1600
+F 0 "D?" H 4700 1384 50  0000 C CNN
+F 1 "D" H 4700 1475 50  0000 C CNN
+F 2 "" H 4700 1600 50  0001 C CNN
+F 3 "~" H 4700 1600 50  0001 C CNN
+	1    4700 1600
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4550 1600 4450 1600
+Connection ~ 4450 1600
+$Comp
+L Lafayette_Electric_Car_Internals:PushButton BTN?
+U 1 1 5F1DC53D
+P 5200 1600
+F 0 "BTN?" H 5200 1885 50  0000 C CNN
+F 1 "Program" H 5200 1794 50  0000 C CNN
+F 2 "Lafayette_Electric_Car_Footprints:PushButton" H 5450 1800 50  0001 C CNN
+F 3 "https://media.digikey.com/pdf/Data%20Sheets/RAFI%20PDF's/Racon_PCB_Tactile_Switches_Cat.pdf" H 5450 1800 50  0001 C CNN
+F 4 "Digikey" H 5000 1950 50  0001 C CNN "Vendor"
+F 5 "1715-1676-1-ND" H 5150 1950 50  0001 C CNN "Vendor Part"
+F 6 "RAFI USA" H 5000 1950 50  0001 C CNN "Manufacturer"
+F 7 "1.14100.5030000" H 5150 1950 50  0001 C CNN "Manufacturer Part"
+	1    5200 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5000 1600 4900 1600
+$Comp
+L power:GND #PWR?
+U 1 1 5F1DD46E
+P 5500 1800
+F 0 "#PWR?" H 5500 1550 50  0001 C CNN
+F 1 "GND" H 5350 1750 50  0000 C CNN
+F 2 "" H 5500 1800 50  0001 C CNN
+F 3 "" H 5500 1800 50  0001 C CNN
+	1    5500 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 1800 5500 1600
+Wire Wire Line
+	5500 1600 5400 1600
+Text Label 4900 1200 1    50   ~ 0
+PrgmNode
+Wire Wire Line
+	4900 1200 4900 1600
+Connection ~ 4900 1600
+Wire Wire Line
+	4900 1600 4850 1600
 $EndSCHEMATC

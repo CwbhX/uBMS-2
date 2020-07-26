@@ -19,6 +19,28 @@ X ~ 2 0 -100 80 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
+# Device_D
+#
+DEF Device_D D 0 40 N N 1 F N
+F0 "D" 0 100 50 H V C CNN
+F1 "Device_D" 0 -100 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ TO-???*
+ *_Diode_*
+ *SingleDiode*
+ D_*
+$ENDFPLIST
+DRAW
+P 2 0 1 8 -50 50 -50 -50 N
+P 2 0 1 0 50 0 -50 0 N
+P 4 0 1 8 50 50 50 -50 -50 0 50 50 N
+X K 1 -150 0 100 R 50 50 1 1 P
+X A 2 150 0 100 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
 # Device_R
 #
 DEF Device_R R 0 0 N Y 1 F N
@@ -33,6 +55,27 @@ DRAW
 S -40 -100 40 100 0 1 10 N
 X ~ 1 0 150 50 D 50 50 1 1 P
 X ~ 2 0 -150 50 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Lafayette_Electric_Car_Internals_PushButton
+#
+DEF Lafayette_Electric_Car_Internals_PushButton BTN 0 40 Y Y 1 F N
+F0 "BTN" 250 200 50 H V C CNN
+F1 "Lafayette_Electric_Car_Internals_PushButton" -100 200 50 H V C CNN
+F2 "Lafayette_Electric_Car_Footprints:PushButton" 250 200 50 H I C CNN
+F3 "" 250 200 50 H I C CNN
+F4 "Digikey" -200 350 50 H I C CNN "Vendor"
+F5 "1715-1676-1-ND" -50 350 50 H I C CNN "Vendor Part"
+F6 "RAFI USA" -200 350 50 H I C CNN "Manufacturer"
+F7 "1.14100.5030000" -50 350 50 H I C CNN "Manufacturer Part"
+DRAW
+C -80 0 20 1 1 0 N
+C 80 0 20 1 1 0 N
+P 2 1 1 0 0 50 0 120 N
+P 2 1 1 0 100 50 -100 50 N
+X ~ 1 -200 0 100 R 50 50 1 1 P
+X ~ 2 200 0 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
