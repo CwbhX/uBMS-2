@@ -451,4 +451,115 @@ Wire Notes Line
 	4750 1750 4750 550 
 Text Notes 7750 1750 2    50   Italic 10
 Buck Converter Power Supply
+$Comp
+L Analog_ADC:ADS1115IDGS U?
+U 1 1 5F207292
+P 8750 1550
+F 0 "U?" H 8500 2000 50  0000 C CNN
+F 1 "ADS1115IDGS" H 8450 1200 50  0000 C CNN
+F 2 "Package_SO:TSSOP-10_3x3mm_P0.5mm" H 8750 1050 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/ads1113.pdf" H 8700 650 50  0001 C CNN
+	1    8750 1550
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	8350 1750 8300 1750
+Wire Wire Line
+	8300 1750 8300 2000
+Wire Wire Line
+	8300 2000 8750 2000
+Wire Wire Line
+	8750 2000 8750 1950
+$Comp
+L power:GND #PWR?
+U 1 1 5F20A0C9
+P 8750 2050
+F 0 "#PWR?" H 8750 1800 50  0001 C CNN
+F 1 "GND" H 8900 2000 50  0000 C CNN
+F 2 "" H 8750 2050 50  0001 C CNN
+F 3 "" H 8750 2050 50  0001 C CNN
+	1    8750 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8750 2050 8750 2000
+Connection ~ 8750 2000
+$Comp
+L power:+5V #PWR?
+U 1 1 5F20B1F0
+P 8750 800
+F 0 "#PWR?" H 8750 650 50  0001 C CNN
+F 1 "+5V" H 8765 973 50  0000 C CNN
+F 2 "" H 8750 800 50  0001 C CNN
+F 3 "" H 8750 800 50  0001 C CNN
+	1    8750 800 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5F20BBDE
+P 8600 900
+F 0 "C?" H 8450 950 50  0000 L CNN
+F 1 "0.1uF" H 8300 850 50  0000 L CNN
+F 2 "" H 8600 900 50  0001 C CNN
+F 3 "~" H 8600 900 50  0001 C CNN
+	1    8600 900 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8750 800  8750 1050
+Wire Wire Line
+	8600 800  8750 800 
+Connection ~ 8750 800 
+$Comp
+L power:GND #PWR?
+U 1 1 5F20DFE2
+P 8600 1000
+F 0 "#PWR?" H 8600 750 50  0001 C CNN
+F 1 "GND" H 8450 950 50  0000 C CNN
+F 2 "" H 8600 1000 50  0001 C CNN
+F 3 "" H 8600 1000 50  0001 C CNN
+	1    8600 1000
+	1    0    0    -1  
+$EndComp
+Text Label 9200 1450 0    50   ~ 0
+VoltageSense
+Text Label 9200 1550 0    50   ~ 0
+TempSense
+Text Label 9200 1650 0    50   ~ 0
+CurrentSense
+Text Label 9200 1750 0    50   ~ 0
+ExtADCInput
+Wire Wire Line
+	9200 1450 9150 1450
+Wire Wire Line
+	9200 1550 9150 1550
+Wire Wire Line
+	9200 1650 9150 1650
+Wire Wire Line
+	9200 1750 9150 1750
+Text Label 8300 1550 2    50   ~ 0
+SCL
+Text Label 8300 1650 2    50   ~ 0
+SDA
+Wire Wire Line
+	8350 1550 8300 1550
+Wire Wire Line
+	8350 1650 8300 1650
+Text Notes 8450 1450 2    50   Italic 0
+Needs Pull-Ups
+Text Label 8300 1350 2    50   ~ 0
+ADC_Int
+Wire Wire Line
+	8350 1350 8300 1350
+Wire Notes Line
+	7800 550  7800 2300
+Wire Notes Line
+	7800 2300 9750 2300
+Wire Notes Line
+	9750 2300 9750 550 
+Wire Notes Line
+	9750 550  7800 550 
+Text Notes 9750 2300 2    50   Italic 10
+External ADC - 16-bit
 $EndSCHEMATC
