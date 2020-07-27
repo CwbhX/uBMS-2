@@ -1020,24 +1020,6 @@ F 3 "" H 6400 2450 50  0001 C CNN
 	1    6400 2450
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5F2F1317
-P 6950 3050
-F 0 "#PWR?" H 6950 2800 50  0001 C CNN
-F 1 "GND" H 7050 3050 50  0000 C CNN
-F 2 "" H 6950 3050 50  0001 C CNN
-F 3 "" H 6950 3050 50  0001 C CNN
-	1    6950 3050
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6950 2950 6950 3000
-Wire Wire Line
-	6500 3000 6950 3000
-Connection ~ 6950 3000
-Wire Wire Line
-	6950 3000 6950 3050
 Wire Wire Line
 	7200 2000 7150 2000
 Wire Notes Line
@@ -1342,4 +1324,32 @@ Wire Notes Line
 	11150 2350 11150 4600
 Wire Notes Line
 	7800 2350 7800 4600
+$Comp
+L power:GND #PWR?
+U 1 1 5F422500
+P 8750 2050
+F 0 "#PWR?" H 8750 1800 50  0001 C CNN
+F 1 "GND" H 8850 2050 50  0000 C CNN
+F 2 "" H 8750 2050 50  0001 C CNN
+F 3 "" H 8750 2050 50  0001 C CNN
+	1    8750 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F42C354
+P 6500 3000
+F 0 "#PWR?" H 6500 2750 50  0001 C CNN
+F 1 "GND" H 6650 2950 50  0000 C CNN
+F 2 "" H 6500 3000 50  0001 C CNN
+F 3 "" H 6500 3000 50  0001 C CNN
+	1    6500 3000
+	1    0    0    -1  
+$EndComp
+Text Label 7050 3050 0    50   ~ 0
+CurrentSense
+Wire Wire Line
+	7050 3050 6950 3050
+Wire Wire Line
+	6950 3050 6950 2950
 $EndSCHEMATC
