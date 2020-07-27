@@ -736,4 +736,107 @@ Wire Notes Line
 	11150 2300 9800 2300
 Text Notes 11150 2300 2    50   Italic 10
 I2C Level Shifter + Pullups
+$Comp
+L Regulator_Linear:TLV1117-33 U?
+U 1 1 5F25686D
+P 5350 2050
+F 0 "U?" H 5500 1800 50  0000 C CNN
+F 1 "TLV1117-33" H 5350 2201 50  0000 C CNN
+F 2 "" H 5350 2050 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tlv1117.pdf" H 5350 2050 50  0001 C CNN
+	1    5350 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5F258AC3
+P 4950 2250
+F 0 "C?" H 5000 2300 50  0000 L CNN
+F 1 "1uF" H 5000 2200 50  0000 L CNN
+F 2 "" H 4950 2250 50  0001 C CNN
+F 3 "~" H 4950 2250 50  0001 C CNN
+	1    4950 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4950 2150 4950 2050
+Wire Wire Line
+	4950 2050 5050 2050
+$Comp
+L power:+5V #PWR?
+U 1 1 5F25B851
+P 4850 2050
+F 0 "#PWR?" H 4850 1900 50  0001 C CNN
+F 1 "+5V" H 4865 2223 50  0000 C CNN
+F 2 "" H 4850 2050 50  0001 C CNN
+F 3 "" H 4850 2050 50  0001 C CNN
+	1    4850 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4950 2050 4850 2050
+Connection ~ 4950 2050
+$Comp
+L power:GND #PWR?
+U 1 1 5F25DA39
+P 5350 2400
+F 0 "#PWR?" H 5350 2150 50  0001 C CNN
+F 1 "GND" H 5500 2350 50  0000 C CNN
+F 2 "" H 5350 2400 50  0001 C CNN
+F 3 "" H 5350 2400 50  0001 C CNN
+	1    5350 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4950 2350 4950 2400
+Wire Wire Line
+	4950 2400 5350 2400
+Wire Wire Line
+	5350 2400 5350 2350
+Connection ~ 5350 2400
+$Comp
+L Device:C_Small C?
+U 1 1 5F261CE7
+P 5750 2250
+F 0 "C?" H 5800 2300 50  0000 L CNN
+F 1 "1uF" H 5800 2200 50  0000 L CNN
+F 2 "" H 5750 2250 50  0001 C CNN
+F 3 "~" H 5750 2250 50  0001 C CNN
+	1    5750 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 2150 5750 2050
+Wire Wire Line
+	5750 2050 5650 2050
+Wire Wire Line
+	5750 2350 5750 2400
+Wire Wire Line
+	5750 2400 5350 2400
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5F26676C
+P 5850 2050
+F 0 "#PWR?" H 5850 1900 50  0001 C CNN
+F 1 "+3V3" H 5865 2223 50  0000 C CNN
+F 2 "" H 5850 2050 50  0001 C CNN
+F 3 "" H 5850 2050 50  0001 C CNN
+	1    5850 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5850 2050 5750 2050
+Connection ~ 5750 2050
+Wire Notes Line
+	4750 1800 6000 1800
+Wire Notes Line
+	6000 1800 6000 2600
+Wire Notes Line
+	6000 2600 4750 2600
+Wire Notes Line
+	4750 2600 4750 1800
+Text Notes 6000 2600 2    50   Italic 10
+3V3 Regulator
+Text Notes 5350 2600 2    50   Italic 0
+TLV1117LV (1A)
 $EndSCHEMATC
