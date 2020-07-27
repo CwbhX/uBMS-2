@@ -1352,4 +1352,334 @@ Wire Wire Line
 	7050 3050 6950 3050
 Wire Wire Line
 	6950 3050 6950 2950
+Text Notes 1850 1850 2    50   ~ 0
+Tie reset to GPIO expander too\n
+$Comp
+L uBMS-Parts:CLX6F-FKC D?
+U 1 1 5F44C44C
+P 10750 5550
+F 0 "D?" V 10900 5900 50  0000 R CNN
+F 1 "CLX6F-FKC" H 10950 5200 50  0000 R CNN
+F 2 "LED_SMD:LED_RGB_PLCC-6" H 11350 5200 50  0001 C CNN
+F 3 "ttps://www.cree.com/led-components/media/documents/ds-CLX6F-FKC-1352.pdf" H 10750 5550 50  0001 C CNN
+	1    10750 5550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F450B8E
+P 10550 5100
+F 0 "R?" V 10550 5050 50  0000 L CNN
+F 1 "270R" V 10450 5000 50  0000 L CNN
+F 2 "" V 10480 5100 50  0001 C CNN
+F 3 "~" H 10550 5100 50  0001 C CNN
+	1    10550 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F4510C9
+P 10750 5100
+F 0 "R?" V 10750 5050 50  0000 L CNN
+F 1 "270R" V 10650 5000 50  0000 L CNN
+F 2 "" V 10680 5100 50  0001 C CNN
+F 3 "~" H 10750 5100 50  0001 C CNN
+	1    10750 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F4512E3
+P 10950 5100
+F 0 "R?" V 10950 5050 50  0000 L CNN
+F 1 "270R" V 10850 5000 50  0000 L CNN
+F 2 "" V 10880 5100 50  0001 C CNN
+F 3 "~" H 10950 5100 50  0001 C CNN
+	1    10950 5100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10550 5250 10550 5350
+Wire Wire Line
+	10750 5250 10750 5350
+Wire Wire Line
+	10950 5250 10950 5350
+$Comp
+L power:GND #PWR?
+U 1 1 5F4676CB
+P 10750 5850
+F 0 "#PWR?" H 10750 5600 50  0001 C CNN
+F 1 "GND" H 10900 5800 50  0000 C CNN
+F 2 "" H 10750 5850 50  0001 C CNN
+F 3 "" H 10750 5850 50  0001 C CNN
+	1    10750 5850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10750 5850 10750 5800
+Wire Wire Line
+	10750 5800 10550 5800
+Wire Wire Line
+	10550 5800 10550 5750
+Wire Wire Line
+	10750 5800 10950 5800
+Wire Wire Line
+	10950 5800 10950 5750
+Connection ~ 10750 5800
+Wire Wire Line
+	10750 5750 10750 5800
+Text Label 10950 4900 1    50   ~ 0
+LED_R
+Text Label 10750 4900 1    50   ~ 0
+LED_G
+Text Label 10550 4900 1    50   ~ 0
+LED_B
+Wire Wire Line
+	10550 4900 10550 4950
+Wire Wire Line
+	10750 4900 10750 4950
+Wire Wire Line
+	10950 4900 10950 4950
+Text Label 10350 4050 3    50   ~ 0
+LED_R
+Text Label 10250 4050 3    50   ~ 0
+LED_G
+Text Label 10150 4050 3    50   ~ 0
+LED_B
+Wire Wire Line
+	10150 4050 10150 4000
+Connection ~ 10150 4000
+Wire Wire Line
+	10250 4050 10250 4000
+Connection ~ 10250 4000
+Wire Wire Line
+	10350 4050 10350 4000
+Connection ~ 10350 4000
+Wire Notes Line
+	10350 4650 10350 6050
+Wire Notes Line
+	10350 6050 11150 6050
+Wire Notes Line
+	11150 6050 11150 4650
+Wire Notes Line
+	11150 4650 10350 4650
+Text Notes 11150 6050 2    50   Italic 10
+Status RGB LED
+$Comp
+L uBMS-Parts:VDMG10C0 U?
+U 1 1 5F4E7902
+P 9850 5400
+F 0 "U?" H 9850 6067 50  0000 C CNN
+F 1 "VDMG10C0" H 9850 5976 50  0000 C CNN
+F 2 "" H 9850 5400 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/84196/vdmx10x0.pdf" H 9850 5400 50  0001 C CNN
+	1    9850 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F4F367B
+P 10200 5850
+F 0 "#PWR?" H 10200 5600 50  0001 C CNN
+F 1 "GND" H 10100 5750 50  0000 C CNN
+F 2 "" H 10200 5850 50  0001 C CNN
+F 3 "" H 10200 5850 50  0001 C CNN
+	1    10200 5850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10200 5850 10200 5800
+Wire Wire Line
+	10200 5800 10150 5800
+Wire Wire Line
+	10150 5700 10200 5700
+Wire Wire Line
+	10200 5700 10200 5800
+Connection ~ 10200 5800
+Text Label 9550 4400 3    50   ~ 0
+7A
+Text Label 9450 4400 3    50   ~ 0
+7B
+Text Label 9350 4400 3    50   ~ 0
+7C
+Text Label 9250 4400 3    50   ~ 0
+7D
+Text Label 9150 4400 3    50   ~ 0
+7E
+Text Label 9050 4400 3    50   ~ 0
+7F
+Text Label 8950 4400 3    50   ~ 0
+7G
+Text Label 8850 4400 3    50   ~ 0
+7DP
+Text Label 9500 5100 2    50   ~ 0
+7A
+Text Label 9500 5200 2    50   ~ 0
+7B
+Text Label 9500 5300 2    50   ~ 0
+7C
+Text Label 9500 5400 2    50   ~ 0
+7D
+Text Label 9500 5500 2    50   ~ 0
+7E
+Text Label 9500 5600 2    50   ~ 0
+7F
+Text Label 9500 5700 2    50   ~ 0
+7G
+Text Label 9500 5800 2    50   ~ 0
+7DP
+Wire Wire Line
+	9500 5800 9550 5800
+Wire Wire Line
+	9500 5700 9550 5700
+Wire Wire Line
+	9500 5600 9550 5600
+Wire Wire Line
+	9550 5500 9500 5500
+Wire Wire Line
+	9550 5400 9500 5400
+Wire Wire Line
+	9550 5300 9500 5300
+Wire Wire Line
+	9550 5200 9500 5200
+Wire Wire Line
+	9550 5100 9500 5100
+$Comp
+L Device:R R?
+U 1 1 5F5B9121
+P 8850 4200
+F 0 "R?" V 8850 4150 50  0000 L CNN
+F 1 "270R" V 8750 4100 50  0000 L CNN
+F 2 "" V 8780 4200 50  0001 C CNN
+F 3 "~" H 8850 4200 50  0001 C CNN
+	1    8850 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F5B9880
+P 8950 4200
+F 0 "R?" V 8950 4150 50  0000 L CNN
+F 1 "270R" V 8850 4100 50  0000 L CNN
+F 2 "" V 8880 4200 50  0001 C CNN
+F 3 "~" H 8950 4200 50  0001 C CNN
+	1    8950 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F5B9A32
+P 9050 4200
+F 0 "R?" V 9050 4150 50  0000 L CNN
+F 1 "270R" V 8950 4100 50  0000 L CNN
+F 2 "" V 8980 4200 50  0001 C CNN
+F 3 "~" H 9050 4200 50  0001 C CNN
+	1    9050 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F5B9B71
+P 9150 4200
+F 0 "R?" V 9150 4150 50  0000 L CNN
+F 1 "270R" V 9050 4100 50  0000 L CNN
+F 2 "" V 9080 4200 50  0001 C CNN
+F 3 "~" H 9150 4200 50  0001 C CNN
+	1    9150 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F5B9CBF
+P 9250 4200
+F 0 "R?" V 9250 4150 50  0000 L CNN
+F 1 "270R" V 9150 4100 50  0000 L CNN
+F 2 "" V 9180 4200 50  0001 C CNN
+F 3 "~" H 9250 4200 50  0001 C CNN
+	1    9250 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F5B9E60
+P 9350 4200
+F 0 "R?" V 9350 4150 50  0000 L CNN
+F 1 "270R" V 9250 4100 50  0000 L CNN
+F 2 "" V 9280 4200 50  0001 C CNN
+F 3 "~" H 9350 4200 50  0001 C CNN
+	1    9350 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F5BA02D
+P 9450 4200
+F 0 "R?" V 9450 4150 50  0000 L CNN
+F 1 "270R" V 9350 4100 50  0000 L CNN
+F 2 "" V 9380 4200 50  0001 C CNN
+F 3 "~" H 9450 4200 50  0001 C CNN
+	1    9450 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F5BA20E
+P 9550 4200
+F 0 "R?" V 9550 4150 50  0000 L CNN
+F 1 "270R" V 9450 4100 50  0000 L CNN
+F 2 "" V 9480 4200 50  0001 C CNN
+F 3 "~" H 9550 4200 50  0001 C CNN
+	1    9550 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8850 4050 8850 4000
+Connection ~ 8850 4000
+Wire Wire Line
+	8950 4050 8950 4000
+Connection ~ 8950 4000
+Wire Wire Line
+	9050 4050 9050 4000
+Connection ~ 9050 4000
+Wire Wire Line
+	9150 4050 9150 4000
+Connection ~ 9150 4000
+Wire Wire Line
+	9250 4050 9250 4000
+Connection ~ 9250 4000
+Wire Wire Line
+	9350 4050 9350 4000
+Connection ~ 9350 4000
+Wire Wire Line
+	9450 4050 9450 4000
+Connection ~ 9450 4000
+Wire Wire Line
+	9550 4050 9550 4000
+Connection ~ 9550 4000
+Wire Wire Line
+	8850 4400 8850 4350
+Wire Wire Line
+	8950 4400 8950 4350
+Wire Wire Line
+	9050 4400 9050 4350
+Wire Wire Line
+	9150 4400 9150 4350
+Wire Wire Line
+	9250 4400 9250 4350
+Wire Wire Line
+	9350 4400 9350 4350
+Wire Wire Line
+	9450 4400 9450 4350
+Wire Wire Line
+	9550 4400 9550 4350
+Wire Notes Line
+	10300 4650 9350 4650
+Wire Notes Line
+	9350 4650 9350 6050
+Wire Notes Line
+	9350 6050 10300 6050
+Wire Notes Line
+	10300 6050 10300 4650
+Text Notes 10300 6050 2    50   Italic 10
+7-Segment
 $EndSCHEMATC

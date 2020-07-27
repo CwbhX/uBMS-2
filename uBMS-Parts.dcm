@@ -1,7 +1,17 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP CLX6F-FKC
+F ttps://www.cree.com/led-components/media/documents/ds-CLX6F-FKC-1352.pdf
+$ENDCMP
+#
 $CMP NTD5865NL
 F https://www.onsemi.com/pub/Collateral/NTD5865NL-D.PDF
+$ENDCMP
+#
+$CMP VDMG10C0
+D Green LED 7-Segment Common Cathode SMD
+K 10mm LED 7 Segment
+F https://www.vishay.com/docs/84196/vdmx10x0.pdf
 $ENDCMP
 #
 #End Doc Library
