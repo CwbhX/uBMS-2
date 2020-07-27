@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name uBMS-Parts)(type Legacy)(uri ${KIPRJMOD}/uBMS-Parts.lib)(options "")(descr ""))
+)

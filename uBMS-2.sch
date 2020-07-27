@@ -1050,4 +1050,61 @@ Wire Notes Line
 	6300 3200 6300 1800
 Text Notes 7750 3200 2    50   Italic 10
 Current Sense
+$Comp
+L uBMS-Parts:NTD5865NL Q?
+U 1 1 5F3172D8
+P 5550 3200
+F 0 "Q?" V 5650 3050 50  0000 C CNN
+F 1 "NTD5865NL" V 5650 3500 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:TO-252-2" H 6250 3050 50  0001 C CNN
+F 3 "https://www.onsemi.com/pub/Collateral/NTD5865NL-D.PDF" H 5500 3200 50  0001 C CNN
+	1    5550 3200
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F31F123
+P 5400 2800
+F 0 "R?" V 5400 2800 50  0000 C CNN
+F 1 "330R" V 5300 2800 50  0000 C CNN
+F 2 "" V 5330 2800 50  0001 C CNN
+F 3 "~" H 5400 2800 50  0001 C CNN
+	1    5400 2800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5550 2800 5550 2900
+Text Label 5300 3200 2    50   ~ 0
+MOD_DSC_SRC
+Wire Wire Line
+	5350 3200 5300 3200
+Text Label 5200 2800 2    50   ~ 0
+MOD_DSC_G
+Wire Wire Line
+	5200 2800 5250 2800
+Text Label 5800 3200 0    50   ~ 0
+Cell_RTN
+Wire Wire Line
+	5800 3200 5750 3200
+$Comp
+L Graphic:SYM_Hot_Small #SYM?
+U 1 1 5F33C8F9
+P 5750 2950
+F 0 "#SYM?" H 5750 3090 50  0001 C CNN
+F 1 "SYM_Hot_Small" H 5750 2825 50  0001 C CNN
+F 2 "" H 5750 2775 50  0001 C CNN
+F 3 "~" H 5780 2750 50  0001 C CNN
+	1    5750 2950
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	4750 2650 4750 3450
+Wire Notes Line
+	4750 3450 6150 3450
+Wire Notes Line
+	6150 3450 6150 2650
+Wire Notes Line
+	6150 2650 4750 2650
+Text Notes 6150 3450 2    50   Italic 10
+Module Disconnect
 $EndSCHEMATC
