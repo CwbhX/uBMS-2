@@ -1682,4 +1682,160 @@ Wire Notes Line
 	10300 6050 10300 4650
 Text Notes 10300 6050 2    50   Italic 10
 7-Segment
+$Comp
+L Device:LED D?
+U 1 1 5F664B22
+P 9000 5600
+F 0 "D?" V 9039 5483 50  0000 R CNN
+F 1 "LED" V 8948 5483 50  0000 R CNN
+F 2 "" H 9000 5600 50  0001 C CNN
+F 3 "~" H 9000 5600 50  0001 C CNN
+	1    9000 5600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 5F666853
+P 8650 5600
+F 0 "D?" V 8689 5483 50  0000 R CNN
+F 1 "LED" V 8598 5483 50  0000 R CNN
+F 2 "" H 8650 5600 50  0001 C CNN
+F 3 "~" H 8650 5600 50  0001 C CNN
+	1    8650 5600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 5F666FBD
+P 8300 5600
+F 0 "D?" V 8339 5483 50  0000 R CNN
+F 1 "LED" V 8248 5483 50  0000 R CNN
+F 2 "" H 8300 5600 50  0001 C CNN
+F 3 "~" H 8300 5600 50  0001 C CNN
+	1    8300 5600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 5F667385
+P 7950 5600
+F 0 "D?" V 7989 5483 50  0000 R CNN
+F 1 "LED" V 7898 5483 50  0000 R CNN
+F 2 "" H 7950 5600 50  0001 C CNN
+F 3 "~" H 7950 5600 50  0001 C CNN
+	1    7950 5600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F667730
+P 7950 5300
+F 0 "R?" V 7950 5250 50  0000 L CNN
+F 1 "270R" V 7850 5200 50  0000 L CNN
+F 2 "" V 7880 5300 50  0001 C CNN
+F 3 "~" H 7950 5300 50  0001 C CNN
+	1    7950 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F667C35
+P 8300 5300
+F 0 "R?" V 8300 5250 50  0000 L CNN
+F 1 "270R" V 8200 5200 50  0000 L CNN
+F 2 "" V 8230 5300 50  0001 C CNN
+F 3 "~" H 8300 5300 50  0001 C CNN
+	1    8300 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F667E2F
+P 8650 5300
+F 0 "R?" V 8650 5250 50  0000 L CNN
+F 1 "270R" V 8550 5200 50  0000 L CNN
+F 2 "" V 8580 5300 50  0001 C CNN
+F 3 "~" H 8650 5300 50  0001 C CNN
+	1    8650 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F66802D
+P 9000 5300
+F 0 "R?" V 9000 5250 50  0000 L CNN
+F 1 "270R" V 8900 5200 50  0000 L CNN
+F 2 "" V 8930 5300 50  0001 C CNN
+F 3 "~" H 9000 5300 50  0001 C CNN
+	1    9000 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F6681E3
+P 8500 5850
+F 0 "#PWR?" H 8500 5600 50  0001 C CNN
+F 1 "GND" H 8350 5750 50  0000 C CNN
+F 2 "" H 8500 5850 50  0001 C CNN
+F 3 "" H 8500 5850 50  0001 C CNN
+	1    8500 5850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8500 5850 8300 5850
+Wire Wire Line
+	7950 5850 7950 5750
+Wire Wire Line
+	8300 5750 8300 5850
+Connection ~ 8300 5850
+Wire Wire Line
+	8300 5850 7950 5850
+Wire Wire Line
+	8500 5850 8650 5850
+Wire Wire Line
+	8650 5850 8650 5750
+Connection ~ 8500 5850
+Wire Wire Line
+	8650 5850 9000 5850
+Wire Wire Line
+	9000 5850 9000 5750
+Connection ~ 8650 5850
+Text Label 10050 4050 3    50   ~ 0
+LED_BAT_G1
+Text Label 9950 4050 3    50   ~ 0
+LED_BAT_G2
+Text Label 9850 4050 3    50   ~ 0
+LED_BAT_Y
+Text Label 9750 4050 3    50   ~ 0
+LED_BAT_R
+Wire Wire Line
+	10050 4050 10050 4000
+Connection ~ 10050 4000
+Wire Wire Line
+	9950 4050 9950 4000
+Connection ~ 9950 4000
+Wire Wire Line
+	9850 4050 9850 4000
+Connection ~ 9850 4000
+Wire Wire Line
+	9750 4050 9750 4000
+Connection ~ 9750 4000
+Text Label 9000 5150 1    50   ~ 0
+LED_BAT_G1
+Text Label 8650 5150 1    50   ~ 0
+LED_BAT_G2
+Text Label 8300 5150 1    50   ~ 0
+LED_BAT_Y
+Text Label 7950 5150 1    50   ~ 0
+LED_BAT_R
+Wire Notes Line
+	9250 6050 9250 4650
+Wire Notes Line
+	9250 4650 7800 4650
+Wire Notes Line
+	7800 6050 9250 6050
+Wire Notes Line
+	7800 4650 7800 6050
+Text Notes 9250 6050 2    50   Italic 10
+Batt Indicators
 $EndSCHEMATC
