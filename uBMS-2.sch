@@ -1048,4 +1048,6 @@ Wire Notes Line
 	7750 3200 6300 3200
 Wire Notes Line
 	6300 3200 6300 1800
+Text Notes 7750 3200 2    50   Italic 10
+Current Sense
 $EndSCHEMATC
