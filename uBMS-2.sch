@@ -469,12 +469,12 @@ Wire Wire Line
 $Comp
 L power:GND #PWR?
 U 1 1 5F20A0C9
-P 8750 2050
-F 0 "#PWR?" H 8750 1800 50  0001 C CNN
-F 1 "GND" H 8900 2000 50  0000 C CNN
-F 2 "" H 8750 2050 50  0001 C CNN
-F 3 "" H 8750 2050 50  0001 C CNN
-	1    8750 2050
+P 10850 3600
+F 0 "#PWR?" H 10850 3350 50  0001 C CNN
+F 1 "GND" H 11000 3550 50  0000 C CNN
+F 2 "" H 10850 3600 50  0001 C CNN
+F 3 "" H 10850 3600 50  0001 C CNN
+	1    10850 3600
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -1089,12 +1089,12 @@ Wire Wire Line
 $Comp
 L Graphic:SYM_Hot_Small #SYM?
 U 1 1 5F33C8F9
-P 5750 2950
-F 0 "#SYM?" H 5750 3090 50  0001 C CNN
-F 1 "SYM_Hot_Small" H 5750 2825 50  0001 C CNN
-F 2 "" H 5750 2775 50  0001 C CNN
-F 3 "~" H 5780 2750 50  0001 C CNN
-	1    5750 2950
+P 6000 2800
+F 0 "#SYM?" H 6000 2940 50  0001 C CNN
+F 1 "SYM_Hot_Small" H 6000 2675 50  0001 C CNN
+F 2 "" H 6000 2625 50  0001 C CNN
+F 3 "~" H 6030 2600 50  0001 C CNN
+	1    6000 2800
 	1    0    0    -1  
 $EndComp
 Wire Notes Line
@@ -1107,4 +1107,239 @@ Wire Notes Line
 	6150 2650 4750 2650
 Text Notes 6150 3450 2    50   Italic 10
 Module Disconnect
+$Comp
+L Interface_Expansion:MCP23017_SS U?
+U 1 1 5F346217
+P 9650 3300
+F 0 "U?" V 9550 3250 50  0000 L CNN
+F 1 "MCP23017_SS" V 9650 3050 50  0000 L CNN
+F 2 "Package_SO:SSOP-28_5.3x10.2mm_P0.65mm" H 9850 2300 50  0001 L CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20001952C.pdf" H 9850 2200 50  0001 L CNN
+	1    9650 3300
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5F34B0C9
+P 10850 3200
+F 0 "#PWR?" H 10850 3050 50  0001 C CNN
+F 1 "+5V" H 10865 3373 50  0000 C CNN
+F 2 "" H 10850 3200 50  0001 C CNN
+F 3 "" H 10850 3200 50  0001 C CNN
+	1    10850 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5F34B941
+P 10850 3450
+F 0 "C?" H 10700 3500 50  0000 L CNN
+F 1 "0.1uF" H 10600 3350 50  0000 L CNN
+F 2 "" H 10850 3450 50  0001 C CNN
+F 3 "~" H 10850 3450 50  0001 C CNN
+	1    10850 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Interface_Expansion:MCP23017_SS U?
+U 1 1 5F34BF04
+P 9650 3300
+F 0 "U?" V 9550 3250 50  0000 L CNN
+F 1 "MCP23017_SS" V 9650 3050 50  0000 L CNN
+F 2 "Package_SO:SSOP-28_5.3x10.2mm_P0.65mm" H 9850 2300 50  0001 L CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20001952C.pdf" H 9850 2200 50  0001 L CNN
+	1    9650 3300
+	0    1    1    0   
+$EndComp
+Connection ~ 10750 3300
+Wire Wire Line
+	10750 3300 10850 3300
+Wire Wire Line
+	10850 3300 10850 3200
+Connection ~ 10850 3300
+Wire Wire Line
+	10850 3350 10850 3300
+Wire Wire Line
+	10850 3550 10850 3600
+$Comp
+L power:GND #PWR?
+U 1 1 5F36B712
+P 8450 3400
+F 0 "#PWR?" H 8450 3150 50  0001 C CNN
+F 1 "GND" H 8600 3350 50  0000 C CNN
+F 2 "" H 8450 3400 50  0001 C CNN
+F 3 "" H 8450 3400 50  0001 C CNN
+	1    8450 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8450 3400 8450 3300
+Wire Wire Line
+	8450 3300 8550 3300
+Connection ~ 8550 3300
+Text Label 10500 2550 0    50   ~ 0
+SDA_5V
+Text Label 10300 2550 2    50   ~ 0
+SCL_5V
+Wire Wire Line
+	10350 2600 10350 2550
+Wire Wire Line
+	10350 2550 10300 2550
+Connection ~ 10350 2600
+Wire Wire Line
+	10450 2600 10450 2550
+Wire Wire Line
+	10450 2550 10500 2550
+Connection ~ 10450 2600
+$Comp
+L Device:R R?
+U 1 1 5F38375B
+P 7950 2700
+F 0 "R?" H 8020 2746 50  0000 L CNN
+F 1 "6.8k" H 8020 2655 50  0000 L CNN
+F 2 "" V 7880 2700 50  0001 C CNN
+F 3 "~" H 7950 2700 50  0001 C CNN
+	1    7950 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F383B7D
+P 8300 2700
+F 0 "R?" H 8370 2746 50  0000 L CNN
+F 1 "6.8k" H 8370 2655 50  0000 L CNN
+F 2 "" V 8230 2700 50  0001 C CNN
+F 3 "~" H 8300 2700 50  0001 C CNN
+	1    8300 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F383D33
+P 7950 3100
+F 0 "R?" H 8020 3146 50  0000 L CNN
+F 1 "10k" H 8020 3055 50  0000 L CNN
+F 2 "" V 7880 3100 50  0001 C CNN
+F 3 "~" H 7950 3100 50  0001 C CNN
+	1    7950 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F383F61
+P 8300 3100
+F 0 "R?" H 8370 3146 50  0000 L CNN
+F 1 "10k" H 8370 3055 50  0000 L CNN
+F 2 "" V 8230 3100 50  0001 C CNN
+F 3 "~" H 8300 3100 50  0001 C CNN
+	1    8300 3100
+	1    0    0    -1  
+$EndComp
+Text Notes 8250 2300 2    50   Italic 0
+ADDR: 0x48
+Wire Wire Line
+	8950 2600 8950 2550
+Connection ~ 8950 2600
+Wire Wire Line
+	8950 2550 8850 2550
+Wire Wire Line
+	8850 2600 8850 2550
+Connection ~ 8850 2600
+Wire Wire Line
+	9050 2550 8950 2550
+Connection ~ 8950 2550
+Wire Wire Line
+	9050 2550 9050 2600
+Connection ~ 9050 2600
+Wire Wire Line
+	8850 2550 8700 2550
+Wire Wire Line
+	8700 2550 8700 3200
+Wire Wire Line
+	8700 3200 8550 3200
+Wire Wire Line
+	8550 3200 8550 3300
+Connection ~ 8850 2550
+$Comp
+L Device:R R?
+U 1 1 5F3AC1C4
+P 9400 2600
+F 0 "R?" V 9400 2600 50  0000 C CNN
+F 1 "1k" V 9500 2600 50  0000 C CNN
+F 2 "" V 9330 2600 50  0001 C CNN
+F 3 "~" H 9400 2600 50  0001 C CNN
+	1    9400 2600
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5F3B2689
+P 9250 2600
+F 0 "#PWR?" H 9250 2450 50  0001 C CNN
+F 1 "+5V" H 9200 2500 50  0000 C CNN
+F 2 "" H 9250 2600 50  0001 C CNN
+F 3 "" H 9250 2600 50  0001 C CNN
+	1    9250 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9750 2600 9750 2450
+Wire Wire Line
+	9750 2450 8300 2450
+Wire Wire Line
+	8300 2450 8300 2550
+Connection ~ 9750 2600
+Connection ~ 9550 2600
+Wire Wire Line
+	9850 2600 9850 2400
+Wire Wire Line
+	9850 2400 7950 2400
+Wire Wire Line
+	7950 2400 7950 2550
+Connection ~ 9850 2600
+Wire Wire Line
+	8300 3250 8300 3300
+Wire Wire Line
+	8300 3300 8450 3300
+Connection ~ 8450 3300
+Wire Wire Line
+	7950 3250 7950 3300
+Wire Wire Line
+	7950 3300 8300 3300
+Connection ~ 8300 3300
+Wire Wire Line
+	7950 2950 7950 2900
+Wire Wire Line
+	8300 2950 8300 2900
+Text Label 8000 2900 0    50   ~ 0
+INT_B
+Text Label 8350 2900 0    50   ~ 0
+INT_A
+Wire Wire Line
+	8350 2900 8300 2900
+Connection ~ 8300 2900
+Wire Wire Line
+	8300 2900 8300 2850
+Wire Wire Line
+	8000 2900 7950 2900
+Connection ~ 7950 2900
+Wire Wire Line
+	7950 2900 7950 2850
+Text Label 10450 4050 3    50   ~ 0
+MOD_DSC_G
+Wire Wire Line
+	10450 4000 10450 4050
+Connection ~ 10450 4000
+Wire Notes Line
+	7800 2350 11150 2350
+Wire Notes Line
+	11150 4600 7800 4600
+Text Notes 11150 4600 2    50   Italic 10
+I2C GPIO Expander - 16-bit
+Text Notes 8250 4600 2    50   Italic 0
+ADDR: 0x20
+Wire Notes Line
+	11150 2350 11150 4600
+Wire Notes Line
+	7800 2350 7800 4600
 $EndSCHEMATC
