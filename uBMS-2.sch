@@ -295,14 +295,10 @@ Connection ~ 4050 1400
 Wire Wire Line
 	3300 1400 3750 1400
 Connection ~ 3750 1400
-Text Label 3250 1500 0    50   ~ 0
+Text Label 3200 1500 0    50   ~ 10
 UART_TX
-Text Label 3250 1700 0    50   ~ 0
+Text Label 3200 1700 0    50   ~ 10
 UART_RX
-Wire Wire Line
-	3250 1500 3150 1500
-Wire Wire Line
-	3250 1700 3150 1700
 Wire Notes Line
 	550  550  4700 550 
 Wire Notes Line
@@ -574,8 +570,8 @@ $Comp
 L Transistor_FET:2N7002 Q?
 U 1 1 5F21FBB7
 P 10550 950
-F 0 "Q?" V 10750 850 50  0000 C CNN
-F 1 "2N7002" V 10750 1100 50  0000 C CNN
+F 0 "Q?" V 10800 850 50  0000 C CNN
+F 1 "2N7002" V 10800 1100 50  0000 C CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 10750 875 50  0001 L CIN
 F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7002.pdf" H 10550 950 50  0001 L CNN
 	1    10550 950 
@@ -585,8 +581,8 @@ $Comp
 L Transistor_FET:2N7002 Q?
 U 1 1 5F225AE3
 P 10550 1900
-F 0 "Q?" V 10750 1800 50  0000 C CNN
-F 1 "2N7002" V 10750 2050 50  0000 C CNN
+F 0 "Q?" V 10800 1800 50  0000 C CNN
+F 1 "2N7002" V 10800 2050 50  0000 C CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 10750 1825 50  0001 L CIN
 F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7002.pdf" H 10550 1900 50  0001 L CNN
 	1    10550 1900
@@ -839,4 +835,56 @@ Text Notes 6000 2600 2    50   Italic 10
 3V3 Regulator
 Text Notes 5350 2600 2    50   Italic 0
 TLV1117LV (1A)
+Text Label 3200 3400 0    50   ~ 0
+PWM_Blnce_1
+Text Label 3200 3500 0    50   ~ 0
+PWM_Blnce_2
+Text Label 3200 3200 0    50   ~ 0
+PWM_Blnce_3
+Text Label 3200 3300 0    50   ~ 0
+PWM_Blnce_4
+Text Label 3200 2200 0    50   ~ 0
+PWM_Blnce_5
+Text Label 3200 2000 0    50   ~ 0
+PWM_Blnce_6
+Text Label 3200 2100 0    50   ~ 0
+PWM_Blnce_7
+Text Label 3200 2300 0    50   ~ 0
+PWM_Blnce_8
+Text Label 3200 1600 0    50   ~ 0
+PWM_Blnce_9
+Text Label 3200 1800 0    50   ~ 0
+PWM_Blnce_10
+Text Label 3200 2400 0    50   ~ 0
+PWM_Blnce_11
+Text Label 3200 2500 0    50   ~ 0
+PWM_Blnce_12
+Wire Wire Line
+	3200 1800 3150 1800
+Wire Wire Line
+	3200 1600 3150 1600
+Wire Wire Line
+	3200 2000 3150 2000
+Wire Wire Line
+	3200 2100 3150 2100
+Wire Wire Line
+	3200 2200 3150 2200
+Wire Wire Line
+	3200 2300 3150 2300
+Wire Wire Line
+	3200 2400 3150 2400
+Wire Wire Line
+	3200 2500 3150 2500
+Wire Wire Line
+	3200 3200 3150 3200
+Wire Wire Line
+	3200 3300 3150 3300
+Wire Wire Line
+	3200 3400 3150 3400
+Wire Wire Line
+	3200 3500 3150 3500
+Wire Wire Line
+	3200 1700 3150 1700
+Wire Wire Line
+	3200 1500 3150 1500
 $EndSCHEMATC
