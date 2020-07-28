@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 1
+Sheet 1 2
 Title "Micro BMS v2"
 Date ""
 Rev "1"
@@ -542,8 +542,6 @@ Wire Wire Line
 	8350 1550 8300 1550
 Wire Wire Line
 	8350 1650 8300 1650
-Text Notes 8450 1450 2    50   Italic 0
-Needs Pull-Ups
 Text Label 8300 1350 2    50   ~ 0
 ADC_Int
 Wire Wire Line
@@ -1829,13 +1827,36 @@ LED_BAT_Y
 Text Label 7950 5150 1    50   ~ 0
 LED_BAT_R
 Wire Notes Line
-	9250 6050 9250 4650
-Wire Notes Line
-	9250 4650 7800 4650
-Wire Notes Line
-	7800 6050 9250 6050
-Wire Notes Line
 	7800 4650 7800 6050
-Text Notes 9250 6050 2    50   Italic 10
+Text Notes 9300 6050 2    50   Italic 10
 Batt Indicators
+Wire Notes Line
+	9300 6050 9300 4650
+Wire Notes Line
+	7800 4650 9300 4650
+Wire Notes Line
+	7800 6050 9300 6050
+$Comp
+L Interface_Expansion:MCP23017_SS U?
+U 1 1 5F6F9407
+P 6250 4450
+F 0 "U?" V 6150 4400 50  0000 L CNN
+F 1 "MCP23017_SS" V 6250 4200 50  0000 L CNN
+F 2 "Package_SO:SSOP-28_5.3x10.2mm_P0.65mm" H 6450 3450 50  0001 L CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20001952C.pdf" H 6450 3350 50  0001 L CNN
+	1    6250 4450
+	0    1    1    0   
+$EndComp
+$Sheet
+S 5500 5500 650  650 
+U 5F70A721
+F0 "VoltageMultiplex" 50
+F1 "voltmux.sch" 50
+$EndSheet
+$Sheet
+S 6500 5500 650  650 
+U 5F70B1A3
+F0 "TempMultiplex" 50
+F1 "tempmux.sch" 50
+$EndSheet
 $EndSCHEMATC
