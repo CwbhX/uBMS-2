@@ -1,9 +1,10 @@
 EESchema Schematic File Version 4
+LIBS:uBMS-2-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 2
+Sheet 1 3
 Title "Micro BMS v2"
 Date ""
 Rev "1"
@@ -348,11 +349,8 @@ Wire Wire Line
 	5500 900  5250 900 
 Wire Wire Line
 	5250 900  5250 950 
-Text Label 5000 900  2    50   ~ 0
+Text Label 4950 900  2    50   ~ 0
 V_IN
-Wire Wire Line
-	5250 900  5000 900 
-Connection ~ 5250 900 
 $Comp
 L Device:D D?
 U 1 1 5F1F8176
@@ -886,149 +884,50 @@ Wire Wire Line
 Wire Wire Line
 	3200 1500 3150 1500
 $Comp
-L Amplifier_Current:INA181 U?
-U 1 1 5F2A0AB1
-P 6950 2650
-F 0 "U?" V 7000 2750 50  0000 L CNN
-F 1 "INA181" V 7100 2750 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-6" H 7000 2700 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/ina181.pdf" H 7100 2800 50  0001 C CNN
-	1    6950 2650
-	0    1    1    0   
-$EndComp
-$Comp
 L Device:R_Shunt R?
 U 1 1 5F2A2116
-P 6950 2000
-F 0 "R?" V 6950 2000 50  0000 C CNN
-F 1 "5m Ohm" V 6816 2000 50  0000 C CNN
-F 2 "" V 6880 2000 50  0001 C CNN
-F 3 "~" H 6950 2000 50  0001 C CNN
-	1    6950 2000
+P 7050 2000
+F 0 "R?" V 7050 2000 50  0000 C CNN
+F 1 "1m Ohm" V 6916 2000 50  0000 C CNN
+F 2 "" V 6980 2000 50  0001 C CNN
+F 3 "~" H 7050 2000 50  0001 C CNN
+	1    7050 2000
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	7050 2350 7050 2150
-Wire Wire Line
-	6850 2350 6850 2150
-$Comp
-L power:+5V #PWR?
-U 1 1 5F2B75DC
-P 7350 2450
-F 0 "#PWR?" H 7350 2300 50  0001 C CNN
-F 1 "+5V" H 7365 2623 50  0000 C CNN
-F 2 "" H 7350 2450 50  0001 C CNN
-F 3 "" H 7350 2450 50  0001 C CNN
-	1    7350 2450
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C?
-U 1 1 5F2B817B
-P 7350 2650
-F 0 "C?" H 7400 2750 50  0000 L CNN
-F 1 "0.1uF" H 7400 2600 50  0000 L CNN
-F 2 "" H 7350 2650 50  0001 C CNN
-F 3 "~" H 7350 2650 50  0001 C CNN
-	1    7350 2650
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5F2B8940
-P 7350 2850
-F 0 "#PWR?" H 7350 2600 50  0001 C CNN
-F 1 "GND" H 7450 2850 50  0000 C CNN
-F 2 "" H 7350 2850 50  0001 C CNN
-F 3 "" H 7350 2850 50  0001 C CNN
-	1    7350 2850
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7350 2850 7350 2750
-Wire Wire Line
-	7350 2550 7350 2450
-Wire Wire Line
-	7350 2550 7250 2550
-Connection ~ 7350 2550
-$Comp
-L power:GND #PWR?
-U 1 1 5F2D0E42
-P 6450 2050
-F 0 "#PWR?" H 6450 1800 50  0001 C CNN
-F 1 "GND" H 6500 1900 50  0000 C CNN
-F 2 "" H 6450 2050 50  0001 C CNN
-F 3 "" H 6450 2050 50  0001 C CNN
-	1    6450 2050
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6450 2000 6450 2050
-Wire Wire Line
-	6450 2000 6600 2000
-Text Label 7200 2000 0    50   ~ 0
-MOD_DSC_SRC
-Wire Wire Line
-	6650 2550 6600 2550
-Wire Wire Line
-	6600 2550 6600 2000
-Connection ~ 6600 2000
-Wire Wire Line
-	6600 2000 6750 2000
 $Comp
 L Reference_Voltage:TL431DBV U?
 U 1 1 5F2DE882
-P 6500 2900
-F 0 "U?" V 6546 2830 50  0000 R CNN
-F 1 "TL431DBV" V 6450 2850 50  0000 R CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-5" H 6500 2650 50  0001 C CIN
-F 3 "http://www.ti.com/lit/ds/symlink/tl431.pdf" H 6500 2900 50  0001 C CIN
-	1    6500 2900
+P 6350 2550
+F 0 "U?" V 6350 2500 50  0000 R CNN
+F 1 "TL431DBV" V 6250 2550 50  0000 R CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5" H 6350 2300 50  0001 C CIN
+F 3 "http://www.ti.com/lit/ds/symlink/tl431.pdf" H 6350 2550 50  0001 C CIN
+	1    6350 2550
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	6500 2800 6500 2750
-Wire Wire Line
-	6500 2750 6650 2750
 $Comp
 L Device:R R?
 U 1 1 5F2E7D49
-P 6400 2600
-F 0 "R?" H 6470 2646 50  0000 L CNN
-F 1 "560R" H 6470 2555 50  0000 L CNN
-F 2 "" V 6330 2600 50  0001 C CNN
-F 3 "~" H 6400 2600 50  0001 C CNN
-	1    6400 2600
+P 6350 2300
+F 0 "R?" H 6400 2400 50  0000 L CNN
+F 1 "470R" H 6400 2300 50  0000 L CNN
+F 2 "" V 6280 2300 50  0001 C CNN
+F 3 "~" H 6350 2300 50  0001 C CNN
+	1    6350 2300
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	6500 2750 6400 2750
-Connection ~ 6500 2750
-Wire Wire Line
-	6400 2750 6400 2900
-Connection ~ 6400 2750
 $Comp
 L power:+5V #PWR?
 U 1 1 5F2F0DC0
-P 6400 2450
-F 0 "#PWR?" H 6400 2300 50  0001 C CNN
-F 1 "+5V" H 6500 2550 50  0000 C CNN
-F 2 "" H 6400 2450 50  0001 C CNN
-F 3 "" H 6400 2450 50  0001 C CNN
-	1    6400 2450
+P 6350 2150
+F 0 "#PWR?" H 6350 2000 50  0001 C CNN
+F 1 "+5V" H 6450 2250 50  0000 C CNN
+F 2 "" H 6350 2150 50  0001 C CNN
+F 3 "" H 6350 2150 50  0001 C CNN
+	1    6350 2150
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	7200 2000 7150 2000
-Wire Notes Line
-	6300 1800 7750 1800
-Wire Notes Line
-	7750 1800 7750 3200
-Wire Notes Line
-	7750 3200 6300 3200
-Wire Notes Line
-	6300 3200 6300 1800
-Text Notes 7750 3200 2    50   Italic 10
+Text Notes 7750 3450 2    50   Italic 10
 Current Sense
 $Comp
 L uBMS-Parts:NTD5865NL Q?
@@ -1054,16 +953,12 @@ F 3 "~" H 5400 2800 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5550 2800 5550 2900
-Text Label 5300 3200 2    50   ~ 0
-MOD_DSC_SRC
-Wire Wire Line
-	5350 3200 5300 3200
 Text Label 5200 2800 2    50   ~ 0
 MOD_DSC_G
 Wire Wire Line
 	5200 2800 5250 2800
 Text Label 5800 3200 0    50   ~ 0
-Cell_RTN
+Batt_RTN
 Wire Wire Line
 	5800 3200 5750 3200
 $Comp
@@ -1336,20 +1231,14 @@ $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 5F42C354
-P 6500 3000
-F 0 "#PWR?" H 6500 2750 50  0001 C CNN
-F 1 "GND" H 6650 2950 50  0000 C CNN
-F 2 "" H 6500 3000 50  0001 C CNN
-F 3 "" H 6500 3000 50  0001 C CNN
-	1    6500 3000
+P 6350 2650
+F 0 "#PWR?" H 6350 2400 50  0001 C CNN
+F 1 "GND" H 6450 2550 50  0000 C CNN
+F 2 "" H 6350 2650 50  0001 C CNN
+F 3 "" H 6350 2650 50  0001 C CNN
+	1    6350 2650
 	1    0    0    -1  
 $EndComp
-Text Label 7050 3050 0    50   ~ 0
-CurrentSense
-Wire Wire Line
-	7050 3050 6950 3050
-Wire Wire Line
-	6950 3050 6950 2950
 Text Notes 1850 1850 2    50   ~ 0
 Tie reset to GPIO expander too\n
 $Comp
@@ -1859,4 +1748,138 @@ U 5F70B1A3
 F0 "TempMultiplex" 50
 F1 "tempmux.sch" 50
 $EndSheet
+$Comp
+L power:GND #PWR?
+U 1 1 5F21BB2D
+P 5250 3300
+F 0 "#PWR?" H 5250 3050 50  0001 C CNN
+F 1 "GND" H 5100 3250 50  0000 C CNN
+F 2 "" H 5250 3300 50  0001 C CNN
+F 3 "" H 5250 3300 50  0001 C CNN
+	1    5250 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5250 3200 5350 3200
+Wire Wire Line
+	5250 3200 5250 3300
+Text Label 6750 2000 2    50   ~ 0
+Batt_Pos
+Wire Wire Line
+	6850 2000 6750 2000
+$Comp
+L Device:Fuse F?
+U 1 1 5F24DB09
+P 5100 900
+F 0 "F?" V 4903 900 50  0000 C CNN
+F 1 "Fuse" V 4994 900 50  0000 C CNN
+F 2 "" V 5030 900 50  0001 C CNN
+F 3 "~" H 5100 900 50  0001 C CNN
+	1    5100 900 
+	0    1    1    0   
+$EndComp
+Connection ~ 5250 900 
+Text Label 7300 2000 0    50   ~ 0
+Batt_PTerm
+Wire Wire Line
+	7300 2000 7250 2000
+Wire Notes Line
+	6200 1800 6200 3450
+Wire Notes Line
+	6200 3450 7750 3450
+Wire Notes Line
+	7750 1800 7750 3450
+Wire Notes Line
+	6200 1800 7750 1800
+$Comp
+L uBMS-Parts:TSC2012IDT U?
+U 1 1 5F298EF9
+P 7050 2900
+F 0 "U?" H 7300 2550 50  0000 C CNN
+F 1 "TSC2012IDT" H 6750 2450 50  0000 C CNN
+F 2 "Package_SO:SO-8_3.9x4.9mm_P1.27mm" H 7850 2450 50  0001 C CNN
+F 3 "https://www.st.com/resource/en/datasheet/tsc2012.pdf" H 7050 2900 50  0001 C CNN
+	1    7050 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F299EB8
+P 7050 3300
+F 0 "#PWR?" H 7050 3050 50  0001 C CNN
+F 1 "GND" H 7200 3250 50  0000 C CNN
+F 2 "" H 7050 3300 50  0001 C CNN
+F 3 "" H 7050 3300 50  0001 C CNN
+	1    7050 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5F29A67A
+P 6450 3200
+F 0 "C?" H 6300 3250 50  0000 L CNN
+F 1 "0.1uF" H 6550 3150 50  0000 L CNN
+F 2 "" H 6450 3200 50  0001 C CNN
+F 3 "~" H 6450 3200 50  0001 C CNN
+	1    6450 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6450 3100 6650 3100
+Wire Wire Line
+	6450 3300 7050 3300
+Connection ~ 7050 3300
+$Comp
+L power:+5V #PWR?
+U 1 1 5F2B1C0D
+P 6450 3100
+F 0 "#PWR?" H 6450 2950 50  0001 C CNN
+F 1 "+5V" H 6350 3200 50  0000 C CNN
+F 2 "" H 6450 3100 50  0001 C CNN
+F 3 "" H 6450 3100 50  0001 C CNN
+	1    6450 3100
+	1    0    0    -1  
+$EndComp
+Connection ~ 6450 3100
+Wire Wire Line
+	6250 2550 6250 2450
+Wire Wire Line
+	6250 2450 6350 2450
+Connection ~ 6350 2450
+Text Label 6450 2450 0    50   ~ 0
+REF_2.5
+Wire Wire Line
+	6450 2450 6350 2450
+Wire Wire Line
+	7500 3100 7450 3100
+Wire Wire Line
+	7500 3100 7500 3300
+Wire Wire Line
+	7500 3300 7050 3300
+Text Label 7450 3000 0    50   ~ 0
+REF_2.5
+Text Label 6600 2950 2    50   ~ 0
+REF_2.5
+Wire Wire Line
+	6600 2950 6600 3000
+Wire Wire Line
+	6600 3000 6650 3000
+Wire Wire Line
+	6950 2400 6850 2400
+Wire Wire Line
+	6850 2400 6850 2500
+Wire Wire Line
+	6950 2150 6950 2400
+Wire Wire Line
+	7150 2400 7250 2400
+Wire Wire Line
+	7250 2400 7250 2500
+Wire Wire Line
+	7150 2150 7150 2400
+Text Label 7550 2800 1    50   ~ 0
+CurrentSense
+Wire Wire Line
+	7450 2900 7550 2900
+Wire Wire Line
+	7550 2900 7550 2800
 $EndSCHEMATC

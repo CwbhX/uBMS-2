@@ -8,6 +8,11 @@ $CMP NTD5865NL
 F https://www.onsemi.com/pub/Collateral/NTD5865NL-D.PDF
 $ENDCMP
 #
+$CMP TSC2012IDT
+D High voltage, precision, bidirectional current sense amplifier, 100 V/V
+F https://www.st.com/resource/en/datasheet/tsc2012.pdf
+$ENDCMP
+#
 $CMP VDMG10C0
 D Green LED 7-Segment Common Cathode SMD
 K 10mm LED 7 Segment
