@@ -830,4 +830,28 @@ F 3 "" H 8300 2600 50  0001 C CNN
 	1    8300 2600
 	1    0    0    -1  
 $EndComp
+Text HLabel 1800 2250 0    50   Input ~ 0
+S0
+Text HLabel 1800 2350 0    50   Input ~ 0
+S1
+Text HLabel 1800 2450 0    50   Input ~ 0
+S2
+Text HLabel 1800 2550 0    50   Input ~ 0
+S3
+Wire Wire Line
+	1800 2550 1850 2550
+Wire Wire Line
+	1800 2450 1850 2450
+Wire Wire Line
+	1800 2350 1850 2350
+Wire Wire Line
+	1800 2250 1850 2250
+Text HLabel 1800 1850 0    50   BiDi ~ 0
+COM
+Wire Wire Line
+	1800 1850 1850 1850
+Text HLabel 1800 2950 0    50   Input ~ 0
+~Enable~
+Wire Wire Line
+	1800 2950 1850 2950
 $EndSCHEMATC

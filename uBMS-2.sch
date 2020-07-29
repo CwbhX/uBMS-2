@@ -1741,6 +1741,12 @@ S 6500 5550 650  650
 U 5F70A721
 F0 "VoltageMultiplex" 50
 F1 "voltmux.sch" 50
+F2 "S0" I R 7150 5800 50 
+F3 "S1" I R 7150 5900 50 
+F4 "S2" I R 7150 6000 50 
+F5 "S3" I R 7150 6100 50 
+F6 "COM" B R 7150 5650 50 
+F7 "~Enable~" I L 6500 5900 50 
 $EndSheet
 $Sheet
 S 5150 5550 650  650 
@@ -1883,17 +1889,6 @@ Wire Wire Line
 Wire Wire Line
 	7550 2900 7550 2800
 $Comp
-L power:+5V #PWR?
-U 1 1 5F353B75
-P 6400 5600
-F 0 "#PWR?" H 6400 5450 50  0001 C CNN
-F 1 "+5V" H 6300 5700 50  0000 C CNN
-F 2 "" H 6400 5600 50  0001 C CNN
-F 3 "" H 6400 5600 50  0001 C CNN
-	1    6400 5600
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR?
 U 1 1 5F3615AC
 P 6400 6150
@@ -1904,8 +1899,6 @@ F 3 "" H 6400 6150 50  0001 C CNN
 	1    6400 6150
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	6400 5650 6400 5600
 Text Label 7200 5650 0    50   ~ 0
 VoltageSense
 Text Label 5900 5650 0    50   ~ 0
@@ -1970,4 +1963,8 @@ Wire Notes Line
 	7750 6450 4750 6450
 Wire Notes Line
 	4750 6450 4750 3500
+Wire Wire Line
+	6500 5900 6400 5900
+Wire Wire Line
+	6400 5900 6400 6150
 $EndSCHEMATC
