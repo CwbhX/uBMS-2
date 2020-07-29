@@ -14,4 +14,603 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
+$Comp
+L 74xx:CD74HC4067SM U?
+U 1 1 5F6868D3
+P 2000 2200
+AR Path="/5F70A721/5F6868D3" Ref="U?"  Part="1" 
+AR Path="/5F70B1A3/5F6868D3" Ref="U?"  Part="1" 
+F 0 "U?" H 2000 2200 50  0000 C CNN
+F 1 "CD74HC4067SM" H 1600 3100 50  0000 C CNN
+F 2 "Package_SO:SSOP-24_5.3x8.2mm_P0.65mm" H 3050 1200 50  0001 C CIN
+F 3 "http://www.ti.com/lit/ds/symlink/cd74hc4067.pdf" H 1650 3050 50  0001 C CNN
+	1    2000 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F6868D9
+P 2000 3400
+AR Path="/5F70A721/5F6868D9" Ref="#PWR?"  Part="1" 
+AR Path="/5F70B1A3/5F6868D9" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 2000 3150 50  0001 C CNN
+F 1 "GND" H 2005 3227 50  0000 C CNN
+F 2 "" H 2000 3400 50  0001 C CNN
+F 3 "" H 2000 3400 50  0001 C CNN
+	1    2000 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2000 3400 2000 3350
+$Comp
+L Device:C_Small C?
+U 1 1 5F6868E0
+P 2150 1100
+AR Path="/5F70A721/5F6868E0" Ref="C?"  Part="1" 
+AR Path="/5F70B1A3/5F6868E0" Ref="C?"  Part="1" 
+F 0 "C?" H 2242 1146 50  0000 L CNN
+F 1 "0.1uF" H 2242 1055 50  0000 L CNN
+F 2 "" H 2150 1100 50  0001 C CNN
+F 3 "~" H 2150 1100 50  0001 C CNN
+	1    2150 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F6868E6
+P 2150 1200
+AR Path="/5F70A721/5F6868E6" Ref="#PWR?"  Part="1" 
+AR Path="/5F70B1A3/5F6868E6" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 2150 950 50  0001 C CNN
+F 1 "GND" H 2300 1150 50  0000 C CNN
+F 2 "" H 2150 1200 50  0001 C CNN
+F 3 "" H 2150 1200 50  0001 C CNN
+	1    2150 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5F6868EC
+P 2000 950
+AR Path="/5F70A721/5F6868EC" Ref="#PWR?"  Part="1" 
+AR Path="/5F70B1A3/5F6868EC" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 2000 800 50  0001 C CNN
+F 1 "+5V" H 2015 1123 50  0000 C CNN
+F 2 "" H 2000 950 50  0001 C CNN
+F 3 "" H 2000 950 50  0001 C CNN
+	1    2000 950 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2000 950  2000 1000
+Wire Wire Line
+	2150 1000 2000 1000
+Connection ~ 2000 1000
+Wire Wire Line
+	2000 1000 2000 1200
+Text Notes 2500 1250 0    50   ~ 0
+* Through resistance of Analogue Mux is around 60\n Ohms and connects to ADC\n which has input impedence of about 10M Ohm
+Wire Wire Line
+	2500 2700 2550 2700
+Wire Wire Line
+	2550 2700 2550 2800
+Wire Wire Line
+	2550 3350 2000 3350
+Connection ~ 2000 3350
+Wire Wire Line
+	2000 3350 2000 3300
+Wire Wire Line
+	2500 2800 2550 2800
+Connection ~ 2550 2800
+Wire Wire Line
+	2550 2800 2550 2900
+Wire Wire Line
+	2500 2900 2550 2900
+Connection ~ 2550 2900
+Wire Wire Line
+	2550 2900 2550 3000
+Wire Wire Line
+	2500 3000 2550 3000
+Connection ~ 2550 3000
+Wire Wire Line
+	2550 3000 2550 3350
+Text HLabel 1450 2100 0    50   Input ~ 0
+S0
+Text HLabel 1450 2200 0    50   Input ~ 0
+S1
+Text HLabel 1450 2300 0    50   Input ~ 0
+S2
+Text HLabel 1450 2400 0    50   Input ~ 0
+S3
+Wire Wire Line
+	1450 2400 1500 2400
+Wire Wire Line
+	1450 2300 1500 2300
+Wire Wire Line
+	1450 2200 1500 2200
+Wire Wire Line
+	1450 2100 1500 2100
+Text HLabel 1450 1700 0    50   BiDi ~ 0
+COM
+Wire Wire Line
+	1450 1700 1500 1700
+Text HLabel 1450 2800 0    50   Input ~ 0
+~Enable~
+Wire Wire Line
+	1450 2800 1500 2800
+$Comp
+L Connector_Generic:Conn_02x07_Counter_Clockwise J?
+U 1 1 5F68B135
+P 9900 1850
+AR Path="/5F70A721/5F68B135" Ref="J?"  Part="1" 
+AR Path="/5F70B1A3/5F68B135" Ref="J?"  Part="1" 
+F 0 "J?" H 9950 2300 50  0000 C CNN
+F 1 "Conn_02x07_Counter_Clockwise" H 9950 1450 50  0000 C CNN
+F 2 "" H 9900 1850 50  0001 C CNN
+F 3 "~" H 9900 1850 50  0001 C CNN
+	1    9900 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5F68DF75
+P 9650 1550
+AR Path="/5F70A721/5F68DF75" Ref="#PWR?"  Part="1" 
+AR Path="/5F70B1A3/5F68DF75" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 9650 1400 50  0001 C CNN
+F 1 "+5V" H 9665 1723 50  0000 C CNN
+F 2 "" H 9650 1550 50  0001 C CNN
+F 3 "" H 9650 1550 50  0001 C CNN
+	1    9650 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5F68E7C7
+P 10250 1550
+AR Path="/5F70A721/5F68E7C7" Ref="#PWR?"  Part="1" 
+AR Path="/5F70B1A3/5F68E7C7" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 10250 1400 50  0001 C CNN
+F 1 "+5V" H 10265 1723 50  0000 C CNN
+F 2 "" H 10250 1550 50  0001 C CNN
+F 3 "" H 10250 1550 50  0001 C CNN
+	1    10250 1550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10250 1550 10200 1550
+Wire Wire Line
+	9700 1550 9650 1550
+Text Label 9600 1650 2    50   ~ 0
+CellTemp_1
+Text Label 9600 1750 2    50   ~ 0
+CellTemp_2
+Text Label 9600 1850 2    50   ~ 0
+CellTemp_3
+Text Label 9600 1950 2    50   ~ 0
+CellTemp_4
+Text Label 9600 2050 2    50   ~ 0
+CellTemp_5
+Text Label 9600 2150 2    50   ~ 0
+CellTemp_6
+Text Label 10300 2150 0    50   ~ 0
+CellTemp_7
+Text Label 10300 2050 0    50   ~ 0
+CellTemp_8
+Text Label 10300 1950 0    50   ~ 0
+CellTemp_9
+Text Label 10300 1850 0    50   ~ 0
+CellTemp_10
+Text Label 10300 1750 0    50   ~ 0
+CellTemp_11
+Text Label 10300 1650 0    50   ~ 0
+CellTemp_12
+Wire Wire Line
+	9600 1650 9700 1650
+Wire Wire Line
+	9600 1750 9700 1750
+Wire Wire Line
+	9600 1850 9700 1850
+Wire Wire Line
+	9600 1950 9700 1950
+Wire Wire Line
+	9600 2050 9700 2050
+Wire Wire Line
+	9600 2150 9700 2150
+Wire Wire Line
+	10200 2150 10300 2150
+Wire Wire Line
+	10200 2050 10300 2050
+Wire Wire Line
+	10200 1950 10300 1950
+Wire Wire Line
+	10200 1850 10300 1850
+Wire Wire Line
+	10200 1750 10300 1750
+Wire Wire Line
+	10200 1650 10300 1650
+$Comp
+L Device:R R?
+U 1 1 5F69A862
+P 5000 1650
+F 0 "R?" H 5070 1696 50  0000 L CNN
+F 1 "22k" H 5070 1605 50  0000 L CNN
+F 2 "" V 4930 1650 50  0001 C CNN
+F 3 "~" H 5000 1650 50  0001 C CNN
+	1    5000 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F69AE56
+P 5500 1650
+F 0 "R?" H 5570 1696 50  0000 L CNN
+F 1 "22k" H 5570 1605 50  0000 L CNN
+F 2 "" V 5430 1650 50  0001 C CNN
+F 3 "~" H 5500 1650 50  0001 C CNN
+	1    5500 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F69AFF2
+P 6000 1650
+F 0 "R?" H 6070 1696 50  0000 L CNN
+F 1 "22k" H 6070 1605 50  0000 L CNN
+F 2 "" V 5930 1650 50  0001 C CNN
+F 3 "~" H 6000 1650 50  0001 C CNN
+	1    6000 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F69B1F7
+P 6500 1650
+F 0 "R?" H 6570 1696 50  0000 L CNN
+F 1 "22k" H 6570 1605 50  0000 L CNN
+F 2 "" V 6430 1650 50  0001 C CNN
+F 3 "~" H 6500 1650 50  0001 C CNN
+	1    6500 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F69B4CD
+P 7000 1650
+F 0 "R?" H 7070 1696 50  0000 L CNN
+F 1 "22k" H 7070 1605 50  0000 L CNN
+F 2 "" V 6930 1650 50  0001 C CNN
+F 3 "~" H 7000 1650 50  0001 C CNN
+	1    7000 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F69B7DC
+P 7500 1650
+F 0 "R?" H 7570 1696 50  0000 L CNN
+F 1 "22k" H 7570 1605 50  0000 L CNN
+F 2 "" V 7430 1650 50  0001 C CNN
+F 3 "~" H 7500 1650 50  0001 C CNN
+	1    7500 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F6A3EEE
+P 5000 2900
+F 0 "R?" H 5070 2946 50  0000 L CNN
+F 1 "22k" H 5070 2855 50  0000 L CNN
+F 2 "" V 4930 2900 50  0001 C CNN
+F 3 "~" H 5000 2900 50  0001 C CNN
+	1    5000 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F6A3EF4
+P 5500 2900
+F 0 "R?" H 5570 2946 50  0000 L CNN
+F 1 "22k" H 5570 2855 50  0000 L CNN
+F 2 "" V 5430 2900 50  0001 C CNN
+F 3 "~" H 5500 2900 50  0001 C CNN
+	1    5500 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F6A3EFA
+P 6000 2900
+F 0 "R?" H 6070 2946 50  0000 L CNN
+F 1 "22k" H 6070 2855 50  0000 L CNN
+F 2 "" V 5930 2900 50  0001 C CNN
+F 3 "~" H 6000 2900 50  0001 C CNN
+	1    6000 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F6A3F00
+P 6500 2900
+F 0 "R?" H 6570 2946 50  0000 L CNN
+F 1 "22k" H 6570 2855 50  0000 L CNN
+F 2 "" V 6430 2900 50  0001 C CNN
+F 3 "~" H 6500 2900 50  0001 C CNN
+	1    6500 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F6A3F06
+P 7000 2900
+F 0 "R?" H 7070 2946 50  0000 L CNN
+F 1 "22k" H 7070 2855 50  0000 L CNN
+F 2 "" V 6930 2900 50  0001 C CNN
+F 3 "~" H 7000 2900 50  0001 C CNN
+	1    7000 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F6A3F0C
+P 7500 2900
+F 0 "R?" H 7570 2946 50  0000 L CNN
+F 1 "22k" H 7570 2855 50  0000 L CNN
+F 2 "" V 7430 2900 50  0001 C CNN
+F 3 "~" H 7500 2900 50  0001 C CNN
+	1    7500 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F6A4A53
+P 5000 1800
+AR Path="/5F70A721/5F6A4A53" Ref="#PWR?"  Part="1" 
+AR Path="/5F70B1A3/5F6A4A53" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 5000 1550 50  0001 C CNN
+F 1 "GND" H 5005 1627 50  0000 C CNN
+F 2 "" H 5000 1800 50  0001 C CNN
+F 3 "" H 5000 1800 50  0001 C CNN
+	1    5000 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F6A4F23
+P 5500 1800
+AR Path="/5F70A721/5F6A4F23" Ref="#PWR?"  Part="1" 
+AR Path="/5F70B1A3/5F6A4F23" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 5500 1550 50  0001 C CNN
+F 1 "GND" H 5505 1627 50  0000 C CNN
+F 2 "" H 5500 1800 50  0001 C CNN
+F 3 "" H 5500 1800 50  0001 C CNN
+	1    5500 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F6A5197
+P 6000 1800
+AR Path="/5F70A721/5F6A5197" Ref="#PWR?"  Part="1" 
+AR Path="/5F70B1A3/5F6A5197" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 6000 1550 50  0001 C CNN
+F 1 "GND" H 6005 1627 50  0000 C CNN
+F 2 "" H 6000 1800 50  0001 C CNN
+F 3 "" H 6000 1800 50  0001 C CNN
+	1    6000 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F6A5348
+P 6500 1800
+AR Path="/5F70A721/5F6A5348" Ref="#PWR?"  Part="1" 
+AR Path="/5F70B1A3/5F6A5348" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 6500 1550 50  0001 C CNN
+F 1 "GND" H 6505 1627 50  0000 C CNN
+F 2 "" H 6500 1800 50  0001 C CNN
+F 3 "" H 6500 1800 50  0001 C CNN
+	1    6500 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F6A55E5
+P 7000 1800
+AR Path="/5F70A721/5F6A55E5" Ref="#PWR?"  Part="1" 
+AR Path="/5F70B1A3/5F6A55E5" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 7000 1550 50  0001 C CNN
+F 1 "GND" H 7005 1627 50  0000 C CNN
+F 2 "" H 7000 1800 50  0001 C CNN
+F 3 "" H 7000 1800 50  0001 C CNN
+	1    7000 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F6A585F
+P 7500 1800
+AR Path="/5F70A721/5F6A585F" Ref="#PWR?"  Part="1" 
+AR Path="/5F70B1A3/5F6A585F" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 7500 1550 50  0001 C CNN
+F 1 "GND" H 7505 1627 50  0000 C CNN
+F 2 "" H 7500 1800 50  0001 C CNN
+F 3 "" H 7500 1800 50  0001 C CNN
+	1    7500 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F6A59FF
+P 5000 3050
+AR Path="/5F70A721/5F6A59FF" Ref="#PWR?"  Part="1" 
+AR Path="/5F70B1A3/5F6A59FF" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 5000 2800 50  0001 C CNN
+F 1 "GND" H 5005 2877 50  0000 C CNN
+F 2 "" H 5000 3050 50  0001 C CNN
+F 3 "" H 5000 3050 50  0001 C CNN
+	1    5000 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F6A5CE6
+P 5500 3050
+AR Path="/5F70A721/5F6A5CE6" Ref="#PWR?"  Part="1" 
+AR Path="/5F70B1A3/5F6A5CE6" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 5500 2800 50  0001 C CNN
+F 1 "GND" H 5505 2877 50  0000 C CNN
+F 2 "" H 5500 3050 50  0001 C CNN
+F 3 "" H 5500 3050 50  0001 C CNN
+	1    5500 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F6A5EEC
+P 6000 3050
+AR Path="/5F70A721/5F6A5EEC" Ref="#PWR?"  Part="1" 
+AR Path="/5F70B1A3/5F6A5EEC" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 6000 2800 50  0001 C CNN
+F 1 "GND" H 6005 2877 50  0000 C CNN
+F 2 "" H 6000 3050 50  0001 C CNN
+F 3 "" H 6000 3050 50  0001 C CNN
+	1    6000 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F6A6093
+P 6500 3050
+AR Path="/5F70A721/5F6A6093" Ref="#PWR?"  Part="1" 
+AR Path="/5F70B1A3/5F6A6093" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 6500 2800 50  0001 C CNN
+F 1 "GND" H 6505 2877 50  0000 C CNN
+F 2 "" H 6500 3050 50  0001 C CNN
+F 3 "" H 6500 3050 50  0001 C CNN
+	1    6500 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F6A622C
+P 7000 3050
+AR Path="/5F70A721/5F6A622C" Ref="#PWR?"  Part="1" 
+AR Path="/5F70B1A3/5F6A622C" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 7000 2800 50  0001 C CNN
+F 1 "GND" H 7005 2877 50  0000 C CNN
+F 2 "" H 7000 3050 50  0001 C CNN
+F 3 "" H 7000 3050 50  0001 C CNN
+	1    7000 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F6A6421
+P 7500 3050
+AR Path="/5F70A721/5F6A6421" Ref="#PWR?"  Part="1" 
+AR Path="/5F70B1A3/5F6A6421" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 7500 2800 50  0001 C CNN
+F 1 "GND" H 7505 2877 50  0000 C CNN
+F 2 "" H 7500 3050 50  0001 C CNN
+F 3 "" H 7500 3050 50  0001 C CNN
+	1    7500 3050
+	1    0    0    -1  
+$EndComp
+Text Label 5000 1450 1    50   ~ 0
+CellTemp_1
+Text Label 5500 1450 1    50   ~ 0
+CellTemp_2
+Text Label 6000 1450 1    50   ~ 0
+CellTemp_3
+Text Label 6500 1450 1    50   ~ 0
+CellTemp_4
+Text Label 7000 1450 1    50   ~ 0
+CellTemp_5
+Text Label 7500 1450 1    50   ~ 0
+CellTemp_6
+Text Label 5000 2700 1    50   ~ 0
+CellTemp_7
+Text Label 5500 2700 1    50   ~ 0
+CellTemp_8
+Text Label 6000 2700 1    50   ~ 0
+CellTemp_9
+Text Label 6500 2700 1    50   ~ 0
+CellTemp_10
+Text Label 7000 2700 1    50   ~ 0
+CellTemp_11
+Text Label 7500 2700 1    50   ~ 0
+CellTemp_12
+Wire Wire Line
+	5000 1450 5000 1500
+Wire Wire Line
+	5500 1450 5500 1500
+Wire Wire Line
+	6000 1450 6000 1500
+Wire Wire Line
+	6500 1450 6500 1500
+Wire Wire Line
+	7000 1450 7000 1500
+Wire Wire Line
+	7500 1450 7500 1500
+Wire Wire Line
+	5000 2700 5000 2750
+Wire Wire Line
+	5500 2700 5500 2750
+Wire Wire Line
+	6000 2700 6000 2750
+Wire Wire Line
+	6500 2700 6500 2750
+Wire Wire Line
+	7000 2700 7000 2750
+Wire Wire Line
+	7500 2700 7500 2750
+Text Label 2600 1500 0    50   ~ 0
+CellTemp_1
+Text Label 2600 1600 0    50   ~ 0
+CellTemp_2
+Text Label 2600 1700 0    50   ~ 0
+CellTemp_3
+Text Label 2600 1800 0    50   ~ 0
+CellTemp_4
+Text Label 2600 1900 0    50   ~ 0
+CellTemp_5
+Text Label 2600 2000 0    50   ~ 0
+CellTemp_6
+Text Label 2600 2100 0    50   ~ 0
+CellTemp_7
+Text Label 2600 2200 0    50   ~ 0
+CellTemp_8
+Text Label 2600 2300 0    50   ~ 0
+CellTemp_9
+Text Label 2600 2400 0    50   ~ 0
+CellTemp_10
+Text Label 2600 2500 0    50   ~ 0
+CellTemp_11
+Text Label 2600 2600 0    50   ~ 0
+CellTemp_12
+Wire Wire Line
+	2500 1500 2600 1500
+Wire Wire Line
+	2500 1600 2600 1600
+Wire Wire Line
+	2500 1700 2600 1700
+Wire Wire Line
+	2500 1800 2600 1800
+Wire Wire Line
+	2500 1900 2600 1900
+Wire Wire Line
+	2500 2000 2600 2000
+Wire Wire Line
+	2500 2100 2600 2100
+Wire Wire Line
+	2500 2200 2600 2200
+Wire Wire Line
+	2500 2300 2600 2300
+Wire Wire Line
+	2500 2400 2600 2400
+Wire Wire Line
+	2500 2500 2600 2500
+Wire Wire Line
+	2500 2600 2600 2600
 $EndSCHEMATC
