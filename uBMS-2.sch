@@ -183,7 +183,7 @@ Wire Wire Line
 Wire Wire Line
 	850  1400 900  1400
 Wire Wire Line
-	1300 1400 1450 1400
+	1300 1400 1350 1400
 $Comp
 L Device:R R?
 U 1 1 5F1D799A
@@ -1135,28 +1135,6 @@ Wire Wire Line
 Wire Wire Line
 	8550 3200 8550 3300
 Connection ~ 8850 2550
-$Comp
-L Device:R R?
-U 1 1 5F3AC1C4
-P 9400 2600
-F 0 "R?" V 9400 2600 50  0000 C CNN
-F 1 "1k" V 9500 2600 50  0000 C CNN
-F 2 "" V 9330 2600 50  0001 C CNN
-F 3 "~" H 9400 2600 50  0001 C CNN
-	1    9400 2600
-	0    1    1    0   
-$EndComp
-$Comp
-L power:+5V #PWR?
-U 1 1 5F3B2689
-P 9250 2600
-F 0 "#PWR?" H 9250 2450 50  0001 C CNN
-F 1 "+5V" H 9200 2500 50  0000 C CNN
-F 2 "" H 9250 2600 50  0001 C CNN
-F 3 "" H 9250 2600 50  0001 C CNN
-	1    9250 2600
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	9750 2600 9750 2450
 Wire Wire Line
@@ -1164,7 +1142,6 @@ Wire Wire Line
 Wire Wire Line
 	8300 2450 8300 2550
 Connection ~ 9750 2600
-Connection ~ 9550 2600
 Wire Wire Line
 	9850 2600 9850 2400
 Wire Wire Line
@@ -1988,4 +1965,120 @@ Wire Wire Line
 	5150 5900 5050 5900
 Wire Wire Line
 	5050 5900 5050 6150
+$Comp
+L power:+5V #PWR?
+U 1 1 5F6D905B
+P 5450 3750
+F 0 "#PWR?" H 5450 3600 50  0001 C CNN
+F 1 "+5V" H 5350 3800 50  0000 C CNN
+F 2 "" H 5450 3750 50  0001 C CNN
+F 3 "" H 5450 3750 50  0001 C CNN
+	1    5450 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F6D9988
+P 5100 4500
+F 0 "#PWR?" H 5100 4250 50  0001 C CNN
+F 1 "GND" H 5250 4450 50  0000 C CNN
+F 2 "" H 5100 4500 50  0001 C CNN
+F 3 "" H 5100 4500 50  0001 C CNN
+	1    5100 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 4500 5100 4450
+Wire Wire Line
+	5100 4450 5150 4450
+Wire Wire Line
+	5550 3750 5550 3600
+Wire Wire Line
+	5550 3600 5100 3600
+Wire Wire Line
+	5100 3600 5100 4450
+Connection ~ 5100 4450
+Wire Wire Line
+	5650 3750 5650 3600
+Wire Wire Line
+	5650 3600 5550 3600
+Connection ~ 5550 3600
+NoConn ~ 6350 3750
+NoConn ~ 6450 3750
+Text Label 1350 1450 3    50   ~ 0
+Reset
+Wire Wire Line
+	1350 1450 1350 1400
+Connection ~ 1350 1400
+Wire Wire Line
+	1350 1400 1450 1400
+Text Label 9500 2550 2    50   ~ 0
+Reset
+Text Label 6100 3700 2    50   ~ 0
+Reset
+Wire Wire Line
+	6150 3750 6150 3700
+Wire Wire Line
+	6150 3700 6100 3700
+Wire Wire Line
+	9550 2600 9550 2550
+Wire Wire Line
+	9550 2550 9500 2550
+Connection ~ 9550 2600
+Text Notes 5250 4950 2    50   Italic 0
+ADDR: 0x21
+$Comp
+L power:GND #PWR?
+U 1 1 5F75DAB6
+P 7450 4750
+F 0 "#PWR?" H 7450 4500 50  0001 C CNN
+F 1 "GND" H 7600 4700 50  0000 C CNN
+F 2 "" H 7450 4750 50  0001 C CNN
+F 3 "" H 7450 4750 50  0001 C CNN
+	1    7450 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5F75DABC
+P 7450 4350
+F 0 "#PWR?" H 7450 4200 50  0001 C CNN
+F 1 "+5V" H 7465 4523 50  0000 C CNN
+F 2 "" H 7450 4350 50  0001 C CNN
+F 3 "" H 7450 4350 50  0001 C CNN
+	1    7450 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5F75DAC2
+P 7450 4600
+F 0 "C?" H 7300 4650 50  0000 L CNN
+F 1 "0.1uF" H 7200 4500 50  0000 L CNN
+F 2 "" H 7450 4600 50  0001 C CNN
+F 3 "~" H 7450 4600 50  0001 C CNN
+	1    7450 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7350 4450 7450 4450
+Wire Wire Line
+	7450 4450 7450 4350
+Connection ~ 7450 4450
+Wire Wire Line
+	7450 4500 7450 4450
+Wire Wire Line
+	7450 4700 7450 4750
+Text Label 7100 3700 0    50   ~ 0
+SDA_5V
+Text Label 6900 3700 2    50   ~ 0
+SCL_5V
+Wire Wire Line
+	6950 3750 6950 3700
+Wire Wire Line
+	6950 3700 6900 3700
+Wire Wire Line
+	7050 3750 7050 3700
+Wire Wire Line
+	7050 3700 7100 3700
 $EndSCHEMATC
