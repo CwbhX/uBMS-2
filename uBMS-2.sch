@@ -1741,28 +1741,12 @@ S 6500 5550 650  650
 U 5F70A721
 F0 "VoltageMultiplex" 50
 F1 "voltmux.sch" 50
-F2 "S0" I R 7150 5800 50 
-F3 "S1" I R 7150 5900 50 
-F4 "S2" I R 7150 6000 50 
-F5 "S3" I R 7150 6100 50 
-F6 "COM" B R 7150 5650 50 
-F7 "GND" I L 6500 6100 50 
-F8 "~Enable~" I L 6500 6000 50 
-F9 "Vcc" I L 6500 5650 50 
 $EndSheet
 $Sheet
 S 5150 5550 650  650 
 U 5F70B1A3
 F0 "TempMultiplex" 50
 F1 "tempmux.sch" 50
-F2 "S3" I R 5800 6100 50 
-F3 "S2" I R 5800 6000 50 
-F4 "S1" I R 5800 5900 50 
-F5 "S0" I R 5800 5800 50 
-F6 "COM" B R 5800 5650 50 
-F7 "GND" I L 5150 6100 50 
-F8 "~Enable~" I L 5150 6000 50 
-F9 "Vcc" I L 5150 5650 50 
 $EndSheet
 $Comp
 L power:GND #PWR?
@@ -1921,53 +1905,7 @@ F 3 "" H 6400 6150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6400 6150 6400 6100
-Wire Wire Line
-	6400 6100 6500 6100
-Wire Wire Line
 	6400 5650 6400 5600
-Wire Wire Line
-	6400 5650 6500 5650
-Wire Wire Line
-	6400 6000 6400 6100
-Connection ~ 6400 6100
-Wire Wire Line
-	6400 6000 6500 6000
-$Comp
-L power:GND #PWR?
-U 1 1 5F399A72
-P 5050 6150
-F 0 "#PWR?" H 5050 5900 50  0001 C CNN
-F 1 "GND" H 4900 6050 50  0000 C CNN
-F 2 "" H 5050 6150 50  0001 C CNN
-F 3 "" H 5050 6150 50  0001 C CNN
-	1    5050 6150
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5050 6150 5050 6100
-Wire Wire Line
-	5050 6100 5150 6100
-Wire Wire Line
-	5050 6100 5050 6000
-Wire Wire Line
-	5050 6000 5150 6000
-Connection ~ 5050 6100
-$Comp
-L power:+5V #PWR?
-U 1 1 5F3B6840
-P 5050 5600
-F 0 "#PWR?" H 5050 5450 50  0001 C CNN
-F 1 "+5V" H 4950 5650 50  0000 C CNN
-F 2 "" H 5050 5600 50  0001 C CNN
-F 3 "" H 5050 5600 50  0001 C CNN
-	1    5050 5600
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5050 5600 5050 5650
-Wire Wire Line
-	5050 5650 5150 5650
 Text Label 7200 5650 0    50   ~ 0
 VoltageSense
 Text Label 5900 5650 0    50   ~ 0
