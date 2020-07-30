@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 3
+Sheet 1 4
 Title "Micro BMS v2"
 Date ""
 Rev "1"
@@ -2081,4 +2081,12 @@ Wire Wire Line
 	7050 3750 7050 3700
 Wire Wire Line
 	7050 3700 7100 3700
+Text Notes 7450 6450 2    50   Italic 10
+I2C GPIO Expander & Voltage & Temp Sense
+$Sheet
+S 3000 4500 1500 1000
+U 5F7870B7
+F0 "BatteryBalance" 50
+F1 "BatteryBalance.sch" 50
+$EndSheet
 $EndSCHEMATC

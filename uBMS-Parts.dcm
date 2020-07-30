@@ -4,6 +4,11 @@ $CMP CLX6F-FKC
 F ttps://www.cree.com/led-components/media/documents/ds-CLX6F-FKC-1352.pdf
 $ENDCMP
 #
+$CMP FQD5N20L
+D N-Channel QFET® MOSFET 3.8A
+F https://www.mouser.com/datasheet/2/149/FQD5N20L-266424.pdf
+$ENDCMP
+#
 $CMP NTD5865NL
 F https://www.onsemi.com/pub/Collateral/NTD5865NL-D.PDF
 $ENDCMP

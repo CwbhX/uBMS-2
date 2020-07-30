@@ -1,0 +1,1015 @@
+EESchema Schematic File Version 4
+LIBS:uBMS-2-cache
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 4
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L power:GND #PWR?
+U 1 1 5F78CA1C
+P 9650 2850
+AR Path="/5F70A721/5F78CA1C" Ref="#PWR?"  Part="1" 
+AR Path="/5F7870B7/5F78CA1C" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 9650 2600 50  0001 C CNN
+F 1 "GND" H 9655 2677 50  0000 C CNN
+F 2 "" H 9650 2850 50  0001 C CNN
+F 3 "" H 9650 2850 50  0001 C CNN
+	1    9650 2850
+	1    0    0    -1  
+$EndComp
+Text Label 10100 2950 2    50   ~ 0
+Cell1_P
+Text Label 10100 3050 2    50   ~ 0
+Cell2_P
+Text Label 10100 3150 2    50   ~ 0
+Cell3_P
+Text Label 10100 3250 2    50   ~ 0
+Cell4_P
+Text Label 10100 3350 2    50   ~ 0
+Cell5_P
+Text Label 10100 3450 2    50   ~ 0
+Cell6_P
+$Comp
+L Connector_Generic:Conn_02x07_Counter_Clockwise J?
+U 1 1 5F78CA28
+P 10350 3150
+F 0 "J?" H 10400 3667 50  0000 C CNN
+F 1 "Conn_02x07_Counter_Clockwise" H 10400 3576 50  0000 C CNN
+F 2 "" H 10350 3150 50  0001 C CNN
+F 3 "~" H 10350 3150 50  0001 C CNN
+	1    10350 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9650 2850 10150 2850
+Text Label 10700 3450 0    50   ~ 0
+Cell7_P
+Text Label 10700 3350 0    50   ~ 0
+Cell8_P
+Text Label 10700 3250 0    50   ~ 0
+Cell9_P
+Text Label 10700 3150 0    50   ~ 0
+Cell10_P
+Text Label 10700 3050 0    50   ~ 0
+Cell11_P
+Text Label 10700 2950 0    50   ~ 0
+Cell12_P
+Wire Wire Line
+	10100 2950 10150 2950
+Wire Wire Line
+	10100 3050 10150 3050
+Wire Wire Line
+	10100 3150 10150 3150
+Wire Wire Line
+	10100 3250 10150 3250
+Wire Wire Line
+	10100 3350 10150 3350
+Wire Wire Line
+	10100 3450 10150 3450
+Wire Wire Line
+	10700 3450 10650 3450
+Wire Wire Line
+	10700 3350 10650 3350
+Wire Wire Line
+	10700 3250 10650 3250
+Wire Wire Line
+	10700 3150 10650 3150
+Wire Wire Line
+	10700 3050 10650 3050
+Wire Wire Line
+	10700 2950 10650 2950
+NoConn ~ 10650 2850
+$Comp
+L Device:C C?
+U 1 1 5F78D337
+P 1300 1500
+F 0 "C?" V 1048 1500 50  0000 C CNN
+F 1 "10nF" V 1139 1500 50  0000 C CNN
+F 2 "" H 1338 1350 50  0001 C CNN
+F 3 "~" H 1300 1500 50  0001 C CNN
+	1    1300 1500
+	0    1    1    0   
+$EndComp
+$Comp
+L uBMS-Parts:FQD5N20L Q?
+U 1 1 5F7908F1
+P 2150 1500
+F 0 "Q?" H 2256 1546 50  0000 L CNN
+F 1 "FQD5N20L" H 2256 1455 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:TO-252-2" H 2850 1450 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/149/FQD5N20L-266424.pdf" H 2150 1500 50  0001 C CNN
+	1    2150 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F79167A
+P 1500 1700
+F 0 "R?" H 1350 1750 50  0000 L CNN
+F 1 "100k" H 1250 1650 50  0000 L CNN
+F 2 "" V 1430 1700 50  0001 C CNN
+F 3 "~" H 1500 1700 50  0001 C CNN
+	1    1500 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D?
+U 1 1 5F791CB3
+P 1750 1700
+F 0 "D?" V 1704 1779 50  0000 L CNN
+F 1 "D" V 1795 1779 50  0000 L CNN
+F 2 "" H 1750 1700 50  0001 C CNN
+F 3 "~" H 1750 1700 50  0001 C CNN
+	1    1750 1700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1450 1500 1500 1500
+Wire Wire Line
+	1750 1550 1750 1500
+Connection ~ 1750 1500
+Wire Wire Line
+	1750 1500 1850 1500
+Wire Wire Line
+	1500 1550 1500 1500
+Connection ~ 1500 1500
+Wire Wire Line
+	1500 1500 1750 1500
+Wire Wire Line
+	1500 1850 1750 1850
+Wire Wire Line
+	2150 1850 2150 1700
+Connection ~ 1750 1850
+Wire Wire Line
+	1750 1850 2150 1850
+Text Label 2150 1150 0    50   ~ 0
+Cell1_P
+Wire Wire Line
+	2150 1300 2150 1150
+$Comp
+L power:GND #PWR?
+U 1 1 5F793673
+P 2150 1900
+AR Path="/5F70A721/5F793673" Ref="#PWR?"  Part="1" 
+AR Path="/5F7870B7/5F793673" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 2150 1650 50  0001 C CNN
+F 1 "GND" H 2155 1727 50  0000 C CNN
+F 2 "" H 2150 1900 50  0001 C CNN
+F 3 "" H 2150 1900 50  0001 C CNN
+	1    2150 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2150 1900 2150 1850
+Connection ~ 2150 1850
+$Comp
+L Device:C C?
+U 1 1 5F796EE6
+P 3400 1500
+F 0 "C?" V 3148 1500 50  0000 C CNN
+F 1 "10nF" V 3239 1500 50  0000 C CNN
+F 2 "" H 3438 1350 50  0001 C CNN
+F 3 "~" H 3400 1500 50  0001 C CNN
+	1    3400 1500
+	0    1    1    0   
+$EndComp
+$Comp
+L uBMS-Parts:FQD5N20L Q?
+U 1 1 5F796EEC
+P 4250 1500
+F 0 "Q?" H 4356 1546 50  0000 L CNN
+F 1 "FQD5N20L" H 4356 1455 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:TO-252-2" H 4950 1450 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/149/FQD5N20L-266424.pdf" H 4250 1500 50  0001 C CNN
+	1    4250 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F796EF2
+P 3600 1700
+F 0 "R?" H 3450 1750 50  0000 L CNN
+F 1 "100k" H 3350 1650 50  0000 L CNN
+F 2 "" V 3530 1700 50  0001 C CNN
+F 3 "~" H 3600 1700 50  0001 C CNN
+	1    3600 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D?
+U 1 1 5F796EF8
+P 3850 1700
+F 0 "D?" V 3804 1779 50  0000 L CNN
+F 1 "D" V 3895 1779 50  0000 L CNN
+F 2 "" H 3850 1700 50  0001 C CNN
+F 3 "~" H 3850 1700 50  0001 C CNN
+	1    3850 1700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3550 1500 3600 1500
+Wire Wire Line
+	3850 1550 3850 1500
+Connection ~ 3850 1500
+Wire Wire Line
+	3850 1500 3950 1500
+Wire Wire Line
+	3600 1550 3600 1500
+Connection ~ 3600 1500
+Wire Wire Line
+	3600 1500 3850 1500
+Wire Wire Line
+	3600 1850 3850 1850
+Wire Wire Line
+	4250 1850 4250 1700
+Connection ~ 3850 1850
+Wire Wire Line
+	3850 1850 4250 1850
+Text Label 4250 1150 0    50   ~ 0
+Cell2_P
+Wire Wire Line
+	4250 1300 4250 1150
+$Comp
+L Device:C C?
+U 1 1 5F79E64F
+P 5500 1500
+F 0 "C?" V 5248 1500 50  0000 C CNN
+F 1 "10nF" V 5339 1500 50  0000 C CNN
+F 2 "" H 5538 1350 50  0001 C CNN
+F 3 "~" H 5500 1500 50  0001 C CNN
+	1    5500 1500
+	0    1    1    0   
+$EndComp
+$Comp
+L uBMS-Parts:FQD5N20L Q?
+U 1 1 5F79E655
+P 6350 1500
+F 0 "Q?" H 6456 1546 50  0000 L CNN
+F 1 "FQD5N20L" H 6456 1455 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:TO-252-2" H 7050 1450 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/149/FQD5N20L-266424.pdf" H 6350 1500 50  0001 C CNN
+	1    6350 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F79E65B
+P 5700 1700
+F 0 "R?" H 5550 1750 50  0000 L CNN
+F 1 "100k" H 5450 1650 50  0000 L CNN
+F 2 "" V 5630 1700 50  0001 C CNN
+F 3 "~" H 5700 1700 50  0001 C CNN
+	1    5700 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D?
+U 1 1 5F79E661
+P 5950 1700
+F 0 "D?" V 5904 1779 50  0000 L CNN
+F 1 "D" V 5995 1779 50  0000 L CNN
+F 2 "" H 5950 1700 50  0001 C CNN
+F 3 "~" H 5950 1700 50  0001 C CNN
+	1    5950 1700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5650 1500 5700 1500
+Wire Wire Line
+	5950 1550 5950 1500
+Connection ~ 5950 1500
+Wire Wire Line
+	5950 1500 6050 1500
+Wire Wire Line
+	5700 1550 5700 1500
+Connection ~ 5700 1500
+Wire Wire Line
+	5700 1500 5950 1500
+Wire Wire Line
+	5700 1850 5950 1850
+Wire Wire Line
+	6350 1850 6350 1700
+Connection ~ 5950 1850
+Wire Wire Line
+	5950 1850 6350 1850
+Text Label 6350 1150 0    50   ~ 0
+Cell3_P
+Wire Wire Line
+	6350 1300 6350 1150
+$Comp
+L Device:C C?
+U 1 1 5F7A2D2F
+P 7600 1500
+F 0 "C?" V 7348 1500 50  0000 C CNN
+F 1 "10nF" V 7439 1500 50  0000 C CNN
+F 2 "" H 7638 1350 50  0001 C CNN
+F 3 "~" H 7600 1500 50  0001 C CNN
+	1    7600 1500
+	0    1    1    0   
+$EndComp
+$Comp
+L uBMS-Parts:FQD5N20L Q?
+U 1 1 5F7A2D35
+P 8450 1500
+F 0 "Q?" H 8556 1546 50  0000 L CNN
+F 1 "FQD5N20L" H 8556 1455 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:TO-252-2" H 9150 1450 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/149/FQD5N20L-266424.pdf" H 8450 1500 50  0001 C CNN
+	1    8450 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F7A2D3B
+P 7800 1700
+F 0 "R?" H 7650 1750 50  0000 L CNN
+F 1 "100k" H 7550 1650 50  0000 L CNN
+F 2 "" V 7730 1700 50  0001 C CNN
+F 3 "~" H 7800 1700 50  0001 C CNN
+	1    7800 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D?
+U 1 1 5F7A2D41
+P 8050 1700
+F 0 "D?" V 8004 1779 50  0000 L CNN
+F 1 "D" V 8095 1779 50  0000 L CNN
+F 2 "" H 8050 1700 50  0001 C CNN
+F 3 "~" H 8050 1700 50  0001 C CNN
+	1    8050 1700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7750 1500 7800 1500
+Wire Wire Line
+	8050 1550 8050 1500
+Connection ~ 8050 1500
+Wire Wire Line
+	8050 1500 8150 1500
+Wire Wire Line
+	7800 1550 7800 1500
+Connection ~ 7800 1500
+Wire Wire Line
+	7800 1500 8050 1500
+Wire Wire Line
+	7800 1850 8050 1850
+Wire Wire Line
+	8450 1850 8450 1700
+Connection ~ 8050 1850
+Wire Wire Line
+	8050 1850 8450 1850
+Text Label 8450 1150 0    50   ~ 0
+Cell4_P
+Wire Wire Line
+	8450 1300 8450 1150
+$Comp
+L Device:C C?
+U 1 1 5F7ADC89
+P 1300 3000
+F 0 "C?" V 1048 3000 50  0000 C CNN
+F 1 "10nF" V 1139 3000 50  0000 C CNN
+F 2 "" H 1338 2850 50  0001 C CNN
+F 3 "~" H 1300 3000 50  0001 C CNN
+	1    1300 3000
+	0    1    1    0   
+$EndComp
+$Comp
+L uBMS-Parts:FQD5N20L Q?
+U 1 1 5F7ADC8F
+P 2150 3000
+F 0 "Q?" H 2256 3046 50  0000 L CNN
+F 1 "FQD5N20L" H 2256 2955 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:TO-252-2" H 2850 2950 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/149/FQD5N20L-266424.pdf" H 2150 3000 50  0001 C CNN
+	1    2150 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F7ADC95
+P 1500 3200
+F 0 "R?" H 1350 3250 50  0000 L CNN
+F 1 "100k" H 1250 3150 50  0000 L CNN
+F 2 "" V 1430 3200 50  0001 C CNN
+F 3 "~" H 1500 3200 50  0001 C CNN
+	1    1500 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D?
+U 1 1 5F7ADC9B
+P 1750 3200
+F 0 "D?" V 1704 3279 50  0000 L CNN
+F 1 "D" V 1795 3279 50  0000 L CNN
+F 2 "" H 1750 3200 50  0001 C CNN
+F 3 "~" H 1750 3200 50  0001 C CNN
+	1    1750 3200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1450 3000 1500 3000
+Wire Wire Line
+	1750 3050 1750 3000
+Connection ~ 1750 3000
+Wire Wire Line
+	1750 3000 1850 3000
+Wire Wire Line
+	1500 3050 1500 3000
+Connection ~ 1500 3000
+Wire Wire Line
+	1500 3000 1750 3000
+Wire Wire Line
+	1500 3350 1750 3350
+Wire Wire Line
+	2150 3350 2150 3200
+Connection ~ 1750 3350
+Wire Wire Line
+	1750 3350 2150 3350
+Text Label 2150 2650 0    50   ~ 0
+Cell5_P
+Wire Wire Line
+	2150 2800 2150 2650
+$Comp
+L Device:C C?
+U 1 1 5F7ADCB6
+P 3400 3000
+F 0 "C?" V 3148 3000 50  0000 C CNN
+F 1 "10nF" V 3239 3000 50  0000 C CNN
+F 2 "" H 3438 2850 50  0001 C CNN
+F 3 "~" H 3400 3000 50  0001 C CNN
+	1    3400 3000
+	0    1    1    0   
+$EndComp
+$Comp
+L uBMS-Parts:FQD5N20L Q?
+U 1 1 5F7ADCBC
+P 4250 3000
+F 0 "Q?" H 4356 3046 50  0000 L CNN
+F 1 "FQD5N20L" H 4356 2955 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:TO-252-2" H 4950 2950 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/149/FQD5N20L-266424.pdf" H 4250 3000 50  0001 C CNN
+	1    4250 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F7ADCC2
+P 3600 3200
+F 0 "R?" H 3450 3250 50  0000 L CNN
+F 1 "100k" H 3350 3150 50  0000 L CNN
+F 2 "" V 3530 3200 50  0001 C CNN
+F 3 "~" H 3600 3200 50  0001 C CNN
+	1    3600 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D?
+U 1 1 5F7ADCC8
+P 3850 3200
+F 0 "D?" V 3804 3279 50  0000 L CNN
+F 1 "D" V 3895 3279 50  0000 L CNN
+F 2 "" H 3850 3200 50  0001 C CNN
+F 3 "~" H 3850 3200 50  0001 C CNN
+	1    3850 3200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3550 3000 3600 3000
+Wire Wire Line
+	3850 3050 3850 3000
+Connection ~ 3850 3000
+Wire Wire Line
+	3850 3000 3950 3000
+Wire Wire Line
+	3600 3050 3600 3000
+Connection ~ 3600 3000
+Wire Wire Line
+	3600 3000 3850 3000
+Wire Wire Line
+	3600 3350 3850 3350
+Wire Wire Line
+	4250 3350 4250 3200
+Connection ~ 3850 3350
+Wire Wire Line
+	3850 3350 4250 3350
+Text Label 4250 2650 0    50   ~ 0
+Cell6_P
+Wire Wire Line
+	4250 2800 4250 2650
+$Comp
+L Device:C C?
+U 1 1 5F7ADCE3
+P 5500 3000
+F 0 "C?" V 5248 3000 50  0000 C CNN
+F 1 "10nF" V 5339 3000 50  0000 C CNN
+F 2 "" H 5538 2850 50  0001 C CNN
+F 3 "~" H 5500 3000 50  0001 C CNN
+	1    5500 3000
+	0    1    1    0   
+$EndComp
+$Comp
+L uBMS-Parts:FQD5N20L Q?
+U 1 1 5F7ADCE9
+P 6350 3000
+F 0 "Q?" H 6456 3046 50  0000 L CNN
+F 1 "FQD5N20L" H 6456 2955 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:TO-252-2" H 7050 2950 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/149/FQD5N20L-266424.pdf" H 6350 3000 50  0001 C CNN
+	1    6350 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F7ADCEF
+P 5700 3200
+F 0 "R?" H 5550 3250 50  0000 L CNN
+F 1 "100k" H 5450 3150 50  0000 L CNN
+F 2 "" V 5630 3200 50  0001 C CNN
+F 3 "~" H 5700 3200 50  0001 C CNN
+	1    5700 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D?
+U 1 1 5F7ADCF5
+P 5950 3200
+F 0 "D?" V 5904 3279 50  0000 L CNN
+F 1 "D" V 5995 3279 50  0000 L CNN
+F 2 "" H 5950 3200 50  0001 C CNN
+F 3 "~" H 5950 3200 50  0001 C CNN
+	1    5950 3200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5650 3000 5700 3000
+Wire Wire Line
+	5950 3050 5950 3000
+Connection ~ 5950 3000
+Wire Wire Line
+	5950 3000 6050 3000
+Wire Wire Line
+	5700 3050 5700 3000
+Connection ~ 5700 3000
+Wire Wire Line
+	5700 3000 5950 3000
+Wire Wire Line
+	5700 3350 5950 3350
+Wire Wire Line
+	6350 3350 6350 3200
+Connection ~ 5950 3350
+Wire Wire Line
+	5950 3350 6350 3350
+Text Label 6350 2650 0    50   ~ 0
+Cell7_P
+Wire Wire Line
+	6350 2800 6350 2650
+$Comp
+L Device:C C?
+U 1 1 5F7ADD10
+P 7600 3000
+F 0 "C?" V 7348 3000 50  0000 C CNN
+F 1 "10nF" V 7439 3000 50  0000 C CNN
+F 2 "" H 7638 2850 50  0001 C CNN
+F 3 "~" H 7600 3000 50  0001 C CNN
+	1    7600 3000
+	0    1    1    0   
+$EndComp
+$Comp
+L uBMS-Parts:FQD5N20L Q?
+U 1 1 5F7ADD16
+P 8450 3000
+F 0 "Q?" H 8556 3046 50  0000 L CNN
+F 1 "FQD5N20L" H 8556 2955 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:TO-252-2" H 9150 2950 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/149/FQD5N20L-266424.pdf" H 8450 3000 50  0001 C CNN
+	1    8450 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F7ADD1C
+P 7800 3200
+F 0 "R?" H 7650 3250 50  0000 L CNN
+F 1 "100k" H 7550 3150 50  0000 L CNN
+F 2 "" V 7730 3200 50  0001 C CNN
+F 3 "~" H 7800 3200 50  0001 C CNN
+	1    7800 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D?
+U 1 1 5F7ADD22
+P 8050 3200
+F 0 "D?" V 8004 3279 50  0000 L CNN
+F 1 "D" V 8095 3279 50  0000 L CNN
+F 2 "" H 8050 3200 50  0001 C CNN
+F 3 "~" H 8050 3200 50  0001 C CNN
+	1    8050 3200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7750 3000 7800 3000
+Wire Wire Line
+	8050 3050 8050 3000
+Connection ~ 8050 3000
+Wire Wire Line
+	8050 3000 8150 3000
+Wire Wire Line
+	7800 3050 7800 3000
+Connection ~ 7800 3000
+Wire Wire Line
+	7800 3000 8050 3000
+Wire Wire Line
+	7800 3350 8050 3350
+Wire Wire Line
+	8450 3350 8450 3200
+Connection ~ 8050 3350
+Wire Wire Line
+	8050 3350 8450 3350
+Text Label 8450 2650 0    50   ~ 0
+Cell8_P
+Wire Wire Line
+	8450 2800 8450 2650
+$Comp
+L Device:C C?
+U 1 1 5F7BAE22
+P 1300 4500
+F 0 "C?" V 1048 4500 50  0000 C CNN
+F 1 "10nF" V 1139 4500 50  0000 C CNN
+F 2 "" H 1338 4350 50  0001 C CNN
+F 3 "~" H 1300 4500 50  0001 C CNN
+	1    1300 4500
+	0    1    1    0   
+$EndComp
+$Comp
+L uBMS-Parts:FQD5N20L Q?
+U 1 1 5F7BAE28
+P 2150 4500
+F 0 "Q?" H 2256 4546 50  0000 L CNN
+F 1 "FQD5N20L" H 2256 4455 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:TO-252-2" H 2850 4450 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/149/FQD5N20L-266424.pdf" H 2150 4500 50  0001 C CNN
+	1    2150 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F7BAE2E
+P 1500 4700
+F 0 "R?" H 1350 4750 50  0000 L CNN
+F 1 "100k" H 1250 4650 50  0000 L CNN
+F 2 "" V 1430 4700 50  0001 C CNN
+F 3 "~" H 1500 4700 50  0001 C CNN
+	1    1500 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D?
+U 1 1 5F7BAE34
+P 1750 4700
+F 0 "D?" V 1704 4779 50  0000 L CNN
+F 1 "D" V 1795 4779 50  0000 L CNN
+F 2 "" H 1750 4700 50  0001 C CNN
+F 3 "~" H 1750 4700 50  0001 C CNN
+	1    1750 4700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1450 4500 1500 4500
+Wire Wire Line
+	1750 4550 1750 4500
+Connection ~ 1750 4500
+Wire Wire Line
+	1750 4500 1850 4500
+Wire Wire Line
+	1500 4550 1500 4500
+Connection ~ 1500 4500
+Wire Wire Line
+	1500 4500 1750 4500
+Wire Wire Line
+	1500 4850 1750 4850
+Wire Wire Line
+	2150 4850 2150 4700
+Connection ~ 1750 4850
+Wire Wire Line
+	1750 4850 2150 4850
+Text Label 2150 4150 0    50   ~ 0
+Cell9_P
+Wire Wire Line
+	2150 4300 2150 4150
+$Comp
+L Device:C C?
+U 1 1 5F7BAE4F
+P 3400 4500
+F 0 "C?" V 3148 4500 50  0000 C CNN
+F 1 "10nF" V 3239 4500 50  0000 C CNN
+F 2 "" H 3438 4350 50  0001 C CNN
+F 3 "~" H 3400 4500 50  0001 C CNN
+	1    3400 4500
+	0    1    1    0   
+$EndComp
+$Comp
+L uBMS-Parts:FQD5N20L Q?
+U 1 1 5F7BAE55
+P 4250 4500
+F 0 "Q?" H 4356 4546 50  0000 L CNN
+F 1 "FQD5N20L" H 4356 4455 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:TO-252-2" H 4950 4450 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/149/FQD5N20L-266424.pdf" H 4250 4500 50  0001 C CNN
+	1    4250 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F7BAE5B
+P 3600 4700
+F 0 "R?" H 3450 4750 50  0000 L CNN
+F 1 "100k" H 3350 4650 50  0000 L CNN
+F 2 "" V 3530 4700 50  0001 C CNN
+F 3 "~" H 3600 4700 50  0001 C CNN
+	1    3600 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D?
+U 1 1 5F7BAE61
+P 3850 4700
+F 0 "D?" V 3804 4779 50  0000 L CNN
+F 1 "D" V 3895 4779 50  0000 L CNN
+F 2 "" H 3850 4700 50  0001 C CNN
+F 3 "~" H 3850 4700 50  0001 C CNN
+	1    3850 4700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3550 4500 3600 4500
+Wire Wire Line
+	3850 4550 3850 4500
+Connection ~ 3850 4500
+Wire Wire Line
+	3850 4500 3950 4500
+Wire Wire Line
+	3600 4550 3600 4500
+Connection ~ 3600 4500
+Wire Wire Line
+	3600 4500 3850 4500
+Wire Wire Line
+	3600 4850 3850 4850
+Wire Wire Line
+	4250 4850 4250 4700
+Connection ~ 3850 4850
+Wire Wire Line
+	3850 4850 4250 4850
+Text Label 4250 4150 0    50   ~ 0
+Cell10_P
+Wire Wire Line
+	4250 4300 4250 4150
+$Comp
+L Device:C C?
+U 1 1 5F7BAE7C
+P 5500 4500
+F 0 "C?" V 5248 4500 50  0000 C CNN
+F 1 "10nF" V 5339 4500 50  0000 C CNN
+F 2 "" H 5538 4350 50  0001 C CNN
+F 3 "~" H 5500 4500 50  0001 C CNN
+	1    5500 4500
+	0    1    1    0   
+$EndComp
+$Comp
+L uBMS-Parts:FQD5N20L Q?
+U 1 1 5F7BAE82
+P 6350 4500
+F 0 "Q?" H 6456 4546 50  0000 L CNN
+F 1 "FQD5N20L" H 6456 4455 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:TO-252-2" H 7050 4450 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/149/FQD5N20L-266424.pdf" H 6350 4500 50  0001 C CNN
+	1    6350 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F7BAE88
+P 5700 4700
+F 0 "R?" H 5550 4750 50  0000 L CNN
+F 1 "100k" H 5450 4650 50  0000 L CNN
+F 2 "" V 5630 4700 50  0001 C CNN
+F 3 "~" H 5700 4700 50  0001 C CNN
+	1    5700 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D?
+U 1 1 5F7BAE8E
+P 5950 4700
+F 0 "D?" V 5904 4779 50  0000 L CNN
+F 1 "D" V 5995 4779 50  0000 L CNN
+F 2 "" H 5950 4700 50  0001 C CNN
+F 3 "~" H 5950 4700 50  0001 C CNN
+	1    5950 4700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5650 4500 5700 4500
+Wire Wire Line
+	5950 4550 5950 4500
+Connection ~ 5950 4500
+Wire Wire Line
+	5950 4500 6050 4500
+Wire Wire Line
+	5700 4550 5700 4500
+Connection ~ 5700 4500
+Wire Wire Line
+	5700 4500 5950 4500
+Wire Wire Line
+	5700 4850 5950 4850
+Wire Wire Line
+	6350 4850 6350 4700
+Connection ~ 5950 4850
+Wire Wire Line
+	5950 4850 6350 4850
+Text Label 6350 4150 0    50   ~ 0
+Cell11_P
+Wire Wire Line
+	6350 4300 6350 4150
+$Comp
+L Device:C C?
+U 1 1 5F7BAEA9
+P 7600 4500
+F 0 "C?" V 7348 4500 50  0000 C CNN
+F 1 "10nF" V 7439 4500 50  0000 C CNN
+F 2 "" H 7638 4350 50  0001 C CNN
+F 3 "~" H 7600 4500 50  0001 C CNN
+	1    7600 4500
+	0    1    1    0   
+$EndComp
+$Comp
+L uBMS-Parts:FQD5N20L Q?
+U 1 1 5F7BAEAF
+P 8450 4500
+F 0 "Q?" H 8556 4546 50  0000 L CNN
+F 1 "FQD5N20L" H 8556 4455 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:TO-252-2" H 9150 4450 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/149/FQD5N20L-266424.pdf" H 8450 4500 50  0001 C CNN
+	1    8450 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F7BAEB5
+P 7800 4700
+F 0 "R?" H 7650 4750 50  0000 L CNN
+F 1 "100k" H 7550 4650 50  0000 L CNN
+F 2 "" V 7730 4700 50  0001 C CNN
+F 3 "~" H 7800 4700 50  0001 C CNN
+	1    7800 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D?
+U 1 1 5F7BAEBB
+P 8050 4700
+F 0 "D?" V 8004 4779 50  0000 L CNN
+F 1 "D" V 8095 4779 50  0000 L CNN
+F 2 "" H 8050 4700 50  0001 C CNN
+F 3 "~" H 8050 4700 50  0001 C CNN
+	1    8050 4700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7750 4500 7800 4500
+Wire Wire Line
+	8050 4550 8050 4500
+Connection ~ 8050 4500
+Wire Wire Line
+	8050 4500 8150 4500
+Wire Wire Line
+	7800 4550 7800 4500
+Connection ~ 7800 4500
+Wire Wire Line
+	7800 4500 8050 4500
+Wire Wire Line
+	7800 4850 8050 4850
+Wire Wire Line
+	8450 4850 8450 4700
+Connection ~ 8050 4850
+Wire Wire Line
+	8050 4850 8450 4850
+Text Label 8450 4150 0    50   ~ 0
+Cell12_P
+Wire Wire Line
+	8450 4300 8450 4150
+Text HLabel 1100 1500 0    50   Input ~ 0
+Bal_PWM_1
+Wire Wire Line
+	1100 1500 1150 1500
+Text HLabel 3200 1500 0    50   Input ~ 0
+Bal_PWM_2
+Text HLabel 5300 1500 0    50   Input ~ 0
+Bal_PWM_3
+Text HLabel 7400 1500 0    50   Input ~ 0
+Bal_PWM_4
+Text HLabel 1100 3000 0    50   Input ~ 0
+Bal_PWM_5
+Text HLabel 3200 3000 0    50   Input ~ 0
+Bal_PWM_6
+Text HLabel 5300 3000 0    50   Input ~ 0
+Bal_PWM_7
+Text HLabel 7400 3000 0    50   Input ~ 0
+Bal_PWM_8
+Text HLabel 1100 4500 0    50   Input ~ 0
+Bal_PWM_9
+Text HLabel 3200 4500 0    50   Input ~ 0
+Bal_PWM_10
+Text HLabel 5300 4500 0    50   Input ~ 0
+Bal_PWM_11
+Text HLabel 7400 4500 0    50   Input ~ 0
+Bal_PWM_12
+Wire Wire Line
+	3200 1500 3250 1500
+Wire Wire Line
+	5300 1500 5350 1500
+Wire Wire Line
+	7400 1500 7450 1500
+Wire Wire Line
+	1100 3000 1150 3000
+Wire Wire Line
+	3200 3000 3250 3000
+Wire Wire Line
+	5300 3000 5350 3000
+Wire Wire Line
+	7400 3000 7450 3000
+Wire Wire Line
+	1100 4500 1150 4500
+Wire Wire Line
+	3200 4500 3250 4500
+Wire Wire Line
+	5300 4500 5350 4500
+Wire Wire Line
+	7400 4500 7450 4500
+Text Label 4300 1850 0    50   ~ 0
+Cell1_P
+Text Label 6400 1850 0    50   ~ 0
+Cell2_P
+Text Label 8500 1850 0    50   ~ 0
+Cell3_P
+Text Label 2200 3350 0    50   ~ 0
+Cell4_P
+Text Label 4300 3350 0    50   ~ 0
+Cell5_P
+Text Label 6400 3350 0    50   ~ 0
+Cell6_P
+Text Label 8500 3350 0    50   ~ 0
+Cell7_P
+Text Label 2200 4850 0    50   ~ 0
+Cell8_P
+Text Label 4300 4850 0    50   ~ 0
+Cell9_P
+Text Label 6400 4850 0    50   ~ 0
+Cell10_P
+Text Label 8500 4850 0    50   ~ 0
+Cell11_P
+Wire Wire Line
+	4300 1850 4250 1850
+Connection ~ 4250 1850
+Wire Wire Line
+	6400 1850 6350 1850
+Connection ~ 6350 1850
+Wire Wire Line
+	8500 1850 8450 1850
+Connection ~ 8450 1850
+Wire Wire Line
+	2200 3350 2150 3350
+Connection ~ 2150 3350
+Wire Wire Line
+	4300 3350 4250 3350
+Connection ~ 4250 3350
+Wire Wire Line
+	6400 3350 6350 3350
+Connection ~ 6350 3350
+Wire Wire Line
+	8500 3350 8450 3350
+Connection ~ 8450 3350
+Wire Wire Line
+	2200 4850 2150 4850
+Connection ~ 2150 4850
+Wire Wire Line
+	4300 4850 4250 4850
+Connection ~ 4250 4850
+Wire Wire Line
+	6400 4850 6350 4850
+Connection ~ 6350 4850
+Wire Wire Line
+	8500 4850 8450 4850
+Connection ~ 8450 4850
+$EndSCHEMATC
