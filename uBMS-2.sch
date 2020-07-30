@@ -2081,12 +2081,82 @@ Wire Wire Line
 	7050 3750 7050 3700
 Wire Wire Line
 	7050 3700 7100 3700
-Text Notes 7450 6450 2    50   Italic 10
+Text Notes 7750 6450 2    50   Italic 10
 I2C GPIO Expander & Voltage & Temp Sense
 $Sheet
-S 3000 4500 1500 1000
+S 5000 6850 1250 650 
 U 5F7870B7
 F0 "BatteryBalance" 50
 F1 "BatteryBalance.sch" 50
+F2 "Bal_PWM_1" I L 5000 6900 50 
+F3 "Bal_PWM_2" I L 5000 7000 50 
+F4 "Bal_PWM_3" I L 5000 7100 50 
+F5 "Bal_PWM_4" I L 5000 7200 50 
+F6 "Bal_PWM_5" I L 5000 7300 50 
+F7 "Bal_PWM_6" I L 5000 7400 50 
+F8 "Bal_PWM_7" I R 6250 6900 50 
+F9 "Bal_PWM_8" I R 6250 7000 50 
+F10 "Bal_PWM_9" I R 6250 7100 50 
+F11 "Bal_PWM_10" I R 6250 7200 50 
+F12 "Bal_PWM_11" I R 6250 7300 50 
+F13 "Bal_PWM_12" I R 6250 7400 50 
 $EndSheet
+Text Label 4950 6900 2    50   ~ 0
+PWM_Blnce_1
+Text Label 4950 7000 2    50   ~ 0
+PWM_Blnce_2
+Text Label 4950 7100 2    50   ~ 0
+PWM_Blnce_3
+Text Label 4950 7200 2    50   ~ 0
+PWM_Blnce_4
+Text Label 4950 7300 2    50   ~ 0
+PWM_Blnce_5
+Text Label 4950 7400 2    50   ~ 0
+PWM_Blnce_6
+Text Label 6300 6900 0    50   ~ 0
+PWM_Blnce_7
+Text Label 6300 7000 0    50   ~ 0
+PWM_Blnce_8
+Text Label 6300 7100 0    50   ~ 0
+PWM_Blnce_9
+Text Label 6300 7200 0    50   ~ 0
+PWM_Blnce_10
+Text Label 6300 7300 0    50   ~ 0
+PWM_Blnce_11
+Text Label 6300 7400 0    50   ~ 0
+PWM_Blnce_12
+Wire Wire Line
+	4950 6900 5000 6900
+Wire Wire Line
+	4950 7000 5000 7000
+Wire Wire Line
+	4950 7100 5000 7100
+Wire Wire Line
+	4950 7200 5000 7200
+Wire Wire Line
+	4950 7300 5000 7300
+Wire Wire Line
+	4950 7400 5000 7400
+Wire Wire Line
+	6300 6900 6250 6900
+Wire Wire Line
+	6300 7000 6250 7000
+Wire Wire Line
+	6300 7100 6250 7100
+Wire Wire Line
+	6300 7200 6250 7200
+Wire Wire Line
+	6300 7300 6250 7300
+Wire Wire Line
+	6300 7400 6250 7400
+Wire Notes Line
+	6900 6500 4400 6500
+Wire Notes Line
+	4400 6500 4400 7750
+Wire Notes Line
+	4400 7750 6900 7750
+Wire Notes Line
+	6900 7750 6900 6500
+Text Notes 6900 7750 2    50   Italic 10
+PWM Balance Circuitry
 $EndSCHEMATC
