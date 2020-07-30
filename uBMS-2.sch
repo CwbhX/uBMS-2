@@ -2159,4 +2159,100 @@ Wire Notes Line
 	4750 1800 6150 1800
 Wire Notes Line
 	4750 2600 6150 2600
+$Comp
+L Connector:Micro_SD_Card J?
+U 1 1 5F239FEE
+P 3750 5100
+F 0 "J?" H 3700 5817 50  0000 C CNN
+F 1 "Micro_SD_Card" H 3700 5726 50  0000 C CNN
+F 2 "" H 4900 5400 50  0001 C CNN
+F 3 "http://katalog.we-online.de/em/datasheet/693072010801.pdf" H 3750 5100 50  0001 C CNN
+	1    3750 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F23C6D3
+P 4600 5750
+F 0 "#PWR?" H 4600 5500 50  0001 C CNN
+F 1 "GND" H 4450 5650 50  0000 C CNN
+F 2 "" H 4600 5750 50  0001 C CNN
+F 3 "" H 4600 5750 50  0001 C CNN
+	1    4600 5750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 5750 4600 5700
+Wire Wire Line
+	4600 5700 4550 5700
+Text Label 3200 1900 0    50   ~ 0
+SPI_CS
+Text Label 3200 3000 0    50   ~ 0
+SPI_MOSI
+Text Label 3200 2600 0    50   ~ 0
+SPI_CLK
+Text Label 3200 2700 0    50   ~ 0
+SPI_MISO
+Wire Wire Line
+	3200 1900 3150 1900
+Wire Wire Line
+	3200 2600 3150 2600
+Wire Wire Line
+	3200 2700 3150 2700
+Wire Wire Line
+	3200 3000 3150 3000
+Text Label 2750 4900 2    50   ~ 0
+SPI_CS
+Text Label 2750 5000 2    50   ~ 0
+SPI_MOSI
+Text Label 2750 5200 2    50   ~ 0
+SPI_CLK
+Text Label 2750 5400 2    50   ~ 0
+SPI_MISO
+Wire Wire Line
+	2750 5400 2850 5400
+Wire Wire Line
+	2750 5200 2850 5200
+Wire Wire Line
+	2750 5000 2850 5000
+Wire Wire Line
+	2750 4900 2850 4900
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5F3038DF
+P 2250 5100
+F 0 "#PWR?" H 2250 4950 50  0001 C CNN
+F 1 "+3V3" H 2265 5273 50  0000 C CNN
+F 2 "" H 2250 5100 50  0001 C CNN
+F 3 "" H 2250 5100 50  0001 C CNN
+	1    2250 5100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2250 5100 2850 5100
+$Comp
+L power:GND #PWR?
+U 1 1 5F31AA65
+P 2250 5300
+F 0 "#PWR?" H 2250 5050 50  0001 C CNN
+F 1 "GND" H 2100 5250 50  0000 C CNN
+F 2 "" H 2250 5300 50  0001 C CNN
+F 3 "" H 2250 5300 50  0001 C CNN
+	1    2250 5300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2250 5300 2850 5300
+NoConn ~ 2850 5500
+NoConn ~ 2850 4800
+Wire Notes Line
+	4700 4300 4700 6000
+Wire Notes Line
+	4700 6000 2000 6000
+Wire Notes Line
+	2000 6000 2000 4300
+Wire Notes Line
+	2000 4300 4700 4300
+Text Notes 4700 6000 2    50   Italic 10
+MicroSD Card (SPI)
 $EndSCHEMATC
