@@ -182,8 +182,6 @@ Wire Wire Line
 	850  1600 850  1400
 Wire Wire Line
 	850  1400 900  1400
-Wire Wire Line
-	1300 1400 1350 1400
 $Comp
 L Device:R R2
 U 1 1 5F1D799A
@@ -1210,8 +1208,6 @@ F 3 "" H 6350 2650 50  0001 C CNN
 	1    6350 2650
 	1    0    0    -1  
 $EndComp
-Text Notes 1950 2000 2    50   ~ 10
-Tie reset to GPIO expander too\nMight have to add Diode and 5v pullup\n\n
 $Comp
 L uBMS-Parts:CLX6F-FKC D8
 U 1 1 5F44C44C
@@ -1999,26 +1995,6 @@ Wire Wire Line
 Connection ~ 5550 3600
 NoConn ~ 6350 3750
 NoConn ~ 6450 3750
-Text Label 1350 1450 3    50   ~ 0
-Reset
-Wire Wire Line
-	1350 1450 1350 1400
-Connection ~ 1350 1400
-Wire Wire Line
-	1350 1400 1450 1400
-Text Label 9500 2550 2    50   ~ 0
-Reset
-Text Label 6100 3700 2    50   ~ 0
-Reset
-Wire Wire Line
-	6150 3750 6150 3700
-Wire Wire Line
-	6150 3700 6100 3700
-Wire Wire Line
-	9550 2600 9550 2550
-Wire Wire Line
-	9550 2550 9500 2550
-Connection ~ 9550 2600
 Text Notes 5250 4950 2    50   Italic 0
 ADDR: 0x21
 $Comp
@@ -2255,4 +2231,55 @@ Wire Notes Line
 	2000 4300 4700 4300
 Text Notes 4700 6000 2    50   Italic 10
 MicroSD Card (SPI)
+Wire Wire Line
+	1300 1400 1450 1400
+$Comp
+L Device:R_Small R?
+U 1 1 5F3904DB
+P 6050 3750
+F 0 "R?" V 6150 3700 50  0000 C CNN
+F 1 "4.7k" V 5945 3750 50  0000 C CNN
+F 2 "" H 6050 3750 50  0001 C CNN
+F 3 "~" H 6050 3750 50  0001 C CNN
+	1    6050 3750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5F391C37
+P 9450 2600
+F 0 "R?" V 9550 2550 50  0000 C CNN
+F 1 "4.7k" V 9345 2600 50  0000 C CNN
+F 2 "" H 9450 2600 50  0001 C CNN
+F 3 "~" H 9450 2600 50  0001 C CNN
+	1    9450 2600
+	0    1    1    0   
+$EndComp
+Connection ~ 9550 2600
+$Comp
+L power:+5V #PWR?
+U 1 1 5F39226C
+P 5900 3750
+F 0 "#PWR?" H 5900 3600 50  0001 C CNN
+F 1 "+5V" H 5800 3850 50  0000 C CNN
+F 2 "" H 5900 3750 50  0001 C CNN
+F 3 "" H 5900 3750 50  0001 C CNN
+	1    5900 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5950 3750 5900 3750
+$Comp
+L power:+5V #PWR?
+U 1 1 5F3A8B61
+P 9300 2600
+F 0 "#PWR?" H 9300 2450 50  0001 C CNN
+F 1 "+5V" H 9200 2700 50  0000 C CNN
+F 2 "" H 9300 2600 50  0001 C CNN
+F 3 "" H 9300 2600 50  0001 C CNN
+	1    9300 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9300 2600 9350 2600
 $EndSCHEMATC
