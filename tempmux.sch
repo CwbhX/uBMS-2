@@ -40,8 +40,6 @@ F 3 "" H 2000 3400 50  0001 C CNN
 	1    2000 3400
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2000 3400 2000 3350
 $Comp
 L Device:C_Small C?
 U 1 1 5F6868E0
@@ -90,30 +88,6 @@ Wire Wire Line
 	2000 1000 2000 1200
 Text Notes 2500 1250 0    50   ~ 0
 * Through resistance of Analogue Mux is around 60\n Ohms and connects to ADC\n which has input impedence of about 10M Ohm
-Wire Wire Line
-	2500 2700 2550 2700
-Wire Wire Line
-	2550 2700 2550 2800
-Wire Wire Line
-	2550 3350 2000 3350
-Connection ~ 2000 3350
-Wire Wire Line
-	2000 3350 2000 3300
-Wire Wire Line
-	2500 2800 2550 2800
-Connection ~ 2550 2800
-Wire Wire Line
-	2550 2800 2550 2900
-Wire Wire Line
-	2500 2900 2550 2900
-Connection ~ 2550 2900
-Wire Wire Line
-	2550 2900 2550 3000
-Wire Wire Line
-	2500 3000 2550 3000
-Connection ~ 2550 3000
-Wire Wire Line
-	2550 3000 2550 3350
 Text HLabel 1450 2100 0    50   Input ~ 0
 S0
 Text HLabel 1450 2200 0    50   Input ~ 0
@@ -613,4 +587,266 @@ Wire Wire Line
 	2500 2500 2600 2500
 Wire Wire Line
 	2500 2600 2600 2600
+$Comp
+L Device:Thermistor_NTC TH?
+U 1 1 5F26609F
+P 5000 3850
+F 0 "TH?" H 5097 3896 50  0000 L CNN
+F 1 "10k" H 5097 3805 50  0000 L CNN
+F 2 "" H 5000 3900 50  0001 C CNN
+F 3 "~" H 5000 3900 50  0001 C CNN
+	1    5000 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F2670CB
+P 5000 4250
+F 0 "R?" H 5070 4296 50  0000 L CNN
+F 1 "4.7k" H 5070 4205 50  0000 L CNN
+F 2 "" V 4930 4250 50  0001 C CNN
+F 3 "~" H 5000 4250 50  0001 C CNN
+	1    5000 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5000 4000 5000 4050
+$Comp
+L power:GND #PWR?
+U 1 1 5F26879D
+P 5000 4450
+AR Path="/5F70A721/5F26879D" Ref="#PWR?"  Part="1" 
+AR Path="/5F70B1A3/5F26879D" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 5000 4200 50  0001 C CNN
+F 1 "GND" H 5005 4277 50  0000 C CNN
+F 2 "" H 5000 4450 50  0001 C CNN
+F 3 "" H 5000 4450 50  0001 C CNN
+	1    5000 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5000 4450 5000 4400
+$Comp
+L power:+5V #PWR?
+U 1 1 5F269BD4
+P 5000 3650
+AR Path="/5F70A721/5F269BD4" Ref="#PWR?"  Part="1" 
+AR Path="/5F70B1A3/5F269BD4" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 5000 3500 50  0001 C CNN
+F 1 "+5V" H 5015 3823 50  0000 C CNN
+F 2 "" H 5000 3650 50  0001 C CNN
+F 3 "" H 5000 3650 50  0001 C CNN
+	1    5000 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5000 3650 5000 3700
+$Comp
+L Device:Thermistor_NTC TH?
+U 1 1 5F26E197
+P 6000 3850
+F 0 "TH?" H 6097 3896 50  0000 L CNN
+F 1 "10k" H 6097 3805 50  0000 L CNN
+F 2 "" H 6000 3900 50  0001 C CNN
+F 3 "~" H 6000 3900 50  0001 C CNN
+	1    6000 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F26E19D
+P 6000 4250
+F 0 "R?" H 6070 4296 50  0000 L CNN
+F 1 "4.7k" H 6070 4205 50  0000 L CNN
+F 2 "" V 5930 4250 50  0001 C CNN
+F 3 "~" H 6000 4250 50  0001 C CNN
+	1    6000 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 4000 6000 4050
+$Comp
+L power:GND #PWR?
+U 1 1 5F26E1A4
+P 6000 4450
+AR Path="/5F70A721/5F26E1A4" Ref="#PWR?"  Part="1" 
+AR Path="/5F70B1A3/5F26E1A4" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 6000 4200 50  0001 C CNN
+F 1 "GND" H 6005 4277 50  0000 C CNN
+F 2 "" H 6000 4450 50  0001 C CNN
+F 3 "" H 6000 4450 50  0001 C CNN
+	1    6000 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 4450 6000 4400
+$Comp
+L power:+5V #PWR?
+U 1 1 5F26E1AB
+P 6000 3650
+AR Path="/5F70A721/5F26E1AB" Ref="#PWR?"  Part="1" 
+AR Path="/5F70B1A3/5F26E1AB" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 6000 3500 50  0001 C CNN
+F 1 "+5V" H 6015 3823 50  0000 C CNN
+F 2 "" H 6000 3650 50  0001 C CNN
+F 3 "" H 6000 3650 50  0001 C CNN
+	1    6000 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 3650 6000 3700
+$Comp
+L Device:Thermistor_NTC TH?
+U 1 1 5F2705BF
+P 7000 3850
+F 0 "TH?" H 7097 3896 50  0000 L CNN
+F 1 "10k" H 7097 3805 50  0000 L CNN
+F 2 "" H 7000 3900 50  0001 C CNN
+F 3 "~" H 7000 3900 50  0001 C CNN
+	1    7000 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F2705C5
+P 7000 4250
+F 0 "R?" H 7070 4296 50  0000 L CNN
+F 1 "4.7k" H 7070 4205 50  0000 L CNN
+F 2 "" V 6930 4250 50  0001 C CNN
+F 3 "~" H 7000 4250 50  0001 C CNN
+	1    7000 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7000 4000 7000 4050
+$Comp
+L power:GND #PWR?
+U 1 1 5F2705CC
+P 7000 4450
+AR Path="/5F70A721/5F2705CC" Ref="#PWR?"  Part="1" 
+AR Path="/5F70B1A3/5F2705CC" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 7000 4200 50  0001 C CNN
+F 1 "GND" H 7005 4277 50  0000 C CNN
+F 2 "" H 7000 4450 50  0001 C CNN
+F 3 "" H 7000 4450 50  0001 C CNN
+	1    7000 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7000 4450 7000 4400
+$Comp
+L power:+5V #PWR?
+U 1 1 5F2705D3
+P 7000 3650
+AR Path="/5F70A721/5F2705D3" Ref="#PWR?"  Part="1" 
+AR Path="/5F70B1A3/5F2705D3" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 7000 3500 50  0001 C CNN
+F 1 "+5V" H 7015 3823 50  0000 C CNN
+F 2 "" H 7000 3650 50  0001 C CNN
+F 3 "" H 7000 3650 50  0001 C CNN
+	1    7000 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7000 3650 7000 3700
+$Comp
+L Device:Thermistor_NTC TH?
+U 1 1 5F272D59
+P 8000 3850
+F 0 "TH?" H 8097 3896 50  0000 L CNN
+F 1 "10k" H 8097 3805 50  0000 L CNN
+F 2 "" H 8000 3900 50  0001 C CNN
+F 3 "~" H 8000 3900 50  0001 C CNN
+	1    8000 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F272D5F
+P 8000 4250
+F 0 "R?" H 8070 4296 50  0000 L CNN
+F 1 "4.7k" H 8070 4205 50  0000 L CNN
+F 2 "" V 7930 4250 50  0001 C CNN
+F 3 "~" H 8000 4250 50  0001 C CNN
+	1    8000 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8000 4000 8000 4050
+$Comp
+L power:GND #PWR?
+U 1 1 5F272D66
+P 8000 4450
+AR Path="/5F70A721/5F272D66" Ref="#PWR?"  Part="1" 
+AR Path="/5F70B1A3/5F272D66" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 8000 4200 50  0001 C CNN
+F 1 "GND" H 8005 4277 50  0000 C CNN
+F 2 "" H 8000 4450 50  0001 C CNN
+F 3 "" H 8000 4450 50  0001 C CNN
+	1    8000 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8000 4450 8000 4400
+$Comp
+L power:+5V #PWR?
+U 1 1 5F272D6D
+P 8000 3650
+AR Path="/5F70A721/5F272D6D" Ref="#PWR?"  Part="1" 
+AR Path="/5F70B1A3/5F272D6D" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 8000 3500 50  0001 C CNN
+F 1 "+5V" H 8015 3823 50  0000 C CNN
+F 2 "" H 8000 3650 50  0001 C CNN
+F 3 "" H 8000 3650 50  0001 C CNN
+	1    8000 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8000 3650 8000 3700
+Text Label 2600 2700 0    50   ~ 0
+Mosfet_Temp
+Wire Wire Line
+	4850 4050 5000 4050
+Connection ~ 5000 4050
+Wire Wire Line
+	5000 4050 5000 4100
+Text Label 5850 4050 2    50   ~ 0
+Balance_Temp
+Wire Wire Line
+	5850 4050 6000 4050
+Connection ~ 6000 4050
+Wire Wire Line
+	6000 4050 6000 4100
+Text Label 6850 4050 2    50   ~ 0
+Power_Temp
+Wire Wire Line
+	6850 4050 7000 4050
+Connection ~ 7000 4050
+Wire Wire Line
+	7000 4050 7000 4100
+Text Label 7850 4050 2    50   ~ 0
+ESP_Temp
+Wire Wire Line
+	7850 4050 8000 4050
+Connection ~ 8000 4050
+Wire Wire Line
+	8000 4050 8000 4100
+Wire Wire Line
+	2000 3300 2000 3400
+Text Label 4850 4050 2    50   ~ 0
+Mosfet_Temp
+Text Label 2600 2800 0    50   ~ 0
+Balance_Temp
+Text Label 2600 2900 0    50   ~ 0
+Power_Temp
+Text Label 2600 3000 0    50   ~ 0
+ESP_Temp
+Wire Wire Line
+	2500 2700 2600 2700
+Wire Wire Line
+	2500 2800 2600 2800
+Wire Wire Line
+	2500 2900 2600 2900
+Wire Wire Line
+	2500 3000 2600 3000
 $EndSCHEMATC

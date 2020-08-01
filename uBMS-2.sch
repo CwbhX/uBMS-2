@@ -158,7 +158,7 @@ U 1 1 5F1D5597
 P 1100 1400
 F 0 "BTN1" H 1100 1685 50  0000 C CNN
 F 1 "Reset" H 1100 1594 50  0000 C CNN
-F 2 "Lafayette_Electric_Car_Footprints:PushButton" H 1350 1600 50  0001 C CNN
+F 2 "" H 1350 1600 50  0001 C CNN
 F 3 "https://media.digikey.com/pdf/Data%20Sheets/RAFI%20PDF's/Racon_PCB_Tactile_Switches_Cat.pdf" H 1350 1600 50  0001 C CNN
 F 4 "Digikey" H 900 1750 50  0001 C CNN "Vendor"
 F 5 "1715-1676-1-ND" H 1050 1750 50  0001 C CNN "Vendor Part"
