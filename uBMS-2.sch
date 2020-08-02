@@ -2101,22 +2101,11 @@ Wire Notes Line
 Wire Notes Line
 	4750 2600 6150 2600
 $Comp
-L Connector:Micro_SD_Card J1
-U 1 1 5F239FEE
-P 3750 5100
-F 0 "J1" H 3700 5817 50  0000 C CNN
-F 1 "Micro_SD_Card" H 3700 5726 50  0000 C CNN
-F 2 "" H 4900 5400 50  0001 C CNN
-F 3 "http://katalog.we-online.de/em/datasheet/693072010801.pdf" H 3750 5100 50  0001 C CNN
-	1    3750 5100
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR037
 U 1 1 5F23C6D3
 P 4600 5750
 F 0 "#PWR037" H 4600 5500 50  0001 C CNN
-F 1 "GND" H 4450 5650 50  0000 C CNN
+F 1 "GND" H 4500 5750 50  0000 C CNN
 F 2 "" H 4600 5750 50  0001 C CNN
 F 3 "" H 4600 5750 50  0001 C CNN
 	1    4600 5750
@@ -2484,4 +2473,51 @@ Wire Wire Line
 	6450 5200 6450 5150
 Wire Wire Line
 	6350 5200 6350 5150
+$Comp
+L Connector:Micro_SD_Card_Det J1
+U 1 1 5F28F4CE
+P 3750 5200
+F 0 "J1" H 3700 6017 50  0000 C CNN
+F 1 "Micro_SD_Card_Det" H 3700 5926 50  0000 C CNN
+F 2 "" H 5800 5900 50  0001 C CNN
+F 3 "https://www.hirose.com/product/en/download_file/key_name/DM3/category/Catalog/doc_file_id/49662/?file_category_id=4&item_id=195&is_series=1" H 3750 5300 50  0001 C CNN
+	1    3750 5200
+	1    0    0    -1  
+$EndComp
+NoConn ~ 2850 5700
+$Comp
+L Device:R_Small R92
+U 1 1 5F2E72B5
+P 3800 2900
+F 0 "R92" V 3900 2850 50  0000 C CNN
+F 1 "4.7k" V 3695 2900 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3800 2900 50  0001 C CNN
+F 3 "~" H 3800 2900 50  0001 C CNN
+	1    3800 2900
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+3V3 #PWR089
+U 1 1 5F2E7B0B
+P 3800 2800
+F 0 "#PWR089" H 3800 2650 50  0001 C CNN
+F 1 "+3V3" H 3815 2973 50  0000 C CNN
+F 2 "" H 3800 2800 50  0001 C CNN
+F 3 "" H 3800 2800 50  0001 C CNN
+	1    3800 2800
+	1    0    0    -1  
+$EndComp
+Text Label 3850 3100 0    50   ~ 0
+SD_Detect
+Wire Wire Line
+	3850 3100 3800 3100
+Wire Wire Line
+	3800 3000 3800 3100
+Connection ~ 3800 3100
+Wire Wire Line
+	3800 3100 3150 3100
+Text Label 2750 5600 2    50   ~ 0
+SD_Detect
+Wire Wire Line
+	2750 5600 2850 5600
 $EndSCHEMATC
