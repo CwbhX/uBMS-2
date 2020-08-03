@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name uBMS-2)(type KiCad)(uri ${KIPRJMOD}/Pretties/uBMS-2.pretty)(options "")(descr ""))
+)
