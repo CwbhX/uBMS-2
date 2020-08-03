@@ -463,10 +463,10 @@ Wire Wire Line
 Wire Wire Line
 	8750 2000 8750 1950
 $Comp
-L power:GND #PWR030
+L power:GND #PWR028
 U 1 1 5F20A0C9
 P 10650 3550
-F 0 "#PWR030" H 10650 3300 50  0001 C CNN
+F 0 "#PWR028" H 10650 3300 50  0001 C CNN
 F 1 "GND" H 10800 3500 50  0000 C CNN
 F 2 "" H 10650 3550 50  0001 C CNN
 F 3 "" H 10650 3550 50  0001 C CNN
@@ -2307,10 +2307,10 @@ Connection ~ 1650 1400
 Wire Wire Line
 	1650 1400 1600 1400
 $Comp
-L power:+3V3 #PWR028
+L power:+3V3 #PWR029
 U 1 1 5FA54DD9
 P 900 3850
-F 0 "#PWR028" H 900 3700 50  0001 C CNN
+F 0 "#PWR029" H 900 3700 50  0001 C CNN
 F 1 "+3V3" H 915 4023 50  0000 C CNN
 F 2 "" H 900 3850 50  0001 C CNN
 F 3 "" H 900 3850 50  0001 C CNN
@@ -2326,10 +2326,10 @@ GPIO0
 Text Label 1650 3850 0    50   ~ 0
 EN
 $Comp
-L power:GND #PWR029
+L power:GND #PWR030
 U 1 1 5FAD9446
 P 650 3950
-F 0 "#PWR029" H 650 3700 50  0001 C CNN
+F 0 "#PWR030" H 650 3700 50  0001 C CNN
 F 1 "GND" H 700 4000 50  0000 C CNN
 F 2 "" H 650 3950 50  0001 C CNN
 F 3 "" H 650 3950 50  0001 C CNN
@@ -2368,25 +2368,10 @@ Connection ~ 7100 4150
 Connection ~ 7300 4150
 Wire Wire Line
 	7300 4150 7300 4200
-$Comp
-L Connector_Generic:Conn_01x02 J2
-U 1 1 5FD4B4ED
-P 950 4800
-F 0 "J2" H 868 4475 50  0000 C CNN
-F 1 "Conn_01x02" H 868 4566 50  0000 C CNN
-F 2 "Connector_JST:JST_PH_S2B-PH-SM4-TB_1x02-1MP_P2.00mm_Horizontal" H 950 4800 50  0001 C CNN
-F 3 "~" H 950 4800 50  0001 C CNN
-	1    950  4800
-	-1   0    0    1   
-$EndComp
-Text Label 1250 4700 0    50   ~ 0
+Text Label 1250 4750 0    50   ~ 0
 V_IN
 Wire Wire Line
-	1250 4800 1150 4800
-Wire Wire Line
-	1250 4850 1250 4800
-Wire Wire Line
-	1250 4700 1150 4700
+	1250 4750 1150 4750
 $Comp
 L Connector_Generic:Conn_01x02 J3
 U 1 1 5FDA1C2F
@@ -2422,17 +2407,6 @@ Batt_Pos
 Wire Wire Line
 	2150 5350 2050 5350
 $Comp
-L power:GND #PWR037
-U 1 1 5FD4C2FF
-P 1250 4850
-F 0 "#PWR037" H 1250 4600 50  0001 C CNN
-F 1 "GND" H 1350 4750 50  0000 C CNN
-F 2 "" H 1250 4850 50  0001 C CNN
-F 3 "" H 1250 4850 50  0001 C CNN
-	1    1250 4850
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR038
 U 1 1 5FE34A27
 P 2150 5500
@@ -2464,7 +2438,7 @@ To: Bat +/-
 Text Notes 2550 5000 2    50   Italic 0
 To: System +/-
 Text Notes 1600 5100 2    50   Italic 0
-To: Bat +/-
+Bridge for Power Input
 Wire Notes Line
 	1650 5750 2550 5750
 Text Label 3200 3100 0    50   ~ 0
@@ -2475,7 +2449,7 @@ U 1 1 6009B1C4
 P 800 5500
 F 0 "J5" H 718 5275 50  0000 C CNN
 F 1 "Conn_01x01" H 718 5366 50  0000 C CNN
-F 2 "" H 800 5500 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 800 5500 50  0001 C CNN
 F 3 "~" H 800 5500 50  0001 C CNN
 	1    800  5500
 	-1   0    0    1   
@@ -2517,10 +2491,10 @@ Wire Notes Line
 Wire Wire Line
 	5550 4650 5550 4700
 $Comp
-L Connector_Generic:Conn_02x03_Counter_Clockwise J?
+L Connector_Generic:Conn_02x03_Counter_Clockwise J1
 U 1 1 6031BD36
 P 1300 3950
-F 0 "J?" H 1350 4000 50  0000 C CNN
+F 0 "J1" H 1350 4000 50  0000 C CNN
 F 1 "Conn_02x03_Counter_Clockwise" H 1300 4300 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical_SMD" H 1300 3950 50  0001 C CNN
 F 3 "~" H 1300 3950 50  0001 C CNN
@@ -2547,4 +2521,6 @@ Wire Notes Line
 	600  4200 2000 4200
 Wire Notes Line
 	2000 3550 2000 4200
+Text Label 1150 4750 2    50   ~ 0
+Batt_Pos
 $EndSCHEMATC
