@@ -2307,59 +2307,36 @@ Connection ~ 1650 1400
 Wire Wire Line
 	1650 1400 1600 1400
 $Comp
-L Connector_Generic:Conn_01x06 J1
-U 1 1 5FA07EE6
-P 900 3650
-F 0 "J1" H 818 4067 50  0000 C CNN
-F 1 "Conn_01x06" H 818 3976 50  0000 C CNN
-F 2 "" H 900 3650 50  0001 C CNN
-F 3 "~" H 900 3650 50  0001 C CNN
-	1    900  3650
-	-1   0    0    -1  
-$EndComp
-$Comp
 L power:+3V3 #PWR028
 U 1 1 5FA54DD9
-P 1550 3450
-F 0 "#PWR028" H 1550 3300 50  0001 C CNN
-F 1 "+3V3" H 1565 3623 50  0000 C CNN
-F 2 "" H 1550 3450 50  0001 C CNN
-F 3 "" H 1550 3450 50  0001 C CNN
-	1    1550 3450
+P 900 3850
+F 0 "#PWR028" H 900 3700 50  0001 C CNN
+F 1 "+3V3" H 915 4023 50  0000 C CNN
+F 2 "" H 900 3850 50  0001 C CNN
+F 3 "" H 900 3850 50  0001 C CNN
+	1    900  3850
 	1    0    0    -1  
 $EndComp
-Text Label 1150 3650 0    50   ~ 10
+Text Label 1050 4050 2    50   ~ 10
 UART_RX
-Wire Wire Line
-	1150 3650 1100 3650
-Text Label 1150 3750 0    50   ~ 10
+Text Label 1650 4050 0    50   ~ 10
 UART_TX
-Wire Wire Line
-	1150 3750 1100 3750
-Text Label 1150 3850 0    50   ~ 0
+Text Label 1650 3950 0    50   ~ 0
 GPIO0
-Wire Wire Line
-	1150 3850 1100 3850
-Text Label 1150 3950 0    50   ~ 0
+Text Label 1650 3850 0    50   ~ 0
 EN
 $Comp
 L power:GND #PWR029
 U 1 1 5FAD9446
-P 1550 3550
-F 0 "#PWR029" H 1550 3300 50  0001 C CNN
-F 1 "GND" H 1700 3500 50  0000 C CNN
-F 2 "" H 1550 3550 50  0001 C CNN
-F 3 "" H 1550 3550 50  0001 C CNN
-	1    1550 3550
+P 650 3950
+F 0 "#PWR029" H 650 3700 50  0001 C CNN
+F 1 "GND" H 700 4000 50  0000 C CNN
+F 2 "" H 650 3950 50  0001 C CNN
+F 3 "" H 650 3950 50  0001 C CNN
+	1    650  3950
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1550 3550 1100 3550
-Wire Wire Line
-	1100 3450 1550 3450
-Wire Notes Line
-	700  3150 1850 3150
-Text Notes 1850 4100 2    50   Italic 0
+Text Notes 2000 4200 2    50   Italic 0
 Programming Port
 Wire Wire Line
 	3200 3100 3150 3100
@@ -2539,12 +2516,35 @@ Wire Notes Line
 	1650 5050 1650 5750
 Wire Wire Line
 	5550 4650 5550 4700
+$Comp
+L Connector_Generic:Conn_02x03_Counter_Clockwise J?
+U 1 1 6031BD36
+P 1300 3950
+F 0 "J?" H 1350 4000 50  0000 C CNN
+F 1 "Conn_02x03_Counter_Clockwise" H 1300 4300 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical_SMD" H 1300 3950 50  0001 C CNN
+F 3 "~" H 1300 3950 50  0001 C CNN
+	1    1300 3950
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	1150 3950 1100 3950
+	1050 4050 1100 4050
+Wire Wire Line
+	650  3950 1100 3950
+Wire Wire Line
+	900  3850 1100 3850
+Wire Wire Line
+	1650 4050 1600 4050
+Wire Wire Line
+	1650 3950 1600 3950
+Wire Wire Line
+	1650 3850 1600 3850
 Wire Notes Line
-	700  3150 700  4100
+	2000 3550 600  3550
 Wire Notes Line
-	700  4100 1850 4100
+	600  3550 600  4200
 Wire Notes Line
-	1850 4100 1850 3150
+	600  4200 2000 4200
+Wire Notes Line
+	2000 3550 2000 4200
 $EndSCHEMATC
