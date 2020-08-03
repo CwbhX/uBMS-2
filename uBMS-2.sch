@@ -1957,18 +1957,18 @@ Wire Notes Line
 $Comp
 L power:GND #PWR036
 U 1 1 5F23C6D3
-P 4600 5750
-F 0 "#PWR036" H 4600 5500 50  0001 C CNN
-F 1 "GND" H 4500 5750 50  0000 C CNN
-F 2 "" H 4600 5750 50  0001 C CNN
-F 3 "" H 4600 5750 50  0001 C CNN
-	1    4600 5750
+P 4650 5750
+F 0 "#PWR036" H 4650 5500 50  0001 C CNN
+F 1 "GND" H 4500 5650 50  0000 C CNN
+F 2 "" H 4650 5750 50  0001 C CNN
+F 3 "" H 4650 5750 50  0001 C CNN
+	1    4650 5750
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4600 5750 4600 5700
+	4650 5750 4650 5700
 Wire Wire Line
-	4600 5700 4550 5700
+	4650 5700 4600 5700
 Text Label 3200 1900 0    50   ~ 0
 SPI_CS
 Text Label 3200 3000 0    50   ~ 0
@@ -2027,7 +2027,6 @@ F 3 "" H 2250 5300 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2250 5300 2850 5300
-NoConn ~ 2850 5500
 NoConn ~ 2850 4800
 Wire Notes Line
 	4700 4300 4700 6000
@@ -2296,18 +2295,6 @@ Wire Wire Line
 Wire Wire Line
 	6250 4700 6250 4650
 $Comp
-L Connector:Micro_SD_Card_Det J1
-U 1 1 5F28F4CE
-P 3750 5200
-F 0 "J1" H 3700 6017 50  0000 C CNN
-F 1 "Micro_SD_Card_Det" H 3700 5926 50  0000 C CNN
-F 2 "" H 5800 5900 50  0001 C CNN
-F 3 "https://www.hirose.com/product/en/download_file/key_name/DM3/category/Catalog/doc_file_id/49662/?file_category_id=4&item_id=195&is_series=1" H 3750 5300 50  0001 C CNN
-	1    3750 5200
-	1    0    0    -1  
-$EndComp
-NoConn ~ 2850 5700
-$Comp
 L Device:R_Small R11
 U 1 1 5F2E72B5
 P 3800 2900
@@ -2338,10 +2325,10 @@ Wire Wire Line
 Connection ~ 3800 3100
 Wire Wire Line
 	3800 3100 3150 3100
-Text Label 2750 5600 2    50   ~ 0
+Text Label 2700 5650 2    50   ~ 0
 SD_Detect
 Wire Wire Line
-	2750 5600 2850 5600
+	2700 5650 2800 5650
 NoConn ~ 1950 3100
 NoConn ~ 1950 3000
 NoConn ~ 1950 2900
@@ -2432,4 +2419,34 @@ Wire Wire Line
 	6450 4950 6350 4950
 Wire Wire Line
 	6350 4950 6350 4650
+NoConn ~ 2850 5500
+$Comp
+L Connector:Micro_SD_Card_MEM2061 J?
+U 1 1 5F839F0E
+P 3700 5200
+F 0 "J?" H 3700 6017 50  0000 C CNN
+F 1 "Micro_SD_Card_MEM2061" H 3700 5926 50  0000 C CNN
+F 2 "" H 3800 6000 50  0001 C CNN
+F 3 "" H 3800 6000 50  0001 C CNN
+	1    3700 5200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2850 5600 2800 5600
+Wire Wire Line
+	2800 5600 2800 5650
+Wire Wire Line
+	2850 5700 2800 5700
+Wire Wire Line
+	2800 5700 2800 5650
+Connection ~ 2800 5650
+Wire Wire Line
+	4550 5650 4600 5650
+Wire Wire Line
+	4600 5650 4600 5700
+Wire Wire Line
+	4550 5750 4600 5750
+Wire Wire Line
+	4600 5750 4600 5700
+Connection ~ 4600 5700
 $EndSCHEMATC
