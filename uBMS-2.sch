@@ -2363,7 +2363,7 @@ Wire Wire Line
 	1050 3250 1500 3250
 Wire Notes Line
 	650  2950 1800 2950
-Text Notes 1800 4150 2    50   Italic 10
+Text Notes 1800 4150 2    50   Italic 0
 Programming Port
 $Comp
 L Device:C_Small C10
@@ -2458,4 +2458,123 @@ Connection ~ 7100 4150
 Connection ~ 7300 4150
 Wire Wire Line
 	7300 4150 7300 4200
+$Comp
+L Connector_Generic:Conn_01x02 J?
+U 1 1 5FD4B4ED
+P 950 5100
+F 0 "J?" H 868 4775 50  0000 C CNN
+F 1 "Conn_01x02" H 868 4866 50  0000 C CNN
+F 2 "" H 950 5100 50  0001 C CNN
+F 3 "~" H 950 5100 50  0001 C CNN
+	1    950  5100
+	-1   0    0    1   
+$EndComp
+Text Label 1250 5000 0    50   ~ 0
+V_IN
+Wire Wire Line
+	1250 5100 1150 5100
+Wire Wire Line
+	1250 5150 1250 5100
+Wire Wire Line
+	1250 5000 1150 5000
+$Comp
+L Connector_Generic:Conn_01x02 J?
+U 1 1 5FDA1C2F
+P 1800 4800
+F 0 "J?" H 1718 4475 50  0000 C CNN
+F 1 "Conn_01x02" H 1718 4566 50  0000 C CNN
+F 2 "" H 1800 4800 50  0001 C CNN
+F 3 "~" H 1800 4800 50  0001 C CNN
+	1    1800 4800
+	-1   0    0    1   
+$EndComp
+Text Label 2100 4700 0    50   ~ 0
+Batt_PTerm
+Wire Wire Line
+	2100 4700 2000 4700
+Text Label 2100 4800 0    50   ~ 0
+Batt_RTN
+Wire Wire Line
+	2100 4800 2000 4800
+$Comp
+L Connector_Generic:Conn_01x02 J?
+U 1 1 5FDF9BBD
+P 1850 5450
+F 0 "J?" H 1768 5125 50  0000 C CNN
+F 1 "Conn_01x02" H 1768 5216 50  0000 C CNN
+F 2 "" H 1850 5450 50  0001 C CNN
+F 3 "~" H 1850 5450 50  0001 C CNN
+	1    1850 5450
+	-1   0    0    1   
+$EndComp
+Text Label 2150 5350 0    50   ~ 0
+Batt_Pos
+Wire Wire Line
+	2150 5350 2050 5350
+$Comp
+L power:GND #PWR?
+U 1 1 5FD4C2FF
+P 1250 5150
+F 0 "#PWR?" H 1250 4900 50  0001 C CNN
+F 1 "GND" H 1350 5050 50  0000 C CNN
+F 2 "" H 1250 5150 50  0001 C CNN
+F 3 "" H 1250 5150 50  0001 C CNN
+	1    1250 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FE34A27
+P 2150 5500
+F 0 "#PWR?" H 2150 5250 50  0001 C CNN
+F 1 "GND" H 2250 5400 50  0000 C CNN
+F 2 "" H 2150 5500 50  0001 C CNN
+F 3 "" H 2150 5500 50  0001 C CNN
+	1    2150 5500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2050 5450 2150 5450
+Wire Wire Line
+	2150 5450 2150 5500
+Wire Notes Line
+	2650 4300 550  4300
+Wire Notes Line
+	550  4300 550  5900
+Wire Notes Line
+	550  5900 2650 5900
+Wire Notes Line
+	2650 5900 2650 4300
+Wire Notes Line
+	750  4700 750  5400
+Wire Notes Line
+	750  5400 1450 5400
+Wire Notes Line
+	1450 5400 1450 4700
+Wire Notes Line
+	1450 4700 750  4700
+Wire Notes Line
+	1650 4400 1650 4950
+Wire Notes Line
+	1650 4950 2550 4950
+Wire Notes Line
+	2550 4950 2550 4400
+Wire Notes Line
+	2550 4400 1650 4400
+Text Notes 2650 5900 2    50   Italic 10
+Connectors
+Text Notes 2550 5750 2    50   Italic 0
+To: Bat +/-
+Text Notes 2550 4950 2    50   Italic 0
+To: System +/-
+Text Notes 1450 5400 2    50   Italic 0
+To: Bat +/-
+Wire Notes Line
+	2550 5750 2550 5000
+Wire Notes Line
+	1650 5000 1650 5750
+Wire Notes Line
+	1650 5000 2550 5000
+Wire Notes Line
+	1650 5750 2550 5750
 $EndSCHEMATC
