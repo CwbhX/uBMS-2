@@ -19,8 +19,8 @@ L power:GND #PWR?
 U 1 1 5F78CA1C
 P 9650 2850
 AR Path="/5F70A721/5F78CA1C" Ref="#PWR?"  Part="1" 
-AR Path="/5F7870B7/5F78CA1C" Ref="#PWR088"  Part="1" 
-F 0 "#PWR088" H 9650 2600 50  0001 C CNN
+AR Path="/5F7870B7/5F78CA1C" Ref="#PWR087"  Part="1" 
+F 0 "#PWR087" H 9650 2600 50  0001 C CNN
 F 1 "GND" H 9655 2677 50  0000 C CNN
 F 2 "" H 9650 2850 50  0001 C CNN
 F 3 "" H 9650 2850 50  0001 C CNN
@@ -112,10 +112,10 @@ F 3 "https://www.mouser.com/datasheet/2/149/FQD5N20L-266424.pdf" H 2150 1500 50 
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R80
+L Device:R R77
 U 1 1 5F79167A
 P 1500 1700
-F 0 "R80" H 1350 1750 50  0000 L CNN
+F 0 "R77" H 1350 1750 50  0000 L CNN
 F 1 "100k" H 1250 1650 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 1430 1700 50  0001 C CNN
 F 3 "~" H 1500 1700 50  0001 C CNN
@@ -161,8 +161,8 @@ L power:GND #PWR?
 U 1 1 5F793673
 P 2150 1900
 AR Path="/5F70A721/5F793673" Ref="#PWR?"  Part="1" 
-AR Path="/5F7870B7/5F793673" Ref="#PWR087"  Part="1" 
-F 0 "#PWR087" H 2150 1650 50  0001 C CNN
+AR Path="/5F7870B7/5F793673" Ref="#PWR086"  Part="1" 
+F 0 "#PWR086" H 2150 1650 50  0001 C CNN
 F 1 "GND" H 2155 1727 50  0000 C CNN
 F 2 "" H 2150 1900 50  0001 C CNN
 F 3 "" H 2150 1900 50  0001 C CNN
@@ -195,10 +195,10 @@ F 3 "https://www.mouser.com/datasheet/2/149/FQD5N20L-266424.pdf" H 4250 1500 50 
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R81
+L Device:R R78
 U 1 1 5F796EF2
 P 3600 1700
-F 0 "R81" H 3450 1750 50  0000 L CNN
+F 0 "R78" H 3450 1750 50  0000 L CNN
 F 1 "100k" H 3350 1650 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 3530 1700 50  0001 C CNN
 F 3 "~" H 3600 1700 50  0001 C CNN
@@ -262,10 +262,10 @@ F 3 "https://www.mouser.com/datasheet/2/149/FQD5N20L-266424.pdf" H 6350 1500 50 
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R82
+L Device:R R79
 U 1 1 5F79E65B
 P 5700 1700
-F 0 "R82" H 5550 1750 50  0000 L CNN
+F 0 "R79" H 5550 1750 50  0000 L CNN
 F 1 "100k" H 5450 1650 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 5630 1700 50  0001 C CNN
 F 3 "~" H 5700 1700 50  0001 C CNN
@@ -329,10 +329,10 @@ F 3 "https://www.mouser.com/datasheet/2/149/FQD5N20L-266424.pdf" H 8450 1500 50 
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R83
+L Device:R R80
 U 1 1 5F7A2D3B
 P 7800 1700
-F 0 "R83" H 7650 1750 50  0000 L CNN
+F 0 "R80" H 7650 1750 50  0000 L CNN
 F 1 "100k" H 7550 1650 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 7730 1700 50  0001 C CNN
 F 3 "~" H 7800 1700 50  0001 C CNN
@@ -396,10 +396,10 @@ F 3 "https://www.mouser.com/datasheet/2/149/FQD5N20L-266424.pdf" H 2150 3000 50 
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R84
+L Device:R R81
 U 1 1 5F7ADC95
 P 1500 3200
-F 0 "R84" H 1350 3250 50  0000 L CNN
+F 0 "R81" H 1350 3250 50  0000 L CNN
 F 1 "100k" H 1250 3150 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 1430 3200 50  0001 C CNN
 F 3 "~" H 1500 3200 50  0001 C CNN
@@ -463,10 +463,10 @@ F 3 "https://www.mouser.com/datasheet/2/149/FQD5N20L-266424.pdf" H 4250 3000 50 
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R85
+L Device:R R82
 U 1 1 5F7ADCC2
 P 3600 3200
-F 0 "R85" H 3450 3250 50  0000 L CNN
+F 0 "R82" H 3450 3250 50  0000 L CNN
 F 1 "100k" H 3350 3150 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 3530 3200 50  0001 C CNN
 F 3 "~" H 3600 3200 50  0001 C CNN
@@ -530,10 +530,10 @@ F 3 "https://www.mouser.com/datasheet/2/149/FQD5N20L-266424.pdf" H 6350 3000 50 
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R86
+L Device:R R83
 U 1 1 5F7ADCEF
 P 5700 3200
-F 0 "R86" H 5550 3250 50  0000 L CNN
+F 0 "R83" H 5550 3250 50  0000 L CNN
 F 1 "100k" H 5450 3150 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 5630 3200 50  0001 C CNN
 F 3 "~" H 5700 3200 50  0001 C CNN
@@ -597,10 +597,10 @@ F 3 "https://www.mouser.com/datasheet/2/149/FQD5N20L-266424.pdf" H 8450 3000 50 
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R87
+L Device:R R84
 U 1 1 5F7ADD1C
 P 7800 3200
-F 0 "R87" H 7650 3250 50  0000 L CNN
+F 0 "R84" H 7650 3250 50  0000 L CNN
 F 1 "100k" H 7550 3150 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 7730 3200 50  0001 C CNN
 F 3 "~" H 7800 3200 50  0001 C CNN
@@ -664,10 +664,10 @@ F 3 "https://www.mouser.com/datasheet/2/149/FQD5N20L-266424.pdf" H 2150 4500 50 
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R88
+L Device:R R85
 U 1 1 5F7BAE2E
 P 1500 4700
-F 0 "R88" H 1350 4750 50  0000 L CNN
+F 0 "R85" H 1350 4750 50  0000 L CNN
 F 1 "100k" H 1250 4650 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 1430 4700 50  0001 C CNN
 F 3 "~" H 1500 4700 50  0001 C CNN
@@ -731,10 +731,10 @@ F 3 "https://www.mouser.com/datasheet/2/149/FQD5N20L-266424.pdf" H 4250 4500 50 
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R89
+L Device:R R86
 U 1 1 5F7BAE5B
 P 3600 4700
-F 0 "R89" H 3450 4750 50  0000 L CNN
+F 0 "R86" H 3450 4750 50  0000 L CNN
 F 1 "100k" H 3350 4650 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 3530 4700 50  0001 C CNN
 F 3 "~" H 3600 4700 50  0001 C CNN
@@ -798,10 +798,10 @@ F 3 "https://www.mouser.com/datasheet/2/149/FQD5N20L-266424.pdf" H 6350 4500 50 
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R90
+L Device:R R87
 U 1 1 5F7BAE88
 P 5700 4700
-F 0 "R90" H 5550 4750 50  0000 L CNN
+F 0 "R87" H 5550 4750 50  0000 L CNN
 F 1 "100k" H 5450 4650 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 5630 4700 50  0001 C CNN
 F 3 "~" H 5700 4700 50  0001 C CNN
@@ -865,10 +865,10 @@ F 3 "https://www.mouser.com/datasheet/2/149/FQD5N20L-266424.pdf" H 8450 4500 50 
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R91
+L Device:R R88
 U 1 1 5F7BAEB5
 P 7800 4700
-F 0 "R91" H 7650 4750 50  0000 L CNN
+F 0 "R88" H 7650 4750 50  0000 L CNN
 F 1 "100k" H 7550 4650 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 7730 4700 50  0001 C CNN
 F 3 "~" H 7800 4700 50  0001 C CNN
