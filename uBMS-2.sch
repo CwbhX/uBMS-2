@@ -876,17 +876,6 @@ Wire Wire Line
 Wire Wire Line
 	3200 1500 3150 1500
 $Comp
-L Device:R_Shunt R7
-U 1 1 5F2A2116
-P 7050 2000
-F 0 "R7" V 7050 2000 50  0000 C CNN
-F 1 "1m Ohm" V 6916 2000 50  0000 C CNN
-F 2 "Resistor_SMD:R_2512_CSNL2512" V 6980 2000 50  0001 C CNN
-F 3 "~" H 7050 2000 50  0001 C CNN
-	1    7050 2000
-	0    1    1    0   
-$EndComp
-$Comp
 L Reference_Voltage:TL431DBV U4
 U 1 1 5F2DE882
 P 6350 2550
@@ -1594,8 +1583,6 @@ Wire Wire Line
 	5250 3200 5250 3300
 Text Label 6750 2000 2    50   ~ 0
 Batt_Pos
-Wire Wire Line
-	6850 2000 6750 2000
 $Comp
 L Device:Fuse F1
 U 1 1 5F24DB09
@@ -1610,8 +1597,6 @@ $EndComp
 Connection ~ 5250 900 
 Text Label 7300 2000 0    50   ~ 0
 SYS_Pos
-Wire Wire Line
-	7300 2000 7250 2000
 Wire Notes Line
 	6200 1800 6200 3450
 Wire Notes Line
@@ -1694,17 +1679,9 @@ Wire Wire Line
 Wire Wire Line
 	6600 3000 6650 3000
 Wire Wire Line
-	6950 2400 6850 2400
-Wire Wire Line
 	6850 2400 6850 2500
 Wire Wire Line
-	6950 2150 6950 2400
-Wire Wire Line
-	7150 2400 7250 2400
-Wire Wire Line
 	7250 2400 7250 2500
-Wire Wire Line
-	7150 2150 7150 2400
 Text Label 7550 2800 1    50   ~ 0
 CurrentSense
 Wire Wire Line
@@ -2523,4 +2500,29 @@ Wire Notes Line
 	2000 3550 2000 4200
 Text Label 1150 4750 2    50   ~ 0
 Batt_Pos
+$Comp
+L Device:R R7
+U 1 1 5F2F0639
+P 7050 2000
+F 0 "R7" V 7050 2000 50  0000 C CNN
+F 1 "1m Ohm" V 6950 2000 50  0000 C CNN
+F 2 "Resistor_SMD:R_2512_CSNL2512" V 6980 2000 50  0001 C CNN
+F 3 "~" H 7050 2000 50  0001 C CNN
+	1    7050 2000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6900 2000 6900 2400
+Wire Wire Line
+	6900 2400 6850 2400
+Wire Wire Line
+	7200 2000 7200 2400
+Wire Wire Line
+	7200 2400 7250 2400
+Wire Wire Line
+	7200 2000 7300 2000
+Connection ~ 7200 2000
+Wire Wire Line
+	6750 2000 6900 2000
+Connection ~ 6900 2000
 $EndSCHEMATC
