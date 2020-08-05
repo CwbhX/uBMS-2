@@ -2536,4 +2536,58 @@ F 3 "~" H 1850 5500 50  0001 C CNN
 	1    1850 5500
 	-1   0    0    1   
 $EndComp
+Wire Notes Line
+	2350 5950 550  5950
+Text Notes 2350 6950 2    50   Italic 10
+Mounting Holes
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 5F47D2A9
+P 1000 6100
+F 0 "H1" H 1100 6146 50  0000 L CNN
+F 1 "MountingHole" H 600 6000 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2mm" H 1000 6100 50  0001 C CNN
+F 3 "~" H 1000 6100 50  0001 C CNN
+	1    1000 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 5F47E758
+P 2000 6100
+F 0 "H2" H 2100 6146 50  0000 L CNN
+F 1 "MountingHole" H 1600 6000 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2mm" H 2000 6100 50  0001 C CNN
+F 3 "~" H 2000 6100 50  0001 C CNN
+	1    2000 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H3
+U 1 1 5F47FEDB
+P 1000 6650
+F 0 "H3" H 1100 6696 50  0000 L CNN
+F 1 "MountingHole" H 600 6550 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2mm" H 1000 6650 50  0001 C CNN
+F 3 "~" H 1000 6650 50  0001 C CNN
+	1    1000 6650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H4
+U 1 1 5F47FEE1
+P 2000 6650
+F 0 "H4" H 2100 6696 50  0000 L CNN
+F 1 "MountingHole" H 1600 6550 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2mm" H 2000 6650 50  0001 C CNN
+F 3 "~" H 2000 6650 50  0001 C CNN
+	1    2000 6650
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	2350 5950 2350 6950
+Wire Notes Line
+	550  6000 550  6950
+Wire Notes Line
+	550  6950 2350 6950
 $EndSCHEMATC
