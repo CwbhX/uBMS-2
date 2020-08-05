@@ -2368,17 +2368,6 @@ Text Label 2100 4800 0    50   ~ 0
 SYS_RTN
 Wire Wire Line
 	2100 4800 2000 4800
-$Comp
-L Connector_Generic:Conn_01x02 J3
-U 1 1 5FDF9BBD
-P 1850 5450
-F 0 "J3" H 1768 5125 50  0000 C CNN
-F 1 "Conn_01x02" H 1768 5216 50  0000 C CNN
-F 2 "uBMS-2:1720430202" H 1850 5450 50  0001 C CNN
-F 3 "~" H 1850 5450 50  0001 C CNN
-	1    1850 5450
-	-1   0    0    1   
-$EndComp
 Text Label 2150 5350 0    50   ~ 0
 Batt_Pos
 Wire Wire Line
@@ -2386,18 +2375,18 @@ Wire Wire Line
 $Comp
 L power:GND #PWR037
 U 1 1 5FE34A27
-P 2150 5500
-F 0 "#PWR037" H 2150 5250 50  0001 C CNN
-F 1 "GND" H 2250 5400 50  0000 C CNN
-F 2 "" H 2150 5500 50  0001 C CNN
-F 3 "" H 2150 5500 50  0001 C CNN
-	1    2150 5500
+P 2150 5550
+F 0 "#PWR037" H 2150 5300 50  0001 C CNN
+F 1 "GND" H 2300 5500 50  0000 C CNN
+F 2 "" H 2150 5550 50  0001 C CNN
+F 3 "" H 2150 5550 50  0001 C CNN
+	1    2150 5550
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2050 5450 2150 5450
+	2050 5500 2150 5500
 Wire Wire Line
-	2150 5450 2150 5500
+	2150 5500 2150 5550
 Wire Notes Line
 	2650 4300 550  4300
 Wire Notes Line
@@ -2525,4 +2514,26 @@ Connection ~ 7200 2000
 Wire Wire Line
 	6750 2000 6900 2000
 Connection ~ 6900 2000
+$Comp
+L Connector_Generic:Conn_01x01 J3
+U 1 1 5F30D99E
+P 1850 5350
+F 0 "J3" H 1850 5250 50  0000 C CNN
+F 1 "Conn_01x01" H 1500 5200 50  0000 C CNN
+F 2 "MountingHole:MountingHole_3mm_Pad_Via" H 1850 5350 50  0001 C CNN
+F 3 "~" H 1850 5350 50  0001 C CNN
+	1    1850 5350
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J8
+U 1 1 5F30DEDE
+P 1850 5500
+F 0 "J8" H 1850 5600 50  0000 C CNN
+F 1 "Conn_01x01" H 1450 5450 50  0000 C CNN
+F 2 "MountingHole:MountingHole_3mm_Pad_Via" H 1850 5500 50  0001 C CNN
+F 3 "~" H 1850 5500 50  0001 C CNN
+	1    1850 5500
+	-1   0    0    1   
+$EndComp
 $EndSCHEMATC
