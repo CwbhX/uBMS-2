@@ -2587,7 +2587,7 @@ $EndComp
 Wire Notes Line
 	2350 5950 2350 6950
 Wire Notes Line
-	550  6000 550  6950
-Wire Notes Line
 	550  6950 2350 6950
+Wire Notes Line
+	550  5950 550  6950
 $EndSCHEMATC
