@@ -876,17 +876,6 @@ Wire Wire Line
 Wire Wire Line
 	3200 1500 3150 1500
 $Comp
-L Reference_Voltage:TL431DBV U4
-U 1 1 5F2DE882
-P 6350 2550
-F 0 "U4" V 6350 2500 50  0000 R CNN
-F 1 "TL431DBV" V 6250 2550 50  0000 R CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 6350 2300 50  0001 C CIN
-F 3 "http://www.ti.com/lit/ds/symlink/tl431.pdf" H 6350 2550 50  0001 C CIN
-	1    6350 2550
-	0    -1   -1   0   
-$EndComp
-$Comp
 L Device:R R8
 U 1 1 5F2E7D49
 P 6350 2300
@@ -2590,4 +2579,15 @@ Wire Notes Line
 	550  6950 2350 6950
 Wire Notes Line
 	550  5950 550  6950
+$Comp
+L Reference_Voltage:TL431DBZ U4
+U 1 1 5F3301B6
+P 6350 2550
+F 0 "U4" V 6396 2480 50  0000 R CNN
+F 1 "TL431DBZ" V 6250 2550 50  0000 R CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 6350 2400 50  0001 C CIN
+F 3 "http://www.ti.com/lit/ds/symlink/tl431.pdf" H 6350 2550 50  0001 C CIN
+	1    6350 2550
+	0    -1   -1   0   
+$EndComp
 $EndSCHEMATC

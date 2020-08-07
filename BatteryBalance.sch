@@ -27,42 +27,31 @@ F 3 "" H 9650 2850 50  0001 C CNN
 	1    9650 2850
 	1    0    0    -1  
 $EndComp
-Text Label 10100 2950 2    50   ~ 0
+Text Label 10700 2850 0    50   ~ 0
 Cell1_P
-Text Label 10100 3050 2    50   ~ 0
+Text Label 10100 2950 2    50   ~ 0
 Cell2_P
-Text Label 10100 3150 2    50   ~ 0
+Text Label 10700 2950 0    50   ~ 0
 Cell3_P
-Text Label 10100 3250 2    50   ~ 0
+Text Label 10100 3050 2    50   ~ 0
 Cell4_P
-Text Label 10100 3350 2    50   ~ 0
+Text Label 10700 3050 0    50   ~ 0
 Cell5_P
-Text Label 10100 3450 2    50   ~ 0
+Text Label 10100 3150 2    50   ~ 0
 Cell6_P
-$Comp
-L Connector_Generic:Conn_02x07_Counter_Clockwise J7
-U 1 1 5F78CA28
-P 10350 3150
-F 0 "J7" H 10400 3667 50  0000 C CNN
-F 1 "Conn_02x07_Counter_Clockwise" H 10400 3576 50  0000 C CNN
-F 2 "uBMS-2:Molex_Milli_Grid_0878325623" H 10350 3150 50  0001 C CNN
-F 3 "~" H 10350 3150 50  0001 C CNN
-	1    10350 3150
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	9650 2850 10150 2850
-Text Label 10700 3450 0    50   ~ 0
+Text Label 10700 3150 0    50   ~ 0
 Cell7_P
-Text Label 10700 3350 0    50   ~ 0
+Text Label 10100 3250 2    50   ~ 0
 Cell8_P
 Text Label 10700 3250 0    50   ~ 0
 Cell9_P
-Text Label 10700 3150 0    50   ~ 0
+Text Label 10100 3350 2    50   ~ 0
 Cell10_P
-Text Label 10700 3050 0    50   ~ 0
+Text Label 10700 3350 0    50   ~ 0
 Cell11_P
-Text Label 10700 2950 0    50   ~ 0
+Text Label 10100 3450 2    50   ~ 0
 Cell12_P
 Wire Wire Line
 	10100 2950 10150 2950
@@ -88,7 +77,6 @@ Wire Wire Line
 	10700 3050 10650 3050
 Wire Wire Line
 	10700 2950 10650 2950
-NoConn ~ 10650 2850
 $Comp
 L Device:C C15
 U 1 1 5F78D337
@@ -1012,4 +1000,18 @@ Connection ~ 6350 4850
 Wire Wire Line
 	8500 4850 8450 4850
 Connection ~ 8450 4850
+$Comp
+L Connector_Generic:Conn_02x07_Odd_Even J7
+U 1 1 5F34DEC3
+P 10350 3150
+F 0 "J7" H 10400 3667 50  0000 C CNN
+F 1 "Conn_02x07_Odd_Even" H 10400 3576 50  0000 C CNN
+F 2 "uBMS-2:Molex_Milli_Grid_0878325623_TopBottom" H 10350 3150 50  0001 C CNN
+F 3 "~" H 10350 3150 50  0001 C CNN
+	1    10350 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10700 2850 10650 2850
+NoConn ~ 10700 3450
 $EndSCHEMATC

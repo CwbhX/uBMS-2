@@ -113,71 +113,54 @@ Text HLabel 1450 2800 0    50   Input ~ 0
 Wire Wire Line
 	1450 2800 1500 2800
 $Comp
-L Connector_Generic:Conn_02x07_Counter_Clockwise J?
-U 1 1 5F68B135
-P 9900 1850
-AR Path="/5F70A721/5F68B135" Ref="J?"  Part="1" 
-AR Path="/5F70B1A3/5F68B135" Ref="J6"  Part="1" 
-F 0 "J6" H 9950 2300 50  0000 C CNN
-F 1 "Conn_02x07_Counter_Clockwise" H 9950 1450 50  0000 C CNN
-F 2 "uBMS-2:Molex_Milli_Grid_0878325623" H 9900 1850 50  0001 C CNN
-F 3 "~" H 9900 1850 50  0001 C CNN
-	1    9900 1850
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:+5V #PWR?
 U 1 1 5F68DF75
-P 9650 1550
+P 9000 2150
 AR Path="/5F70A721/5F68DF75" Ref="#PWR?"  Part="1" 
 AR Path="/5F70B1A3/5F68DF75" Ref="#PWR062"  Part="1" 
-F 0 "#PWR062" H 9650 1400 50  0001 C CNN
-F 1 "+5V" H 9665 1723 50  0000 C CNN
-F 2 "" H 9650 1550 50  0001 C CNN
-F 3 "" H 9650 1550 50  0001 C CNN
-	1    9650 1550
+F 0 "#PWR062" H 9000 2000 50  0001 C CNN
+F 1 "+5V" H 9015 2323 50  0000 C CNN
+F 2 "" H 9000 2150 50  0001 C CNN
+F 3 "" H 9000 2150 50  0001 C CNN
+	1    9000 2150
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:+5V #PWR?
 U 1 1 5F68E7C7
-P 10250 1550
+P 10850 2150
 AR Path="/5F70A721/5F68E7C7" Ref="#PWR?"  Part="1" 
 AR Path="/5F70B1A3/5F68E7C7" Ref="#PWR063"  Part="1" 
-F 0 "#PWR063" H 10250 1400 50  0001 C CNN
-F 1 "+5V" H 10265 1723 50  0000 C CNN
-F 2 "" H 10250 1550 50  0001 C CNN
-F 3 "" H 10250 1550 50  0001 C CNN
-	1    10250 1550
+F 0 "#PWR063" H 10850 2000 50  0001 C CNN
+F 1 "+5V" H 10865 2323 50  0000 C CNN
+F 2 "" H 10850 2150 50  0001 C CNN
+F 3 "" H 10850 2150 50  0001 C CNN
+	1    10850 2150
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	10250 1550 10200 1550
-Wire Wire Line
-	9700 1550 9650 1550
-Text Label 9600 1650 2    50   ~ 0
+Text Label 9600 1550 2    50   ~ 0
 CellTemp_1
-Text Label 9600 1750 2    50   ~ 0
+Text Label 10300 1550 0    50   ~ 0
 CellTemp_2
-Text Label 9600 1850 2    50   ~ 0
+Text Label 9600 1650 2    50   ~ 0
 CellTemp_3
-Text Label 9600 1950 2    50   ~ 0
-CellTemp_4
-Text Label 9600 2050 2    50   ~ 0
-CellTemp_5
-Text Label 9600 2150 2    50   ~ 0
-CellTemp_6
-Text Label 10300 2150 0    50   ~ 0
-CellTemp_7
-Text Label 10300 2050 0    50   ~ 0
-CellTemp_8
-Text Label 10300 1950 0    50   ~ 0
-CellTemp_9
-Text Label 10300 1850 0    50   ~ 0
-CellTemp_10
-Text Label 10300 1750 0    50   ~ 0
-CellTemp_11
 Text Label 10300 1650 0    50   ~ 0
+CellTemp_4
+Text Label 9600 1750 2    50   ~ 0
+CellTemp_5
+Text Label 10300 1750 0    50   ~ 0
+CellTemp_6
+Text Label 9600 1850 2    50   ~ 0
+CellTemp_7
+Text Label 10300 1850 0    50   ~ 0
+CellTemp_8
+Text Label 9600 1950 2    50   ~ 0
+CellTemp_9
+Text Label 10300 1950 0    50   ~ 0
+CellTemp_10
+Text Label 9600 2050 2    50   ~ 0
+CellTemp_11
+Text Label 10300 2050 0    50   ~ 0
 CellTemp_12
 Wire Wire Line
 	9600 1650 9700 1650
@@ -189,10 +172,6 @@ Wire Wire Line
 	9600 1950 9700 1950
 Wire Wire Line
 	9600 2050 9700 2050
-Wire Wire Line
-	9600 2150 9700 2150
-Wire Wire Line
-	10200 2150 10300 2150
 Wire Wire Line
 	10200 2050 10300 2050
 Wire Wire Line
@@ -849,4 +828,23 @@ Wire Wire Line
 	2500 2900 2600 2900
 Wire Wire Line
 	2500 3000 2600 3000
+$Comp
+L Connector_Generic:Conn_02x07_Odd_Even J6
+U 1 1 5F36EBDC
+P 9900 1850
+F 0 "J6" H 9950 2367 50  0000 C CNN
+F 1 "Conn_02x07_Odd_Even" H 9950 2276 50  0000 C CNN
+F 2 "uBMS-2:Molex_Milli_Grid_0878325623_TopBottom" H 9900 1850 50  0001 C CNN
+F 3 "~" H 9900 1850 50  0001 C CNN
+	1    9900 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10200 1550 10300 1550
+Wire Wire Line
+	9600 1550 9700 1550
+Wire Wire Line
+	9000 2150 9700 2150
+Wire Wire Line
+	10200 2150 10850 2150
 $EndSCHEMATC

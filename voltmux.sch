@@ -89,42 +89,31 @@ F 3 "" H 9400 2100 50  0001 C CNN
 	1    9400 2100
 	1    0    0    -1  
 $EndComp
-Text Label 9850 2200 2    50   ~ 0
+Text Label 10450 2100 0    50   ~ 0
 Cell1_P
-Text Label 9850 2300 2    50   ~ 0
+Text Label 9850 2200 2    50   ~ 0
 Cell2_P
-Text Label 9850 2400 2    50   ~ 0
+Text Label 10450 2200 0    50   ~ 0
 Cell3_P
-Text Label 9850 2500 2    50   ~ 0
+Text Label 9850 2300 2    50   ~ 0
 Cell4_P
-Text Label 9850 2600 2    50   ~ 0
+Text Label 10450 2300 0    50   ~ 0
 Cell5_P
-Text Label 9850 2700 2    50   ~ 0
+Text Label 9850 2400 2    50   ~ 0
 Cell6_P
-$Comp
-L Connector_Generic:Conn_02x07_Counter_Clockwise J5
-U 1 1 5F55EF88
-P 10100 2400
-F 0 "J5" H 10150 2917 50  0000 C CNN
-F 1 "Conn_02x07_Counter_Clockwise" H 10150 2826 50  0000 C CNN
-F 2 "uBMS-2:Molex_Milli_Grid_0878325623" H 10100 2400 50  0001 C CNN
-F 3 "~" H 10100 2400 50  0001 C CNN
-	1    10100 2400
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	9400 2100 9900 2100
-Text Label 10450 2700 0    50   ~ 0
+Text Label 10450 2400 0    50   ~ 0
 Cell7_P
-Text Label 10450 2600 0    50   ~ 0
+Text Label 9850 2500 2    50   ~ 0
 Cell8_P
 Text Label 10450 2500 0    50   ~ 0
 Cell9_P
-Text Label 10450 2400 0    50   ~ 0
+Text Label 9850 2600 2    50   ~ 0
 Cell10_P
-Text Label 10450 2300 0    50   ~ 0
+Text Label 10450 2600 0    50   ~ 0
 Cell11_P
-Text Label 10450 2200 0    50   ~ 0
+Text Label 9850 2700 2    50   ~ 0
 Cell12_P
 Wire Wire Line
 	9850 2200 9900 2200
@@ -150,7 +139,6 @@ Wire Wire Line
 	10450 2300 10400 2300
 Wire Wire Line
 	10450 2200 10400 2200
-NoConn ~ 10400 2100
 Text Label 2900 1650 0    50   ~ 0
 Cell1_P
 Wire Wire Line
@@ -854,4 +842,18 @@ Text HLabel 1800 2950 0    50   Input ~ 0
 ~Enable~
 Wire Wire Line
 	1800 2950 1850 2950
+$Comp
+L Connector_Generic:Conn_02x07_Odd_Even J5
+U 1 1 5F37E464
+P 10100 2400
+F 0 "J5" H 10150 2917 50  0000 C CNN
+F 1 "Conn_02x07_Odd_Even" H 10150 2826 50  0000 C CNN
+F 2 "uBMS-2:Molex_Milli_Grid_0878325623_TopBottom" H 10100 2400 50  0001 C CNN
+F 3 "~" H 10100 2400 50  0001 C CNN
+	1    10100 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10450 2100 10400 2100
+NoConn ~ 10450 2700
 $EndSCHEMATC
