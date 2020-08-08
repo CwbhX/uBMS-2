@@ -538,8 +538,6 @@ Wire Wire Line
 	8350 1550 8300 1550
 Wire Wire Line
 	8350 1650 8300 1650
-Text Label 8300 1350 2    50   ~ 0
-ADC_Int
 Wire Wire Line
 	8350 1350 8300 1350
 Wire Notes Line
@@ -2590,4 +2588,5 @@ F 3 "http://www.ti.com/lit/ds/symlink/tl431.pdf" H 6350 2550 50  0001 C CIN
 	1    6350 2550
 	0    -1   -1   0   
 $EndComp
+NoConn ~ 8300 1350
 $EndSCHEMATC
