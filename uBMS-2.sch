@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:uBMS-2-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -308,131 +307,21 @@ Wire Notes Line
 	550  4250 550  550 
 Text Notes 4700 4250 2    50   Italic 10
 ESP32 Wroom Module
-$Comp
-L Regulator_Switching:LM2576HVS-5 U1
-U 1 1 5F1F2819
-P 6000 1000
-F 0 "U1" H 6000 1367 50  0000 C CNN
-F 1 "LM2576HVS-5" H 6000 1276 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:TO-263-5_TabPin3" H 6000 750 50  0001 L CIN
-F 3 "http://www.ti.com/lit/ds/symlink/lm2576.pdf" H 6000 1000 50  0001 C CNN
-	1    6000 1000
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR09
-U 1 1 5F1F457A
-P 6000 1500
-F 0 "#PWR09" H 6000 1250 50  0001 C CNN
-F 1 "GND" H 6100 1350 50  0000 C CNN
-F 2 "" H 6000 1500 50  0001 C CNN
-F 3 "" H 6000 1500 50  0001 C CNN
-	1    6000 1500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5500 1100 5450 1100
-$Comp
-L Device:C_Small CIN1
-U 1 1 5F1F582D
-P 5250 1050
-F 0 "CIN1" H 5050 1100 50  0000 L CNN
-F 1 "100uF 60V" H 4800 950 50  0000 L CNN
-F 2 "Capacitor_SMD:CP_Elec_10x10" H 5250 1050 50  0001 C CNN
-F 3 "~" H 5250 1050 50  0001 C CNN
-	1    5250 1050
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5500 900  5250 900 
-Wire Wire Line
-	5250 900  5250 950 
-Text Label 4950 900  2    50   ~ 0
+Text Label 4950 850  2    50   ~ 0
 V_IN
-$Comp
-L Device:D D2
-U 1 1 5F1F8176
-P 6700 1300
-F 0 "D2" V 6654 1379 50  0000 L CNN
-F 1 "D" V 6745 1379 50  0000 L CNN
-F 2 "Diode_SMD:D_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6700 1300 50  0001 C CNN
-F 3 "~" H 6700 1300 50  0001 C CNN
-	1    6700 1300
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	6700 1150 6700 1100
-Wire Wire Line
-	6700 1100 6500 1100
-Wire Wire Line
-	6700 1450 6000 1450
-Connection ~ 6000 1450
-Wire Wire Line
-	6000 1300 6000 1450
-Wire Wire Line
-	5450 1450 6000 1450
-Wire Wire Line
-	5450 1100 5450 1450
-Wire Wire Line
-	5250 1450 5450 1450
-Wire Wire Line
-	5250 1150 5250 1450
-Connection ~ 5450 1450
 Wire Wire Line
 	6000 1500 6000 1450
 $Comp
-L Device:L L1
-U 1 1 5F1FBECD
-P 7050 1100
-F 0 "L1" V 7150 1200 50  0000 C CNN
-F 1 "100uH" V 7150 1000 50  0000 C CNN
-F 2 "Inductor_SMD:L_12x12mm_H8mm" H 7050 1100 50  0001 C CNN
-F 3 "~" H 7050 1100 50  0001 C CNN
-	1    7050 1100
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	6900 1100 6700 1100
-Connection ~ 6700 1100
-$Comp
-L Device:C_Small COUT1
-U 1 1 5F1FD11C
-P 7450 1250
-F 0 "COUT1" H 7150 1250 50  0000 L CNN
-F 1 "1000uF" H 7150 1150 50  0000 L CNN
-F 2 "Capacitor_SMD:CP_Elec_10x10" H 7450 1250 50  0001 C CNN
-F 3 "~" H 7450 1250 50  0001 C CNN
-	1    7450 1250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7450 1150 7450 1100
-Wire Wire Line
-	7450 1100 7200 1100
-Wire Wire Line
-	7450 1450 6700 1450
-Connection ~ 6700 1450
-Wire Wire Line
-	7450 1350 7450 1450
-Wire Wire Line
-	7450 1100 7450 900 
-Wire Wire Line
-	7450 900  6500 900 
-Connection ~ 7450 1100
-$Comp
 L power:+5V #PWR05
 U 1 1 5F20091E
-P 7600 900
-F 0 "#PWR05" H 7600 750 50  0001 C CNN
-F 1 "+5V" H 7615 1073 50  0000 C CNN
-F 2 "" H 7600 900 50  0001 C CNN
-F 3 "" H 7600 900 50  0001 C CNN
-	1    7600 900 
+P 7500 850
+F 0 "#PWR05" H 7500 700 50  0001 C CNN
+F 1 "+5V" H 7515 1023 50  0000 C CNN
+F 2 "" H 7500 850 50  0001 C CNN
+F 3 "" H 7500 850 50  0001 C CNN
+	1    7500 850 
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	7600 900  7450 900 
-Connection ~ 7450 900 
 Wire Notes Line
 	4750 550  7750 550 
 Wire Notes Line
@@ -1573,15 +1462,18 @@ Batt_Pos
 $Comp
 L Device:Fuse F1
 U 1 1 5F24DB09
-P 5100 900
-F 0 "F1" V 4903 900 50  0000 C CNN
-F 1 "1A PTC" V 4994 900 50  0000 C CNN
-F 2 "Fuse:Fuse_2920_7451Metric_Pad2.10x5.45mm_HandSolder" V 5030 900 50  0001 C CNN
-F 3 "~" H 5100 900 50  0001 C CNN
-	1    5100 900 
+P 5100 850
+F 0 "F1" V 5150 700 50  0000 C CNN
+F 1 "0ZCF0030FF2C" V 4900 850 50  0000 C CNN
+F 2 "Fuse:Fuse_2920_7451Metric_Pad2.10x5.45mm_HandSolder" V 5030 850 50  0001 C CNN
+F 3 "https://belfuse.com/resources/datasheets/circuitprotection/ds-cp-0zcf-series.pdf" H 5100 850 50  0001 C CNN
+F 4 "0ZCF0030FF2C" V 5000 900 50  0001 C CNN "Part Number"
+F 5 "507-1740-2-ND" V 5100 850 50  0001 C CNN "Digikey Number"
+F 6 "0.23" V 5100 850 50  0001 C CNN "Price ($)"
+F 7 "300mA PTC" V 5000 850 50  0000 C CNN "Comment"
+	1    5100 850 
 	0    1    1    0   
 $EndComp
-Connection ~ 5250 900 
 Text Label 7300 2000 0    50   ~ 0
 SYS_Pos
 Wire Notes Line
@@ -2195,12 +2087,12 @@ $EndComp
 $Comp
 L Device:R_Small R19
 U 1 1 5F631E38
-P 7100 4400
-F 0 "R19" V 7000 4400 50  0000 C CNN
-F 1 "4.7k" V 7200 4400 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 7100 4400 50  0001 C CNN
-F 3 "~" H 7100 4400 50  0001 C CNN
-	1    7100 4400
+P 7300 4400
+F 0 "R19" V 7200 4400 50  0000 C CNN
+F 1 "4.7k" V 7400 4400 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 7300 4400 50  0001 C CNN
+F 3 "~" H 7300 4400 50  0001 C CNN
+	1    7300 4400
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
@@ -2208,14 +2100,10 @@ Wire Wire Line
 Wire Wire Line
 	6750 4700 6850 4700
 Wire Wire Line
-	7100 4700 7100 4500
-Wire Wire Line
-	7100 4300 7100 4150
+	7300 4700 7300 4500
 Wire Wire Line
 	6850 4650 6850 4700
 Connection ~ 6850 4700
-Wire Wire Line
-	6850 4700 7100 4700
 Wire Wire Line
 	6550 4650 6550 4750
 Wire Wire Line
@@ -2313,13 +2201,6 @@ Wire Wire Line
 Connection ~ 8250 3250
 Wire Wire Line
 	8250 3250 8250 3350
-Wire Wire Line
-	7300 4050 7300 4150
-Wire Wire Line
-	7050 4150 7100 4150
-Wire Wire Line
-	7100 4150 7300 4150
-Connection ~ 7100 4150
 Text Label 1250 4750 0    50   ~ 0
 V_IN
 Wire Wire Line
@@ -2597,4 +2478,200 @@ Wire Wire Line
 Connection ~ 5150 4250
 Wire Wire Line
 	5150 4250 5150 4150
+Wire Wire Line
+	6850 4700 7300 4700
+Wire Wire Line
+	7050 4150 7100 4150
+Wire Wire Line
+	7100 4150 7100 4750
+Connection ~ 7100 4750
+Wire Wire Line
+	7300 4050 7300 4300
+Wire Wire Line
+	5250 850  5450 850 
+Wire Wire Line
+	5650 950  5600 950 
+Wire Wire Line
+	5600 950  5600 850 
+Connection ~ 5600 850 
+Wire Wire Line
+	5600 850  5650 850 
+$Comp
+L Device:R R?
+U 1 1 5FD49783
+P 5450 1450
+F 0 "R?" V 5450 1450 50  0000 C CNN
+F 1 "47.5k" V 5550 1450 50  0000 C CNN
+F 2 "" V 5380 1450 50  0001 C CNN
+F 3 "~" H 5450 1450 50  0001 C CNN
+	1    5450 1450
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FD4AF37
+P 5250 1500
+F 0 "#PWR?" H 5250 1250 50  0001 C CNN
+F 1 "GND" H 5255 1327 50  0000 C CNN
+F 2 "" H 5250 1500 50  0001 C CNN
+F 3 "" H 5250 1500 50  0001 C CNN
+	1    5250 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5250 1500 5250 1450
+Wire Wire Line
+	5250 1450 5300 1450
+Wire Wire Line
+	5600 1450 5650 1450
+$Comp
+L Device:L L?
+U 1 1 5FD86FAC
+P 6700 850
+F 0 "L?" V 6890 850 50  0000 C CNN
+F 1 "47uH" V 6799 850 50  0000 C CNN
+F 2 "" H 6700 850 50  0001 C CNN
+F 3 "https://search.murata.co.jp/Ceramy/image/img/P02/J(E)TE243B-0037_DG6045C_reference.pdf" H 6700 850 50  0001 C CNN
+F 4 "1255AY-470M=P3" V 6700 850 50  0001 C CNN "Part Number"
+F 5 "490-10811-2-ND" V 6700 850 50  0001 C CNN "Digikey Number"
+F 6 "0.42" V 6700 850 50  0001 C CNN "Price"
+F 7 "47uH 1.3A 210mmho SMD" V 6700 850 50  0001 C CNN "Comment"
+	1    6700 850 
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6550 850  6450 850 
+Wire Wire Line
+	7150 950  7150 850 
+Wire Wire Line
+	7150 850  7000 850 
+Wire Wire Line
+	7150 850  7500 850 
+Connection ~ 7150 850 
+$Comp
+L Device:C_Small COUT
+U 1 1 5FDFC497
+P 7150 1050
+F 0 "COUT" H 7242 1096 50  0000 L CNN
+F 1 "47uF" H 7242 1005 50  0000 L CNN
+F 2 "" H 7150 1050 50  0001 C CNN
+F 3 "~" H 7150 1050 50  0001 C CNN
+	1    7150 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FDFCC7F
+P 5950 1650
+F 0 "#PWR?" H 5950 1400 50  0001 C CNN
+F 1 "GND" H 5800 1600 50  0000 C CNN
+F 2 "" H 5950 1650 50  0001 C CNN
+F 3 "" H 5950 1650 50  0001 C CNN
+	1    5950 1650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6050 1650 5950 1650
+$Comp
+L power:GND #PWR?
+U 1 1 5FE19EE8
+P 7150 1200
+F 0 "#PWR?" H 7150 950 50  0001 C CNN
+F 1 "GND" H 7300 1150 50  0000 C CNN
+F 2 "" H 7150 1200 50  0001 C CNN
+F 3 "" H 7150 1200 50  0001 C CNN
+	1    7150 1200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7150 1150 7150 1200
+Wire Wire Line
+	6450 1050 7000 1050
+Wire Wire Line
+	7000 1050 7000 850 
+Connection ~ 7000 850 
+Wire Wire Line
+	7000 850  6850 850 
+Connection ~ 5950 1650
+$Comp
+L Regulator_Switching:LM5166X U?
+U 1 1 5FCEEEAF
+P 6050 1150
+F 0 "U?" H 5800 1600 50  0000 C CNN
+F 1 "LM5166X" H 6050 1626 50  0000 C CNN
+F 2 "Package_SON:Texas_S-PVSON-N10_ThermalVias" H 6100 700 50  0001 L CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm5166.pdf" H 6050 1700 50  0001 C CNN
+F 4 "LM5166XDRCR" H 6050 1150 50  0001 C CNN "Part Number"
+F 5 "296-47662-2-ND" H 6050 1150 50  0001 C CNN "Digikey Number"
+F 6 "5v 500mA Buck Converter" H 6050 1150 50  0001 C CNN "Comment"
+	1    6050 1150
+	1    0    0    -1  
+$EndComp
+NoConn ~ 5650 1150
+Wire Wire Line
+	5250 1250 5250 1450
+Connection ~ 5250 1450
+$Comp
+L Device:C_Small C?
+U 1 1 5FEAAF3A
+P 6750 1350
+F 0 "C?" H 6842 1396 50  0000 L CNN
+F 1 "33nF" H 6842 1305 50  0000 L CNN
+F 2 "" H 6750 1350 50  0001 C CNN
+F 3 "~" H 6750 1350 50  0001 C CNN
+	1    6750 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5FEAC265
+P 6550 1500
+F 0 "R?" V 6550 1500 50  0000 C CNN
+F 1 "105k" V 6650 1500 50  0000 C CNN
+F 2 "" V 6480 1500 50  0001 C CNN
+F 3 "~" H 6550 1500 50  0001 C CNN
+	1    6550 1500
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6550 1350 6450 1350
+Wire Wire Line
+	6450 1250 6750 1250
+Wire Wire Line
+	6550 1650 6050 1650
+Connection ~ 6050 1650
+Wire Wire Line
+	6750 1450 6750 1650
+Wire Wire Line
+	6750 1650 6550 1650
+Connection ~ 6550 1650
+$Comp
+L Device:C_Small CIN?
+U 1 1 5FF23088
+P 5450 1000
+F 0 "CIN?" H 5200 1050 50  0000 L CNN
+F 1 "2.2uF" H 5150 950 50  0000 L CNN
+F 2 "" H 5450 1000 50  0001 C CNN
+F 3 "~" H 5450 1000 50  0001 C CNN
+	1    5450 1000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5450 900  5450 850 
+Connection ~ 5450 850 
+Wire Wire Line
+	5450 850  5600 850 
+Wire Wire Line
+	5250 1250 5650 1250
+$Comp
+L power:GND #PWR?
+U 1 1 5FF6174B
+P 5450 1100
+F 0 "#PWR?" H 5450 850 50  0001 C CNN
+F 1 "GND" H 5300 1050 50  0000 C CNN
+F 2 "" H 5450 1100 50  0001 C CNN
+F 3 "" H 5450 1100 50  0001 C CNN
+	1    5450 1100
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
