@@ -6,10 +6,11 @@
 - 
 
 ## Inductors
-- Buck Converter Inductor: [1255AY-470M=P3](https://search.murata.co.jp/Ceramy/image/img/P02/J(E)TE243B-0037_DG6045C_reference.pdf)
+- Buck Converter Inductor 100uH: [1267AY-101M=P3](https://www.murata.com/~/media/webrenewal/products/inductor/chip/tokoproducts/wirewoundferritetypeforpl/m_dg8040c.ashx?la=en)
 
 ## Diodes
 - USB-C Power Input 1A Schottky: [RB162VAM-20TR](https://d1d2qsbl8m0m72.cloudfront.net/en/products/databook/datasheet/discrete/diode/schottky_barrier/rb162vam-20tr-e.pdf)
+- USB TVS Protection Diodes: [TPD1E10B06QDPYRQ1](https://www.ti.com/lit/ds/symlink/tpd1e10b06-q1.pdf?HQS=TI-null-null-digikeymode-df-pf-null-wwe&ts=1606712128437)
 
 ## Transistors
 - 
@@ -25,4 +26,5 @@
 ## Indicators
 - Red UART RX LED: [150060VS55040](https://www.we-online.de/web/en/index.php/download/media/07_electronic_components/download_center_1/application_notes_berichte/ano002_leds___the_future_of_horticultural_lighting/ANO002b_EN_LEDs_The_Future_of_Horticultural_Lighting.pdf)
 - Green UART TX LED: [150060SS55040](https://www.we-online.de/web/en/index.php/download/media/07_electronic_components/download_center_1/application_notes_berichte/ano002_leds___the_future_of_horticultural_lighting/ANO002b_EN_LEDs_The_Future_of_Horticultural_Lighting.pdf)
+- Yellow LED: [150060YS55040](https://www.we-online.de/web/en/index.php/download/media/07_electronic_components/download_center_1/application_notes_berichte/ano002_leds___the_future_of_horticultural_lighting/ANO002b_EN_LEDs_The_Future_of_Horticultural_Lighting.pdf)
 
