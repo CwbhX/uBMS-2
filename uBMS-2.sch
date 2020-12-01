@@ -41,22 +41,22 @@ Buck Converter Power Supply
 $Comp
 L Analog_ADC:ADS1115IDGS U2
 U 1 1 5F207292
-P 10450 6100
-F 0 "U2" H 10200 6550 50  0000 C CNN
-F 1 "ADS1115IDGS" H 10150 5750 50  0000 C CNN
-F 2 "Package_SO:TSSOP-10_3x3mm_P0.5mm" H 10450 5600 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/ads1113.pdf" H 10400 5200 50  0001 C CNN
-	1    10450 6100
+P 14950 5750
+F 0 "U2" H 14700 6200 50  0000 C CNN
+F 1 "ADS1115IDGS" H 14650 5400 50  0000 C CNN
+F 2 "Package_SO:TSSOP-10_3x3mm_P0.5mm" H 14950 5250 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/ads1113.pdf" H 14900 4850 50  0001 C CNN
+	1    14950 5750
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	10050 6300 10000 6300
+	14550 5950 14500 5950
 Wire Wire Line
-	10000 6300 10000 6550
+	14500 5950 14500 6200
 Wire Wire Line
-	10000 6550 10450 6550
+	14500 6200 14950 6200
 Wire Wire Line
-	10450 6550 10450 6500
+	14950 6200 14950 6150
 $Comp
 L power:GND #PWR028
 U 1 1 5F20A0C9
@@ -69,247 +69,210 @@ F 3 "" H 15450 1750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	10450 6600 10450 6550
-Connection ~ 10450 6550
+	14950 6250 14950 6200
+Connection ~ 14950 6200
 $Comp
 L power:+5V #PWR03
 U 1 1 5F20B1F0
-P 10450 5350
-F 0 "#PWR03" H 10450 5200 50  0001 C CNN
-F 1 "+5V" H 10465 5523 50  0000 C CNN
-F 2 "" H 10450 5350 50  0001 C CNN
-F 3 "" H 10450 5350 50  0001 C CNN
-	1    10450 5350
+P 14950 5000
+F 0 "#PWR03" H 14950 4850 50  0001 C CNN
+F 1 "+5V" H 14965 5173 50  0000 C CNN
+F 2 "" H 14950 5000 50  0001 C CNN
+F 3 "" H 14950 5000 50  0001 C CNN
+	1    14950 5000
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C_Small C1
 U 1 1 5F20BBDE
-P 10300 5450
-F 0 "C1" H 10150 5500 50  0000 L CNN
-F 1 "0.1uF" H 10000 5400 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric" H 10300 5450 50  0001 C CNN
-F 3 "~" H 10300 5450 50  0001 C CNN
-	1    10300 5450
+P 14800 5100
+F 0 "C1" H 14650 5150 50  0000 L CNN
+F 1 "0.1uF" H 14500 5050 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 14800 5100 50  0001 C CNN
+F 3 "~" H 14800 5100 50  0001 C CNN
+	1    14800 5100
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	10450 5350 10450 5600
+	14950 5000 14950 5250
 Wire Wire Line
-	10300 5350 10450 5350
-Connection ~ 10450 5350
+	14800 5000 14950 5000
+Connection ~ 14950 5000
 $Comp
 L power:GND #PWR06
 U 1 1 5F20DFE2
-P 10300 5600
-F 0 "#PWR06" H 10300 5350 50  0001 C CNN
-F 1 "GND" H 10150 5550 50  0000 C CNN
-F 2 "" H 10300 5600 50  0001 C CNN
-F 3 "" H 10300 5600 50  0001 C CNN
-	1    10300 5600
+P 14800 5250
+F 0 "#PWR06" H 14800 5000 50  0001 C CNN
+F 1 "GND" H 14650 5200 50  0000 C CNN
+F 2 "" H 14800 5250 50  0001 C CNN
+F 3 "" H 14800 5250 50  0001 C CNN
+	1    14800 5250
 	1    0    0    -1  
 $EndComp
-Text Label 10900 6000 0    50   ~ 0
+Text Label 15400 5650 0    50   ~ 0
 VoltageSense
-Text Label 10900 6100 0    50   ~ 0
+Text Label 15400 5750 0    50   ~ 0
 TempSense
-Text Label 10900 6200 0    50   ~ 0
+Text Label 15400 5850 0    50   ~ 0
 CurrentSense
-Text Label 10900 6300 0    50   ~ 0
+Text Label 15400 5950 0    50   ~ 0
 ExtADCInput
 Wire Wire Line
-	10900 6000 10850 6000
+	15400 5650 15350 5650
 Wire Wire Line
-	10900 6100 10850 6100
+	15400 5750 15350 5750
 Wire Wire Line
-	10900 6200 10850 6200
+	15400 5850 15350 5850
 Wire Wire Line
-	10900 6300 10850 6300
-Text Label 10000 6100 2    50   ~ 0
+	15400 5950 15350 5950
+Text Label 14500 5750 2    50   ~ 0
 SCL_5V
-Text Label 10000 6200 2    50   ~ 0
+Text Label 14500 5850 2    50   ~ 0
 SDA_5V
 Wire Wire Line
-	10050 6100 10000 6100
+	14550 5750 14500 5750
 Wire Wire Line
-	10050 6200 10000 6200
+	14550 5850 14500 5850
 Wire Wire Line
-	10050 5900 10000 5900
+	14550 5550 14500 5550
 Wire Notes Line
-	9500 5100 9500 6850
+	14000 4750 14000 6500
 Wire Notes Line
-	9500 6850 11450 6850
+	14000 6500 15950 6500
 Wire Notes Line
-	11450 6850 11450 5100
+	15950 6500 15950 4750
 Wire Notes Line
-	11450 5100 9500 5100
-Text Notes 11450 6850 2    50   Italic 10
+	15950 4750 14000 4750
+Text Notes 15950 6500 2    50   Italic 10
 External ADC - 16-bit
-$Comp
-L Transistor_FET:2N7002 Q1
-U 1 1 5F21FBB7
-P 13350 3300
-F 0 "Q1" V 13600 3200 50  0000 C CNN
-F 1 "2N7002" V 13600 3450 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 13550 3225 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7002.pdf" H 13350 3300 50  0001 L CNN
-	1    13350 3300
-	0    1    1    0   
-$EndComp
-$Comp
-L Transistor_FET:2N7002 Q2
-U 1 1 5F225AE3
-P 13350 4250
-F 0 "Q2" V 13600 4150 50  0000 C CNN
-F 1 "2N7002" V 13600 4400 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 13550 4175 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7002.pdf" H 13350 4250 50  0001 L CNN
-	1    13350 4250
-	0    1    1    0   
-$EndComp
 $Comp
 L power:+3V3 #PWR01
 U 1 1 5F22E404
-P 13350 3050
-F 0 "#PWR01" H 13350 2900 50  0001 C CNN
-F 1 "+3V3" H 13200 3150 50  0000 C CNN
-F 2 "" H 13350 3050 50  0001 C CNN
-F 3 "" H 13350 3050 50  0001 C CNN
-	1    13350 3050
+P 15200 3050
+F 0 "#PWR01" H 15200 2900 50  0001 C CNN
+F 1 "+3V3" H 15050 3150 50  0000 C CNN
+F 2 "" H 15200 3050 50  0001 C CNN
+F 3 "" H 15200 3050 50  0001 C CNN
+	1    15200 3050
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:+3V3 #PWR014
 U 1 1 5F23078A
-P 13350 4000
-F 0 "#PWR014" H 13350 3850 50  0001 C CNN
-F 1 "+3V3" H 13365 4173 50  0000 C CNN
-F 2 "" H 13350 4000 50  0001 C CNN
-F 3 "" H 13350 4000 50  0001 C CNN
-	1    13350 4000
+P 15200 4000
+F 0 "#PWR014" H 15200 3850 50  0001 C CNN
+F 1 "+3V3" H 15215 4173 50  0000 C CNN
+F 2 "" H 15200 4000 50  0001 C CNN
+F 3 "" H 15200 4000 50  0001 C CNN
+	1    15200 4000
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R R1
 U 1 1 5F232EC7
-P 13000 3200
-F 0 "R1" H 13070 3246 50  0000 L CNN
-F 1 "2.2k" H 13070 3155 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 12930 3200 50  0001 C CNN
-F 3 "~" H 13000 3200 50  0001 C CNN
-	1    13000 3200
+P 14850 3200
+F 0 "R1" H 14920 3246 50  0000 L CNN
+F 1 "2.2k" H 14920 3155 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 14780 3200 50  0001 C CNN
+F 3 "~" H 14850 3200 50  0001 C CNN
+	1    14850 3200
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R R2
 U 1 1 5F2338F8
-P 13600 3200
-F 0 "R2" H 13670 3246 50  0000 L CNN
-F 1 "2.2k" H 13670 3155 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 13530 3200 50  0001 C CNN
-F 3 "~" H 13600 3200 50  0001 C CNN
-	1    13600 3200
+P 15600 3200
+F 0 "R2" H 15670 3246 50  0000 L CNN
+F 1 "2.2k" H 15670 3155 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 15530 3200 50  0001 C CNN
+F 3 "~" H 15600 3200 50  0001 C CNN
+	1    15600 3200
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R R5
 U 1 1 5F2341A9
-P 13000 4150
-F 0 "R5" H 13070 4196 50  0000 L CNN
-F 1 "2.2k" H 13070 4105 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 12930 4150 50  0001 C CNN
-F 3 "~" H 13000 4150 50  0001 C CNN
-	1    13000 4150
+P 14850 4150
+F 0 "R5" H 14920 4196 50  0000 L CNN
+F 1 "2.2k" H 14920 4105 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 14780 4150 50  0001 C CNN
+F 3 "~" H 14850 4150 50  0001 C CNN
+	1    14850 4150
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R R6
 U 1 1 5F234A5C
-P 13600 4150
-F 0 "R6" H 13670 4196 50  0000 L CNN
-F 1 "2.2k" H 13670 4105 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 13530 4150 50  0001 C CNN
-F 3 "~" H 13600 4150 50  0001 C CNN
-	1    13600 4150
+P 15600 4150
+F 0 "R6" H 15670 4196 50  0000 L CNN
+F 1 "2.2k" H 15670 4105 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 15530 4150 50  0001 C CNN
+F 3 "~" H 15600 4150 50  0001 C CNN
+	1    15600 4150
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	13000 3050 13350 3050
+	14850 3050 15200 3050
 Wire Wire Line
-	13350 3100 13350 3050
-Connection ~ 13350 3050
+	15200 4000 15200 4050
 Wire Wire Line
-	13350 4000 13350 4050
+	15200 4000 14850 4000
+Connection ~ 15200 4000
 Wire Wire Line
-	13350 4000 13000 4000
-Connection ~ 13350 4000
+	14850 4350 14850 4300
 Wire Wire Line
-	13150 4350 13000 4350
-Wire Wire Line
-	13000 4350 13000 4300
-Wire Wire Line
-	13150 3400 13000 3400
-Wire Wire Line
-	13000 3400 13000 3350
-Text Label 12950 3400 2    50   ~ 0
+	14850 3400 14850 3350
+Text Label 14800 3400 2    50   ~ 0
 SDA_3V3
 Wire Wire Line
-	13000 3400 12950 3400
-Connection ~ 13000 3400
-Text Label 12950 4350 2    50   ~ 0
+	14850 3400 14800 3400
+Connection ~ 14850 3400
+Text Label 14800 4350 2    50   ~ 0
 SCL_3V3
 Wire Wire Line
-	12950 4350 13000 4350
-Connection ~ 13000 4350
+	14800 4350 14850 4350
+Connection ~ 14850 4350
 $Comp
 L power:+5V #PWR02
 U 1 1 5F2416DE
-P 13600 3050
-F 0 "#PWR02" H 13600 2900 50  0001 C CNN
-F 1 "+5V" H 13700 3150 50  0000 C CNN
-F 2 "" H 13600 3050 50  0001 C CNN
-F 3 "" H 13600 3050 50  0001 C CNN
-	1    13600 3050
+P 15600 3050
+F 0 "#PWR02" H 15600 2900 50  0001 C CNN
+F 1 "+5V" H 15700 3150 50  0000 C CNN
+F 2 "" H 15600 3050 50  0001 C CNN
+F 3 "" H 15600 3050 50  0001 C CNN
+	1    15600 3050
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:+5V #PWR015
 U 1 1 5F241DEA
-P 13600 4000
-F 0 "#PWR015" H 13600 3850 50  0001 C CNN
-F 1 "+5V" H 13615 4173 50  0000 C CNN
-F 2 "" H 13600 4000 50  0001 C CNN
-F 3 "" H 13600 4000 50  0001 C CNN
-	1    13600 4000
+P 15600 4000
+F 0 "#PWR015" H 15600 3850 50  0001 C CNN
+F 1 "+5V" H 15615 4173 50  0000 C CNN
+F 2 "" H 15600 4000 50  0001 C CNN
+F 3 "" H 15600 4000 50  0001 C CNN
+	1    15600 4000
 	1    0    0    -1  
 $EndComp
-Text Label 13650 3400 0    50   ~ 0
+Text Label 15650 3400 0    50   ~ 0
 SDA_5V
-Text Label 13650 4350 0    50   ~ 0
+Text Label 15650 4350 0    50   ~ 0
 SCL_5V
 Wire Wire Line
-	13550 4350 13600 4350
+	15600 4300 15600 4350
+Connection ~ 15600 4350
 Wire Wire Line
-	13600 4300 13600 4350
-Connection ~ 13600 4350
+	15600 4350 15650 4350
 Wire Wire Line
-	13600 4350 13650 4350
+	15600 3350 15600 3400
+Connection ~ 15600 3400
 Wire Wire Line
-	13550 3400 13600 3400
-Wire Wire Line
-	13600 3350 13600 3400
-Connection ~ 13600 3400
-Wire Wire Line
-	13600 3400 13650 3400
+	15600 3400 15650 3400
 Wire Notes Line
-	12600 4650 12600 2900
+	14450 4650 14450 2900
 Wire Notes Line
-	12600 2900 13950 2900
-Wire Notes Line
-	13950 2900 13950 4650
-Wire Notes Line
-	13950 4650 12600 4650
-Text Notes 13950 4650 2    50   Italic 10
+	15950 2900 15950 4650
+Text Notes 15950 4650 2    50   Italic 10
 I2C Level Shifter + Pullups
 $Comp
 L Regulator_Linear:TLV1117-33 U3
@@ -543,7 +506,7 @@ Wire Wire Line
 	15050 750  15050 700 
 Wire Wire Line
 	15050 700  15100 700 
-Text Notes 9950 6850 2    50   Italic 0
+Text Notes 14450 6500 2    50   Italic 0
 ADDR: 0x48
 Wire Wire Line
 	13550 750  13550 700 
@@ -576,12 +539,12 @@ Wire Notes Line
 $Comp
 L power:GND #PWR018
 U 1 1 5F422500
-P 10450 6600
-F 0 "#PWR018" H 10450 6350 50  0001 C CNN
-F 1 "GND" H 10550 6600 50  0000 C CNN
-F 2 "" H 10450 6600 50  0001 C CNN
-F 3 "" H 10450 6600 50  0001 C CNN
-	1    10450 6600
+P 14950 6250
+F 0 "#PWR018" H 14950 6000 50  0001 C CNN
+F 1 "GND" H 15050 6250 50  0000 C CNN
+F 2 "" H 14950 6250 50  0001 C CNN
+F 3 "" H 14950 6250 50  0001 C CNN
+	1    14950 6250
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -805,24 +768,17 @@ Wire Notes Line
 Text Notes 12000 4950 2    50   Italic 10
 7-Segment
 $Comp
-L Device:LED D8
-U 1 1 5F664B22
-P 10700 4500
-F 0 "D8" V 10739 4383 50  0000 R CNN
-F 1 "LED" V 10648 4383 50  0000 R CNN
-F 2 "LED_SMD:LED_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 10700 4500 50  0001 C CNN
-F 3 "~" H 10700 4500 50  0001 C CNN
-	1    10700 4500
-	0    -1   -1   0   
-$EndComp
-$Comp
 L Device:LED D7
 U 1 1 5F666853
 P 10350 4500
-F 0 "D7" V 10389 4383 50  0000 R CNN
-F 1 "LED" V 10298 4383 50  0000 R CNN
-F 2 "LED_SMD:LED_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 10350 4500 50  0001 C CNN
-F 3 "~" H 10350 4500 50  0001 C CNN
+F 0 "D7" V 10450 4500 50  0000 R CNN
+F 1 "GREEN_LED" H 10550 4600 50  0000 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Castellated" H 10350 4500 50  0001 C CNN
+F 3 "https://www.we-online.de/web/en/index.php/download/media/07_electronic_components/download_center_1/application_notes_berichte/ano002_leds___the_future_of_horticultural_lighting/ANO002b_EN_LEDs_The_Future_of_Horticultural_Lighting.pdf" H 10350 4500 50  0001 C CNN
+F 4 "150060VS55040" V 10350 4500 50  0001 C CNN "Part Number"
+F 5 "732-12017-2-ND" V 10350 4500 50  0001 C CNN "Digikey Number"
+F 6 "0.18" V 10350 4500 50  0001 C CNN "Price ($)"
+F 7 "Green 573nm LED Indication - Discrete 2V 0603 (1608 Metric)" V 10350 4500 50  0001 C CNN "Comment"
 	1    10350 4500
 	0    -1   -1   0   
 $EndComp
@@ -830,10 +786,14 @@ $Comp
 L Device:LED D6
 U 1 1 5F666FBD
 P 10000 4500
-F 0 "D6" V 10039 4383 50  0000 R CNN
-F 1 "LED" V 9948 4383 50  0000 R CNN
-F 2 "LED_SMD:LED_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 10000 4500 50  0001 C CNN
-F 3 "~" H 10000 4500 50  0001 C CNN
+F 0 "D6" V 10100 4500 50  0000 R CNN
+F 1 "YELLOW_LED" H 10250 4600 50  0000 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Castellated" H 10000 4500 50  0001 C CNN
+F 3 "https://www.we-online.de/web/en/index.php/download/media/07_electronic_components/download_center_1/application_notes_berichte/ano002_leds___the_future_of_horticultural_lighting/ANO002b_EN_LEDs_The_Future_of_Horticultural_Lighting.pdf" H 10000 4500 50  0001 C CNN
+F 4 "150060YS55040" V 10000 4500 50  0001 C CNN "Part Number"
+F 5 "732-12018-2-ND" V 10000 4500 50  0001 C CNN "Digikey Number"
+F 6 "0.18" V 10000 4500 50  0001 C CNN "Price ($)"
+F 7 "Yellow 589nm LED Indication - Discrete 2V 0603 (1608 Metric)" V 10000 4500 50  0001 C CNN "Comment"
 	1    10000 4500
 	0    -1   -1   0   
 $EndComp
@@ -841,10 +801,14 @@ $Comp
 L Device:LED D5
 U 1 1 5F667385
 P 9650 4500
-F 0 "D5" V 9689 4383 50  0000 R CNN
-F 1 "LED" V 9598 4383 50  0000 R CNN
-F 2 "LED_SMD:LED_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 9650 4500 50  0001 C CNN
-F 3 "~" H 9650 4500 50  0001 C CNN
+F 0 "D5" V 9750 4500 50  0000 R CNN
+F 1 "RED_LED" H 9750 4600 50  0000 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Castellated" H 9650 4500 50  0001 C CNN
+F 3 "https://www.we-online.de/web/en/index.php/download/media/07_electronic_components/download_center_1/application_notes_berichte/ano002_leds___the_future_of_horticultural_lighting/ANO002b_EN_LEDs_The_Future_of_Horticultural_Lighting.pdf" H 9650 4500 50  0001 C CNN
+F 4 "150060SS55040" V 9650 4500 50  0001 C CNN "Part Number"
+F 5 "732-12016-2-ND" V 9650 4500 50  0001 C CNN "Digikey Number"
+F 6 "0.18" V 9650 4500 50  0001 C CNN "Price ($)"
+F 7 "Red 630nm LED Indication - Discrete 2V 0603 (1608 Metric)" V 9650 4500 50  0001 C CNN "Comment"
 	1    9650 4500
 	0    -1   -1   0   
 $EndComp
@@ -853,7 +817,7 @@ L Device:R R25
 U 1 1 5F667730
 P 9650 4200
 F 0 "R25" V 9650 4150 50  0000 L CNN
-F 1 "270R" V 9550 4100 50  0000 L CNN
+F 1 "470R" V 9750 4100 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 9580 4200 50  0001 C CNN
 F 3 "~" H 9650 4200 50  0001 C CNN
 	1    9650 4200
@@ -864,7 +828,7 @@ L Device:R R26
 U 1 1 5F667C35
 P 10000 4200
 F 0 "R26" V 10000 4150 50  0000 L CNN
-F 1 "270R" V 9900 4100 50  0000 L CNN
+F 1 "470R" V 10100 4100 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 9930 4200 50  0001 C CNN
 F 3 "~" H 10000 4200 50  0001 C CNN
 	1    10000 4200
@@ -875,7 +839,7 @@ L Device:R R27
 U 1 1 5F667E2F
 P 10350 4200
 F 0 "R27" V 10350 4150 50  0000 L CNN
-F 1 "270R" V 10250 4100 50  0000 L CNN
+F 1 "470R" V 10450 4100 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 10280 4200 50  0001 C CNN
 F 3 "~" H 10350 4200 50  0001 C CNN
 	1    10350 4200
@@ -886,7 +850,7 @@ L Device:R R28
 U 1 1 5F66802D
 P 10700 4200
 F 0 "R28" V 10700 4150 50  0000 L CNN
-F 1 "270R" V 10600 4100 50  0000 L CNN
+F 1 "470R" V 10800 4100 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 10630 4200 50  0001 C CNN
 F 3 "~" H 10700 4200 50  0001 C CNN
 	1    10700 4200
@@ -947,15 +911,11 @@ LED_BAT_Y
 Text Label 9650 4050 1    50   ~ 0
 LED_BAT_R
 Wire Notes Line
-	9500 3550 9500 4950
+	9450 3550 9450 4950
 Text Notes 11000 4950 2    50   Italic 10
 Batt Indicators
 Wire Notes Line
 	11000 4950 11000 3550
-Wire Notes Line
-	9500 3550 11000 3550
-Wire Notes Line
-	9500 4950 11000 4950
 $Sheet
 S 5150 5000 650  650 
 U 5F70A721
@@ -1548,7 +1508,7 @@ Connection ~ 15450 1450
 Wire Wire Line
 	15450 1450 15450 1500
 Wire Wire Line
-	10300 5600 10300 5550
+	14800 5250 14800 5200
 Wire Wire Line
 	13050 700  13050 1450
 Wire Wire Line
@@ -1674,7 +1634,11 @@ P 11800 2000
 F 0 "R7" V 11800 2000 50  0000 C CNN
 F 1 "1m Ohm" V 11700 2000 50  0000 C CNN
 F 2 "Resistor_SMD:R_2512_CSNL2512" V 11730 2000 50  0001 C CNN
-F 3 "~" H 11800 2000 50  0001 C CNN
+F 3 "https://www.seielect.com/catalog/sei-csnl.pdf" H 11800 2000 50  0001 C CNN
+F 4 "CSNL2512FT1L00" V 11800 2000 50  0001 C CNN "Part Number"
+F 5 "CSNL2512FT1L00TR-ND" V 11800 2000 50  0001 C CNN "Digikey Number"
+F 6 "0.59" V 11800 2000 50  0001 C CNN "Price ($)"
+F 7 "1 mOhms ±1% 2W Chip Resistor 2512 (6432 Metric) Current Sense, Moisture Resistant Metal Element" V 11800 2000 50  0001 C CNN "Comment"
 	1    11800 2000
 	0    1    1    0   
 $EndComp
@@ -1757,7 +1721,7 @@ F 3 "http://www.ti.com/lit/ds/symlink/tl431.pdf" H 11100 2550 50  0001 C CIN
 	1    11100 2550
 	0    -1   -1   0   
 $EndComp
-NoConn ~ 10000 5900
+NoConn ~ 14500 5550
 $Comp
 L power:+5V #PWR089
 U 1 1 5FBBA21E
@@ -1996,8 +1960,12 @@ U 1 1 60BAB526
 P 3650 1500
 F 0 "D2" V 3650 1650 50  0000 R CNN
 F 1 "150060VS55040" H 3550 1550 50  0000 R CNN
-F 2 "" H 3650 1500 50  0001 C CNN
-F 3 "~" H 3650 1500 50  0001 C CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Castellated" H 3650 1500 50  0001 C CNN
+F 3 "https://www.we-online.de/web/en/index.php/download/media/07_electronic_components/download_center_1/application_notes_berichte/ano002_leds___the_future_of_horticultural_lighting/ANO002b_EN_LEDs_The_Future_of_Horticultural_Lighting.pdf" H 3650 1500 50  0001 C CNN
+F 4 "150060VS55040" V 3650 1500 50  0001 C CNN "Part Number"
+F 5 "732-12017-2-ND" V 3650 1500 50  0001 C CNN "Digikey Number"
+F 6 "0.18" V 3650 1500 50  0001 C CNN "Price ($)"
+F 7 "LED GREEN DIFFUSED 0603 SMD" V 3650 1500 50  0001 C CNN "Comment"
 	1    3650 1500
 	0    -1   -1   0   
 $EndComp
@@ -2007,8 +1975,12 @@ U 1 1 60BA9A51
 P 4000 1500
 F 0 "D3" V 4000 1400 50  0000 R CNN
 F 1 "150060SS55040" H 3900 1550 50  0000 R CNN
-F 2 "" H 4000 1500 50  0001 C CNN
-F 3 "~" H 4000 1500 50  0001 C CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Castellated" H 4000 1500 50  0001 C CNN
+F 3 "https://www.we-online.de/web/en/index.php/download/media/07_electronic_components/download_center_1/application_notes_berichte/ano002_leds___the_future_of_horticultural_lighting/ANO002b_EN_LEDs_The_Future_of_Horticultural_Lighting.pdf" H 4000 1500 50  0001 C CNN
+F 4 "150060SS55040" V 4000 1500 50  0001 C CNN "Part Number"
+F 5 "732-12016-2-ND" V 4000 1500 50  0001 C CNN "Digikey Number"
+F 6 "0.18" V 4000 1500 50  0001 C CNN "Price ($)"
+F 7 "LED RED DIFFUSED 0603 SMS" V 4000 1500 50  0001 C CNN "Comment"
 	1    4000 1500
 	0    -1   -1   0   
 $EndComp
@@ -2162,8 +2134,12 @@ U 1 1 606AB993
 P 8300 850
 F 0 "D1" H 8300 750 50  0000 C CNN
 F 1 "RB162VAM-20TR" H 8400 1000 50  0000 C CNN
-F 2 "" H 8300 850 50  0001 C CNN
+F 2 "Diode_SMD:D_TUMD2" H 8300 850 50  0001 C CNN
 F 3 "https://d1d2qsbl8m0m72.cloudfront.net/en/products/databook/datasheet/discrete/diode/schottky_barrier/rb162vam-20tr-e.pdf" H 8300 850 50  0001 C CNN
+F 4 "RB162VAM-20TR" H 8300 850 50  0001 C CNN "Part Number"
+F 5 "RB162VAM-20TRTR-ND" H 8300 850 50  0001 C CNN "Digikey Number"
+F 6 "0.35" H 8300 850 50  0001 C CNN "Price ($)"
+F 7 "DIODE SCHOTTKY 20V 1A TUMD2M" H 8300 850 50  0001 C CNN "Comment"
 	1    8300 850 
 	1    0    0    -1  
 $EndComp
@@ -2600,8 +2576,12 @@ U 1 1 6018DD6E
 P 5350 1850
 F 0 "U12" H 5000 2750 50  0000 C CNN
 F 1 "CP2102N-A02-GQFN24" H 5000 1000 50  0000 C CNN
-F 2 "" H 5250 3100 50  0001 C CNN
-F 3 "" H 5250 3100 50  0001 C CNN
+F 2 "Package_DFN_QFN:QFN-24-1EP_4x4mm_P0.5mm_EP2.6x2.6mm" H 5250 3100 50  0001 C CNN
+F 3 "https://www.silabs.com/documents/public/data-sheets/cp2102n-datasheet.pdf" H 5250 3100 50  0001 C CNN
+F 4 "CP2102N-A02-GQFN24" H 5350 1850 50  0001 C CNN "Part Number"
+F 5 "336-5887-ND" H 5350 1850 50  0001 C CNN "Digikey Number"
+F 6 "1.35" H 5350 1850 50  0001 C CNN "Price ($)"
+F 7 "USB Bridge, USB to UART USB 2.0 UART Interface 24-QFN (4x4)" H 5350 1850 50  0001 C CNN "Comment"
 	1    5350 1850
 	1    0    0    -1  
 $EndComp
@@ -2731,31 +2711,13 @@ U 1 1 5FD2A087
 P 6150 2450
 F 0 "D4" V 6104 2530 50  0000 L CNN
 F 1 "TPD1E10B06QDPYRQ1" H 5850 2350 50  0000 L CNN
-F 2 "" H 6150 2450 50  0001 C CNN
+F 2 "Diode_SMD:D_0402_1005Metric" H 6150 2450 50  0001 C CNN
 F 3 "https://www.ti.com/lit/ds/symlink/tpd1e10b06-q1.pdf?HQS=TI-null-null-digikeymode-df-pf-null-wwe&ts=1606712128437" H 6150 2450 50  0001 C CNN
+F 4 "TPD1E10B06QDPYRQ1" V 6150 2450 50  0001 C CNN "Part Number"
+F 5 "296-TPD1E10B06QDPYRQ1TR-ND" V 6150 2450 50  0001 C CNN "Digikey Number"
+F 6 "0.41" V 6150 2450 50  0001 C CNN "Price ($)"
+F 7 "TVS DIODE 5.5V 14V 2X1SON" V 6150 2450 50  0001 C CNN "Comment"
 	1    6150 2450
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:D_Zener D21
-U 1 1 5FD2B922
-P 6600 2450
-F 0 "D21" V 6554 2530 50  0000 L CNN
-F 1 "TPD1E10B06QDPYRQ1" H 6300 2350 50  0000 L CNN
-F 2 "" H 6600 2450 50  0001 C CNN
-F 3 "https://www.ti.com/lit/ds/symlink/tpd1e10b06-q1.pdf?HQS=TI-null-null-digikeymode-df-pf-null-wwe&ts=1606712128437" H 6600 2450 50  0001 C CNN
-	1    6600 2450
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:D_Zener D22
-U 1 1 5FD2C0E1
-P 7050 2450
-F 0 "D22" V 7004 2530 50  0000 L CNN
-F 1 "TPD1E10B06QDPYRQ1" H 6750 2350 50  0000 L CNN
-F 2 "" H 7050 2450 50  0001 C CNN
-F 3 "https://www.ti.com/lit/ds/symlink/tpd1e10b06-q1.pdf?HQS=TI-null-null-digikeymode-df-pf-null-wwe&ts=1606712128437" H 7050 2450 50  0001 C CNN
-	1    7050 2450
 	0    1    1    0   
 $EndComp
 Text Label 6150 2150 0    50   ~ 0
@@ -2814,14 +2776,118 @@ Wire Notes Line
 Wire Notes Line
 	3450 550  9400 550 
 $Comp
-L Connector_Generic:Conn_01x02 J?
+L Connector_Generic:Conn_01x02 J3
 U 1 1 5FEADAE5
 P 1850 7350
-F 0 "J?" H 1768 7025 50  0000 C CNN
+F 0 "J3" H 1768 7025 50  0000 C CNN
 F 1 "XT60PW-M20" H 1650 7100 50  0000 C CNN
 F 2 "ClementsFootprints:XT60PW-M20" H 1850 7350 50  0001 C CNN
 F 3 "https://www.tme.eu/Document/9b8d0c5eb7094295f3d3112c214d3ade/XT60PW%20SPEC.pdf" H 1850 7350 50  0001 C CNN
 	1    1850 7350
 	-1   0    0    1   
 $EndComp
+$Comp
+L Device:D_Zener D?
+U 1 1 5FF00358
+P 6600 2450
+F 0 "D?" V 6554 2530 50  0000 L CNN
+F 1 "TPD1E10B06QDPYRQ1" H 6300 2350 50  0000 L CNN
+F 2 "Diode_SMD:D_0402_1005Metric" H 6600 2450 50  0001 C CNN
+F 3 "https://www.ti.com/lit/ds/symlink/tpd1e10b06-q1.pdf?HQS=TI-null-null-digikeymode-df-pf-null-wwe&ts=1606712128437" H 6600 2450 50  0001 C CNN
+F 4 "TPD1E10B06QDPYRQ1" V 6600 2450 50  0001 C CNN "Part Number"
+F 5 "296-TPD1E10B06QDPYRQ1TR-ND" V 6600 2450 50  0001 C CNN "Digikey Number"
+F 6 "0.41" V 6600 2450 50  0001 C CNN "Price ($)"
+F 7 "TVS DIODE 5.5V 14V 2X1SON" V 6600 2450 50  0001 C CNN "Comment"
+	1    6600 2450
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_Zener D?
+U 1 1 5FF00A0E
+P 7050 2450
+F 0 "D?" V 7004 2530 50  0000 L CNN
+F 1 "TPD1E10B06QDPYRQ1" H 6750 2350 50  0000 L CNN
+F 2 "Diode_SMD:D_0402_1005Metric" H 7050 2450 50  0001 C CNN
+F 3 "https://www.ti.com/lit/ds/symlink/tpd1e10b06-q1.pdf?HQS=TI-null-null-digikeymode-df-pf-null-wwe&ts=1606712128437" H 7050 2450 50  0001 C CNN
+F 4 "TPD1E10B06QDPYRQ1" V 7050 2450 50  0001 C CNN "Part Number"
+F 5 "296-TPD1E10B06QDPYRQ1TR-ND" V 7050 2450 50  0001 C CNN "Digikey Number"
+F 6 "0.41" V 7050 2450 50  0001 C CNN "Price ($)"
+F 7 "TVS DIODE 5.5V 14V 2X1SON" V 7050 2450 50  0001 C CNN "Comment"
+	1    7050 2450
+	0    1    1    0   
+$EndComp
+$Comp
+L dk_Transistors-FETs-MOSFETs-Single:2N7002 Q?
+U 1 1 5FF06AC3
+P 15300 3400
+F 0 "Q?" V 15450 3450 60  0000 L CNN
+F 1 "2N7002" V 15450 3000 60  0000 L CNN
+F 2 "digikey-footprints:SOT-23-3" H 15500 3600 60  0001 L CNN
+F 3 "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF" H 15500 3700 60  0001 L CNN
+F 4 "2N7002NCT-ND" H 15500 3800 60  0001 L CNN "Digi-Key_PN"
+F 5 "2N7002" H 15500 3900 60  0001 L CNN "MPN"
+F 6 "Discrete Semiconductor Products" H 15500 4000 60  0001 L CNN "Category"
+F 7 "Transistors - FETs, MOSFETs - Single" H 15500 4100 60  0001 L CNN "Family"
+F 8 "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF" H 15500 4200 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/on-semiconductor/2N7002/2N7002NCT-ND/244664" H 15500 4300 60  0001 L CNN "DK_Detail_Page"
+F 10 "MOSFET N-CH 60V 115MA SOT-23" H 15500 4400 60  0001 L CNN "Description"
+F 11 "ON Semiconductor" H 15500 4500 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 15500 4600 60  0001 L CNN "Status"
+	1    15300 3400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	15500 3400 15600 3400
+Wire Wire Line
+	14850 3400 15100 3400
+Wire Wire Line
+	15200 3100 15200 3050
+Connection ~ 15200 3050
+$Comp
+L dk_Transistors-FETs-MOSFETs-Single:2N7002 Q?
+U 1 1 60017C06
+P 15300 4350
+F 0 "Q?" V 15450 4400 60  0000 L CNN
+F 1 "2N7002" V 15450 3950 60  0000 L CNN
+F 2 "digikey-footprints:SOT-23-3" H 15500 4550 60  0001 L CNN
+F 3 "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF" H 15500 4650 60  0001 L CNN
+F 4 "2N7002NCT-ND" H 15500 4750 60  0001 L CNN "Digi-Key_PN"
+F 5 "2N7002" H 15500 4850 60  0001 L CNN "MPN"
+F 6 "Discrete Semiconductor Products" H 15500 4950 60  0001 L CNN "Category"
+F 7 "Transistors - FETs, MOSFETs - Single" H 15500 5050 60  0001 L CNN "Family"
+F 8 "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF" H 15500 5150 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/on-semiconductor/2N7002/2N7002NCT-ND/244664" H 15500 5250 60  0001 L CNN "DK_Detail_Page"
+F 10 "MOSFET N-CH 60V 115MA SOT-23" H 15500 5350 60  0001 L CNN "Description"
+F 11 "ON Semiconductor" H 15500 5450 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 15500 5550 60  0001 L CNN "Status"
+	1    15300 4350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	15500 4350 15600 4350
+Wire Wire Line
+	14850 4350 15100 4350
+Wire Notes Line
+	14450 4650 15950 4650
+Wire Notes Line
+	14450 2900 15950 2900
+$Comp
+L Device:LED D?
+U 1 1 6017C6D4
+P 10700 4500
+F 0 "D?" V 10800 4500 50  0000 R CNN
+F 1 "GREEN_LED" H 10900 4600 50  0000 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Castellated" H 10700 4500 50  0001 C CNN
+F 3 "https://www.we-online.de/web/en/index.php/download/media/07_electronic_components/download_center_1/application_notes_berichte/ano002_leds___the_future_of_horticultural_lighting/ANO002b_EN_LEDs_The_Future_of_Horticultural_Lighting.pdf" H 10700 4500 50  0001 C CNN
+F 4 "150060VS55040" V 10700 4500 50  0001 C CNN "Part Number"
+F 5 "732-12017-2-ND" V 10700 4500 50  0001 C CNN "Digikey Number"
+F 6 "0.18" V 10700 4500 50  0001 C CNN "Price ($)"
+F 7 "Green 573nm LED Indication - Discrete 2V 0603 (1608 Metric)" V 10700 4500 50  0001 C CNN "Comment"
+	1    10700 4500
+	0    -1   -1   0   
+$EndComp
+Wire Notes Line
+	9450 3550 11000 3550
+Wire Notes Line
+	9450 4950 11000 4950
 $EndSCHEMATC
