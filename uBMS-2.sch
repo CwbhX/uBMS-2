@@ -1563,26 +1563,26 @@ Wire Wire Line
 $Comp
 L Connector_Generic:Conn_01x02 J2
 U 1 1 5FDA1C2F
-P 1800 6650
-F 0 "J2" H 1718 6325 50  0000 C CNN
-F 1 "Conn_01x02" H 1718 6416 50  0000 C CNN
-F 2 "uBMS-2:1720430202" H 1800 6650 50  0001 C CNN
-F 3 "~" H 1800 6650 50  0001 C CNN
-	1    1800 6650
+P 1850 6650
+F 0 "J2" H 1768 6325 50  0000 C CNN
+F 1 "XT60PW-M20" H 1650 6400 50  0000 C CNN
+F 2 "ClementsFootprints:XT60PW-M20" H 1850 6650 50  0001 C CNN
+F 3 "https://www.tme.eu/Document/9b8d0c5eb7094295f3d3112c214d3ade/XT60PW%20SPEC.pdf" H 1850 6650 50  0001 C CNN
+	1    1850 6650
 	-1   0    0    1   
 $EndComp
-Text Label 2100 6550 0    50   ~ 0
+Text Label 2150 6550 0    50   ~ 0
 SYS_Pos
 Wire Wire Line
-	2100 6550 2000 6550
-Text Label 2100 6650 0    50   ~ 0
+	2150 6550 2050 6550
+Text Label 2150 6650 0    50   ~ 0
 SYS_RTN
 Wire Wire Line
-	2100 6650 2000 6650
-Text Label 2150 7200 0    50   ~ 0
+	2150 6650 2050 6650
+Text Label 2150 7250 0    50   ~ 0
 Batt_Pos
 Wire Wire Line
-	2150 7200 2050 7200
+	2150 7250 2050 7250
 $Comp
 L power:GND #PWR037
 U 1 1 5FE34A27
@@ -1692,28 +1692,6 @@ Connection ~ 11950 2000
 Wire Wire Line
 	11500 2000 11650 2000
 Connection ~ 11650 2000
-$Comp
-L Connector_Generic:Conn_01x01 J3
-U 1 1 5F30D99E
-P 1850 7200
-F 0 "J3" H 1850 7100 50  0000 C CNN
-F 1 "Conn_01x01" H 1500 7050 50  0000 C CNN
-F 2 "MountingHole:MountingHole_3mm_Pad_Via" H 1850 7200 50  0001 C CNN
-F 3 "~" H 1850 7200 50  0001 C CNN
-	1    1850 7200
-	-1   0    0    1   
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x01 J8
-U 1 1 5F30DEDE
-P 1850 7350
-F 0 "J8" H 1850 7450 50  0000 C CNN
-F 1 "Conn_01x01" H 1450 7300 50  0000 C CNN
-F 2 "MountingHole:MountingHole_3mm_Pad_Via" H 1850 7350 50  0001 C CNN
-F 3 "~" H 1850 7350 50  0001 C CNN
-	1    1850 7350
-	-1   0    0    1   
-$EndComp
 Wire Notes Line
 	2350 7850 550  7850
 Text Notes 2350 8850 2    50   Italic 10
@@ -2835,4 +2813,15 @@ Wire Notes Line
 	3450 3000 9400 3000
 Wire Notes Line
 	3450 550  9400 550 
+$Comp
+L Connector_Generic:Conn_01x02 J?
+U 1 1 5FEADAE5
+P 1850 7350
+F 0 "J?" H 1768 7025 50  0000 C CNN
+F 1 "XT60PW-M20" H 1650 7100 50  0000 C CNN
+F 2 "ClementsFootprints:XT60PW-M20" H 1850 7350 50  0001 C CNN
+F 3 "https://www.tme.eu/Document/9b8d0c5eb7094295f3d3112c214d3ade/XT60PW%20SPEC.pdf" H 1850 7350 50  0001 C CNN
+	1    1850 7350
+	-1   0    0    1   
+$EndComp
 $EndSCHEMATC
