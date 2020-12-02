@@ -2565,8 +2565,12 @@ U 1 1 60128930
 P 7850 1850
 F 0 "J1" H 7900 2600 50  0000 R CNN
 F 1 "USB_C_Receptacle_USB2.0" V 7350 2350 50  0000 R CNN
-F 2 "" H 8000 1850 50  0001 C CNN
+F 2 "ClementsFootprints:DX07S016JA1R1500" H 8000 1850 50  0001 C CNN
 F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 8000 1850 50  0001 C CNN
+F 4 "DX07S016JA1R1500" H 7850 1850 50  0001 C CNN "Part Number"
+F 5 "670-DX07S016JA1R1500TR-ND" H 7850 1850 50  0001 C CNN "Digikey Number"
+F 6 "1.51" H 7850 1850 50  0001 C CNN "Price ($)"
+F 7 "USB-C (USB TYPE-C) USB 2.0 Receptacle Connector 24 (16+8 Dummy) Position Surface Mount, Right Angle; Through Hole" H 7850 1850 50  0001 C CNN "Comment"
 	1    7850 1850
 	1    0    0    -1  
 $EndComp
@@ -2787,10 +2791,10 @@ F 3 "https://www.tme.eu/Document/9b8d0c5eb7094295f3d3112c214d3ade/XT60PW%20SPEC.
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:D_Zener D?
+L Device:D_Zener D8
 U 1 1 5FF00358
 P 6600 2450
-F 0 "D?" V 6554 2530 50  0000 L CNN
+F 0 "D8" V 6554 2530 50  0000 L CNN
 F 1 "TPD1E10B06QDPYRQ1" H 6300 2350 50  0000 L CNN
 F 2 "Diode_SMD:D_0402_1005Metric" H 6600 2450 50  0001 C CNN
 F 3 "https://www.ti.com/lit/ds/symlink/tpd1e10b06-q1.pdf?HQS=TI-null-null-digikeymode-df-pf-null-wwe&ts=1606712128437" H 6600 2450 50  0001 C CNN
@@ -2802,10 +2806,10 @@ F 7 "TVS DIODE 5.5V 14V 2X1SON" V 6600 2450 50  0001 C CNN "Comment"
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:D_Zener D?
+L Device:D_Zener D21
 U 1 1 5FF00A0E
 P 7050 2450
-F 0 "D?" V 7004 2530 50  0000 L CNN
+F 0 "D21" V 7004 2530 50  0000 L CNN
 F 1 "TPD1E10B06QDPYRQ1" H 6750 2350 50  0000 L CNN
 F 2 "Diode_SMD:D_0402_1005Metric" H 7050 2450 50  0001 C CNN
 F 3 "https://www.ti.com/lit/ds/symlink/tpd1e10b06-q1.pdf?HQS=TI-null-null-digikeymode-df-pf-null-wwe&ts=1606712128437" H 7050 2450 50  0001 C CNN
@@ -2817,10 +2821,10 @@ F 7 "TVS DIODE 5.5V 14V 2X1SON" V 7050 2450 50  0001 C CNN "Comment"
 	0    1    1    0   
 $EndComp
 $Comp
-L dk_Transistors-FETs-MOSFETs-Single:2N7002 Q?
+L dk_Transistors-FETs-MOSFETs-Single:2N7002 Q1
 U 1 1 5FF06AC3
 P 15300 3400
-F 0 "Q?" V 15450 3450 60  0000 L CNN
+F 0 "Q1" V 15450 3450 60  0000 L CNN
 F 1 "2N7002" V 15450 3000 60  0000 L CNN
 F 2 "digikey-footprints:SOT-23-3" H 15500 3600 60  0001 L CNN
 F 3 "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF" H 15500 3700 60  0001 L CNN
@@ -2844,10 +2848,10 @@ Wire Wire Line
 	15200 3100 15200 3050
 Connection ~ 15200 3050
 $Comp
-L dk_Transistors-FETs-MOSFETs-Single:2N7002 Q?
+L dk_Transistors-FETs-MOSFETs-Single:2N7002 Q2
 U 1 1 60017C06
 P 15300 4350
-F 0 "Q?" V 15450 4400 60  0000 L CNN
+F 0 "Q2" V 15450 4400 60  0000 L CNN
 F 1 "2N7002" V 15450 3950 60  0000 L CNN
 F 2 "digikey-footprints:SOT-23-3" H 15500 4550 60  0001 L CNN
 F 3 "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF" H 15500 4650 60  0001 L CNN
@@ -2872,10 +2876,10 @@ Wire Notes Line
 Wire Notes Line
 	14450 2900 15950 2900
 $Comp
-L Device:LED D?
+L Device:LED D22
 U 1 1 6017C6D4
 P 10700 4500
-F 0 "D?" V 10800 4500 50  0000 R CNN
+F 0 "D22" V 10800 4500 50  0000 R CNN
 F 1 "GREEN_LED" H 10900 4600 50  0000 R CNN
 F 2 "LED_SMD:LED_0603_1608Metric_Castellated" H 10700 4500 50  0001 C CNN
 F 3 "https://www.we-online.de/web/en/index.php/download/media/07_electronic_components/download_center_1/application_notes_berichte/ano002_leds___the_future_of_horticultural_lighting/ANO002b_EN_LEDs_The_Future_of_Horticultural_Lighting.pdf" H 10700 4500 50  0001 C CNN
