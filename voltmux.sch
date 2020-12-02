@@ -38,17 +38,6 @@ $EndComp
 Wire Wire Line
 	2350 3550 2350 3500
 $Comp
-L Device:C_Small C13
-U 1 1 5F5548EC
-P 2500 1250
-F 0 "C13" H 2592 1296 50  0000 L CNN
-F 1 "0.1uF" H 2592 1205 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric" H 2500 1250 50  0001 C CNN
-F 3 "~" H 2500 1250 50  0001 C CNN
-	1    2500 1250
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR046
 U 1 1 5F55509A
 P 2500 1350
@@ -855,4 +844,21 @@ $EndComp
 Wire Wire Line
 	10450 2100 10400 2100
 NoConn ~ 10450 2700
+$Comp
+L Device:C_Small C?
+U 1 1 5FD72535
+P 2500 1250
+AR Path="/5FD72535" Ref="C?"  Part="1" 
+AR Path="/5F70A721/5FD72535" Ref="C13"  Part="1" 
+F 0 "C13" H 2592 1296 50  0000 L CNN
+F 1 "0.1uF" H 2592 1205 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 2500 1250 50  0001 C CNN
+F 3 "https://content.kemet.com/datasheets/KEM_C1005_Y5V_SMD.pdf" H 2500 1250 50  0001 C CNN
+F 4 "C0805C104Z4VACTU" H 2500 1250 50  0001 C CNN "Part Number"
+F 5 "399-9159-2-ND" H 2500 1250 50  0001 C CNN "Digikey Number"
+F 6 "0.11" H 2500 1250 50  0001 C CNN "Price ($)"
+F 7 "0.1µF -20%, +80% 16V Ceramic Capacitor Y5V 0805 (2012 Metric)" H 2500 1250 50  0001 C CNN "Comment"
+	1    2500 1250
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

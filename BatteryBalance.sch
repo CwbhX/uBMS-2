@@ -82,8 +82,12 @@ U 1 1 5F78D337
 P 1300 1500
 F 0 "C15" V 1048 1500 50  0000 C CNN
 F 1 "10nF" V 1139 1500 50  0000 C CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric" H 1338 1350 50  0001 C CNN
-F 3 "~" H 1300 1500 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 1338 1350 50  0001 C CNN
+F 3 "https://content.kemet.com/datasheets/KEM_C1002_X7R_SMD.pdf" H 1300 1500 50  0001 C CNN
+F 4 "C0805C103J5RAC7210" V 1300 1500 50  0001 C CNN "Part Number"
+F 5 "399-17616-2-ND" V 1300 1500 50  0001 C CNN "Digikey Number"
+F 6 "0.1" V 1300 1500 50  0001 C CNN "Price ($)"
+F 7 "10000pF ±5% 50V Ceramic Capacitor X7R 0805 (2012 Metric)" V 1300 1500 50  0001 C CNN "Comment"
 	1    1300 1500
 	0    1    1    0   
 $EndComp
@@ -160,17 +164,6 @@ Wire Wire Line
 	2150 1900 2150 1850
 Connection ~ 2150 1850
 $Comp
-L Device:C C16
-U 1 1 5F796EE6
-P 3400 1500
-F 0 "C16" V 3148 1500 50  0000 C CNN
-F 1 "10nF" V 3239 1500 50  0000 C CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric" H 3438 1350 50  0001 C CNN
-F 3 "~" H 3400 1500 50  0001 C CNN
-	1    3400 1500
-	0    1    1    0   
-$EndComp
-$Comp
 L uBMS-Parts:FQD5N20L Q5
 U 1 1 5F796EEC
 P 4250 1500
@@ -226,17 +219,6 @@ Text Label 4250 1150 0    50   ~ 0
 Cell2_P
 Wire Wire Line
 	4250 1300 4250 1150
-$Comp
-L Device:C C17
-U 1 1 5F79E64F
-P 5500 1500
-F 0 "C17" V 5248 1500 50  0000 C CNN
-F 1 "10nF" V 5339 1500 50  0000 C CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric" H 5538 1350 50  0001 C CNN
-F 3 "~" H 5500 1500 50  0001 C CNN
-	1    5500 1500
-	0    1    1    0   
-$EndComp
 $Comp
 L uBMS-Parts:FQD5N20L Q6
 U 1 1 5F79E655
@@ -294,17 +276,6 @@ Cell3_P
 Wire Wire Line
 	6350 1300 6350 1150
 $Comp
-L Device:C C18
-U 1 1 5F7A2D2F
-P 7600 1500
-F 0 "C18" V 7348 1500 50  0000 C CNN
-F 1 "10nF" V 7439 1500 50  0000 C CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric" H 7638 1350 50  0001 C CNN
-F 3 "~" H 7600 1500 50  0001 C CNN
-	1    7600 1500
-	0    1    1    0   
-$EndComp
-$Comp
 L uBMS-Parts:FQD5N20L Q7
 U 1 1 5F7A2D35
 P 8450 1500
@@ -360,17 +331,6 @@ Text Label 8450 1150 0    50   ~ 0
 Cell4_P
 Wire Wire Line
 	8450 1300 8450 1150
-$Comp
-L Device:C C19
-U 1 1 5F7ADC89
-P 1300 3000
-F 0 "C19" V 1048 3000 50  0000 C CNN
-F 1 "10nF" V 1139 3000 50  0000 C CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric" H 1338 2850 50  0001 C CNN
-F 3 "~" H 1300 3000 50  0001 C CNN
-	1    1300 3000
-	0    1    1    0   
-$EndComp
 $Comp
 L uBMS-Parts:FQD5N20L Q8
 U 1 1 5F7ADC8F
@@ -428,17 +388,6 @@ Cell5_P
 Wire Wire Line
 	2150 2800 2150 2650
 $Comp
-L Device:C C20
-U 1 1 5F7ADCB6
-P 3400 3000
-F 0 "C20" V 3148 3000 50  0000 C CNN
-F 1 "10nF" V 3239 3000 50  0000 C CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric" H 3438 2850 50  0001 C CNN
-F 3 "~" H 3400 3000 50  0001 C CNN
-	1    3400 3000
-	0    1    1    0   
-$EndComp
-$Comp
 L uBMS-Parts:FQD5N20L Q9
 U 1 1 5F7ADCBC
 P 4250 3000
@@ -494,17 +443,6 @@ Text Label 4250 2650 0    50   ~ 0
 Cell6_P
 Wire Wire Line
 	4250 2800 4250 2650
-$Comp
-L Device:C C21
-U 1 1 5F7ADCE3
-P 5500 3000
-F 0 "C21" V 5248 3000 50  0000 C CNN
-F 1 "10nF" V 5339 3000 50  0000 C CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric" H 5538 2850 50  0001 C CNN
-F 3 "~" H 5500 3000 50  0001 C CNN
-	1    5500 3000
-	0    1    1    0   
-$EndComp
 $Comp
 L uBMS-Parts:FQD5N20L Q10
 U 1 1 5F7ADCE9
@@ -562,17 +500,6 @@ Cell7_P
 Wire Wire Line
 	6350 2800 6350 2650
 $Comp
-L Device:C C22
-U 1 1 5F7ADD10
-P 7600 3000
-F 0 "C22" V 7348 3000 50  0000 C CNN
-F 1 "10nF" V 7439 3000 50  0000 C CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric" H 7638 2850 50  0001 C CNN
-F 3 "~" H 7600 3000 50  0001 C CNN
-	1    7600 3000
-	0    1    1    0   
-$EndComp
-$Comp
 L uBMS-Parts:FQD5N20L Q11
 U 1 1 5F7ADD16
 P 8450 3000
@@ -628,17 +555,6 @@ Text Label 8450 2650 0    50   ~ 0
 Cell8_P
 Wire Wire Line
 	8450 2800 8450 2650
-$Comp
-L Device:C C23
-U 1 1 5F7BAE22
-P 1300 4500
-F 0 "C23" V 1048 4500 50  0000 C CNN
-F 1 "10nF" V 1139 4500 50  0000 C CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric" H 1338 4350 50  0001 C CNN
-F 3 "~" H 1300 4500 50  0001 C CNN
-	1    1300 4500
-	0    1    1    0   
-$EndComp
 $Comp
 L uBMS-Parts:FQD5N20L Q12
 U 1 1 5F7BAE28
@@ -696,17 +612,6 @@ Cell9_P
 Wire Wire Line
 	2150 4300 2150 4150
 $Comp
-L Device:C C24
-U 1 1 5F7BAE4F
-P 3400 4500
-F 0 "C24" V 3148 4500 50  0000 C CNN
-F 1 "10nF" V 3239 4500 50  0000 C CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric" H 3438 4350 50  0001 C CNN
-F 3 "~" H 3400 4500 50  0001 C CNN
-	1    3400 4500
-	0    1    1    0   
-$EndComp
-$Comp
 L uBMS-Parts:FQD5N20L Q13
 U 1 1 5F7BAE55
 P 4250 4500
@@ -763,17 +668,6 @@ Cell10_P
 Wire Wire Line
 	4250 4300 4250 4150
 $Comp
-L Device:C C25
-U 1 1 5F7BAE7C
-P 5500 4500
-F 0 "C25" V 5248 4500 50  0000 C CNN
-F 1 "10nF" V 5339 4500 50  0000 C CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric" H 5538 4350 50  0001 C CNN
-F 3 "~" H 5500 4500 50  0001 C CNN
-	1    5500 4500
-	0    1    1    0   
-$EndComp
-$Comp
 L uBMS-Parts:FQD5N20L Q14
 U 1 1 5F7BAE82
 P 6350 4500
@@ -829,17 +723,6 @@ Text Label 6350 4150 0    50   ~ 0
 Cell11_P
 Wire Wire Line
 	6350 4300 6350 4150
-$Comp
-L Device:C C26
-U 1 1 5F7BAEA9
-P 7600 4500
-F 0 "C26" V 7348 4500 50  0000 C CNN
-F 1 "10nF" V 7439 4500 50  0000 C CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric" H 7638 4350 50  0001 C CNN
-F 3 "~" H 7600 4500 50  0001 C CNN
-	1    7600 4500
-	0    1    1    0   
-$EndComp
 $Comp
 L uBMS-Parts:FQD5N20L Q15
 U 1 1 5F7BAEAF
@@ -1019,8 +902,12 @@ U 1 1 5FF6BD26
 P 2400 1500
 F 0 "C12" H 2492 1546 50  0000 L CNN
 F 1 "10nF" H 2492 1455 50  0000 L CNN
-F 2 "" H 2400 1500 50  0001 C CNN
-F 3 "~" H 2400 1500 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 2400 1500 50  0001 C CNN
+F 3 "https://content.kemet.com/datasheets/KEM_C1002_X7R_SMD.pdf" H 2400 1500 50  0001 C CNN
+F 4 "C0805C103J5RAC7210" H 2400 1500 50  0001 C CNN "Part Number"
+F 5 "399-17616-2-ND" H 2400 1500 50  0001 C CNN "Digikey Number"
+F 6 "0.1" H 2400 1500 50  0001 C CNN "Price ($)"
+F 7 "10000pF ±5% 50V Ceramic Capacitor X7R 0805 (2012 Metric)" H 2400 1500 50  0001 C CNN "Comment"
 	1    2400 1500
 	1    0    0    -1  
 $EndComp
@@ -1034,127 +921,6 @@ Wire Wire Line
 Wire Wire Line
 	2400 1700 2150 1700
 Connection ~ 2150 1700
-$Comp
-L Device:C_Small C27
-U 1 1 5FF7CF68
-P 4450 1500
-F 0 "C27" H 4542 1546 50  0000 L CNN
-F 1 "10nF" H 4542 1455 50  0000 L CNN
-F 2 "" H 4450 1500 50  0001 C CNN
-F 3 "~" H 4450 1500 50  0001 C CNN
-	1    4450 1500
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C28
-U 1 1 5FF7D69E
-P 6550 1500
-F 0 "C28" H 6642 1546 50  0000 L CNN
-F 1 "10nF" H 6642 1455 50  0000 L CNN
-F 2 "" H 6550 1500 50  0001 C CNN
-F 3 "~" H 6550 1500 50  0001 C CNN
-	1    6550 1500
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C29
-U 1 1 5FF7DC64
-P 8650 1500
-F 0 "C29" H 8742 1546 50  0000 L CNN
-F 1 "10nF" H 8742 1455 50  0000 L CNN
-F 2 "" H 8650 1500 50  0001 C CNN
-F 3 "~" H 8650 1500 50  0001 C CNN
-	1    8650 1500
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C30
-U 1 1 5FF7E0BA
-P 2350 3000
-F 0 "C30" H 2442 3046 50  0000 L CNN
-F 1 "10nF" H 2442 2955 50  0000 L CNN
-F 2 "" H 2350 3000 50  0001 C CNN
-F 3 "~" H 2350 3000 50  0001 C CNN
-	1    2350 3000
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C31
-U 1 1 5FF7E835
-P 4450 3000
-F 0 "C31" H 4542 3046 50  0000 L CNN
-F 1 "10nF" H 4542 2955 50  0000 L CNN
-F 2 "" H 4450 3000 50  0001 C CNN
-F 3 "~" H 4450 3000 50  0001 C CNN
-	1    4450 3000
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C32
-U 1 1 5FF7ED5A
-P 6550 3000
-F 0 "C32" H 6642 3046 50  0000 L CNN
-F 1 "10nF" H 6642 2955 50  0000 L CNN
-F 2 "" H 6550 3000 50  0001 C CNN
-F 3 "~" H 6550 3000 50  0001 C CNN
-	1    6550 3000
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C33
-U 1 1 5FF7F434
-P 8650 3000
-F 0 "C33" H 8742 3046 50  0000 L CNN
-F 1 "10nF" H 8742 2955 50  0000 L CNN
-F 2 "" H 8650 3000 50  0001 C CNN
-F 3 "~" H 8650 3000 50  0001 C CNN
-	1    8650 3000
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C34
-U 1 1 5FF7F9CC
-P 2350 4500
-F 0 "C34" H 2442 4546 50  0000 L CNN
-F 1 "10nF" H 2442 4455 50  0000 L CNN
-F 2 "" H 2350 4500 50  0001 C CNN
-F 3 "~" H 2350 4500 50  0001 C CNN
-	1    2350 4500
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C35
-U 1 1 5FF802CE
-P 4450 4500
-F 0 "C35" H 4542 4546 50  0000 L CNN
-F 1 "10nF" H 4542 4455 50  0000 L CNN
-F 2 "" H 4450 4500 50  0001 C CNN
-F 3 "~" H 4450 4500 50  0001 C CNN
-	1    4450 4500
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C36
-U 1 1 5FF80C2C
-P 6550 4500
-F 0 "C36" H 6642 4546 50  0000 L CNN
-F 1 "10nF" H 6642 4455 50  0000 L CNN
-F 2 "" H 6550 4500 50  0001 C CNN
-F 3 "~" H 6550 4500 50  0001 C CNN
-	1    6550 4500
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C37
-U 1 1 5FF8110C
-P 8650 4500
-F 0 "C37" H 8742 4546 50  0000 L CNN
-F 1 "10nF" H 8742 4455 50  0000 L CNN
-F 2 "" H 8650 4500 50  0001 C CNN
-F 3 "~" H 8650 4500 50  0001 C CNN
-	1    8650 4500
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4450 1400 4450 1300
 Wire Wire Line
@@ -1265,4 +1031,334 @@ Wire Wire Line
 Wire Wire Line
 	8650 4700 8450 4700
 Connection ~ 8450 4700
+$Comp
+L Device:C C20
+U 1 1 5FD598EB
+P 3400 1500
+F 0 "C20" V 3148 1500 50  0000 C CNN
+F 1 "10nF" V 3239 1500 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 3438 1350 50  0001 C CNN
+F 3 "https://content.kemet.com/datasheets/KEM_C1002_X7R_SMD.pdf" H 3400 1500 50  0001 C CNN
+F 4 "C0805C103J5RAC7210" V 3400 1500 50  0001 C CNN "Part Number"
+F 5 "399-17616-2-ND" V 3400 1500 50  0001 C CNN "Digikey Number"
+F 6 "0.1" V 3400 1500 50  0001 C CNN "Price ($)"
+F 7 "10000pF ±5% 50V Ceramic Capacitor X7R 0805 (2012 Metric)" V 3400 1500 50  0001 C CNN "Comment"
+	1    3400 1500
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C26
+U 1 1 5FD59FC9
+P 5500 1500
+F 0 "C26" V 5248 1500 50  0000 C CNN
+F 1 "10nF" V 5339 1500 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 5538 1350 50  0001 C CNN
+F 3 "https://content.kemet.com/datasheets/KEM_C1002_X7R_SMD.pdf" H 5500 1500 50  0001 C CNN
+F 4 "C0805C103J5RAC7210" V 5500 1500 50  0001 C CNN "Part Number"
+F 5 "399-17616-2-ND" V 5500 1500 50  0001 C CNN "Digikey Number"
+F 6 "0.1" V 5500 1500 50  0001 C CNN "Price ($)"
+F 7 "10000pF ±5% 50V Ceramic Capacitor X7R 0805 (2012 Metric)" V 5500 1500 50  0001 C CNN "Comment"
+	1    5500 1500
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C32
+U 1 1 5FD5A57E
+P 7600 1500
+F 0 "C32" V 7348 1500 50  0000 C CNN
+F 1 "10nF" V 7439 1500 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 7638 1350 50  0001 C CNN
+F 3 "https://content.kemet.com/datasheets/KEM_C1002_X7R_SMD.pdf" H 7600 1500 50  0001 C CNN
+F 4 "C0805C103J5RAC7210" V 7600 1500 50  0001 C CNN "Part Number"
+F 5 "399-17616-2-ND" V 7600 1500 50  0001 C CNN "Digikey Number"
+F 6 "0.1" V 7600 1500 50  0001 C CNN "Price ($)"
+F 7 "10000pF ±5% 50V Ceramic Capacitor X7R 0805 (2012 Metric)" V 7600 1500 50  0001 C CNN "Comment"
+	1    7600 1500
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C16
+U 1 1 5FD5A9B9
+P 1300 3000
+F 0 "C16" V 1048 3000 50  0000 C CNN
+F 1 "10nF" V 1139 3000 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 1338 2850 50  0001 C CNN
+F 3 "https://content.kemet.com/datasheets/KEM_C1002_X7R_SMD.pdf" H 1300 3000 50  0001 C CNN
+F 4 "C0805C103J5RAC7210" V 1300 3000 50  0001 C CNN "Part Number"
+F 5 "399-17616-2-ND" V 1300 3000 50  0001 C CNN "Digikey Number"
+F 6 "0.1" V 1300 3000 50  0001 C CNN "Price ($)"
+F 7 "10000pF ±5% 50V Ceramic Capacitor X7R 0805 (2012 Metric)" V 1300 3000 50  0001 C CNN "Comment"
+	1    1300 3000
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C21
+U 1 1 5FD5B1A5
+P 3400 3000
+F 0 "C21" V 3148 3000 50  0000 C CNN
+F 1 "10nF" V 3239 3000 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 3438 2850 50  0001 C CNN
+F 3 "https://content.kemet.com/datasheets/KEM_C1002_X7R_SMD.pdf" H 3400 3000 50  0001 C CNN
+F 4 "C0805C103J5RAC7210" V 3400 3000 50  0001 C CNN "Part Number"
+F 5 "399-17616-2-ND" V 3400 3000 50  0001 C CNN "Digikey Number"
+F 6 "0.1" V 3400 3000 50  0001 C CNN "Price ($)"
+F 7 "10000pF ±5% 50V Ceramic Capacitor X7R 0805 (2012 Metric)" V 3400 3000 50  0001 C CNN "Comment"
+	1    3400 3000
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C27
+U 1 1 5FD5B75A
+P 5500 3000
+F 0 "C27" V 5248 3000 50  0000 C CNN
+F 1 "10nF" V 5339 3000 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 5538 2850 50  0001 C CNN
+F 3 "https://content.kemet.com/datasheets/KEM_C1002_X7R_SMD.pdf" H 5500 3000 50  0001 C CNN
+F 4 "C0805C103J5RAC7210" V 5500 3000 50  0001 C CNN "Part Number"
+F 5 "399-17616-2-ND" V 5500 3000 50  0001 C CNN "Digikey Number"
+F 6 "0.1" V 5500 3000 50  0001 C CNN "Price ($)"
+F 7 "10000pF ±5% 50V Ceramic Capacitor X7R 0805 (2012 Metric)" V 5500 3000 50  0001 C CNN "Comment"
+	1    5500 3000
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C33
+U 1 1 5FD5BEBF
+P 7600 3000
+F 0 "C33" V 7348 3000 50  0000 C CNN
+F 1 "10nF" V 7439 3000 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 7638 2850 50  0001 C CNN
+F 3 "https://content.kemet.com/datasheets/KEM_C1002_X7R_SMD.pdf" H 7600 3000 50  0001 C CNN
+F 4 "C0805C103J5RAC7210" V 7600 3000 50  0001 C CNN "Part Number"
+F 5 "399-17616-2-ND" V 7600 3000 50  0001 C CNN "Digikey Number"
+F 6 "0.1" V 7600 3000 50  0001 C CNN "Price ($)"
+F 7 "10000pF ±5% 50V Ceramic Capacitor X7R 0805 (2012 Metric)" V 7600 3000 50  0001 C CNN "Comment"
+	1    7600 3000
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C17
+U 1 1 5FD5C531
+P 1300 4500
+F 0 "C17" V 1048 4500 50  0000 C CNN
+F 1 "10nF" V 1139 4500 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 1338 4350 50  0001 C CNN
+F 3 "https://content.kemet.com/datasheets/KEM_C1002_X7R_SMD.pdf" H 1300 4500 50  0001 C CNN
+F 4 "C0805C103J5RAC7210" V 1300 4500 50  0001 C CNN "Part Number"
+F 5 "399-17616-2-ND" V 1300 4500 50  0001 C CNN "Digikey Number"
+F 6 "0.1" V 1300 4500 50  0001 C CNN "Price ($)"
+F 7 "10000pF ±5% 50V Ceramic Capacitor X7R 0805 (2012 Metric)" V 1300 4500 50  0001 C CNN "Comment"
+	1    1300 4500
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C22
+U 1 1 5FD5CCB1
+P 3400 4500
+F 0 "C22" V 3148 4500 50  0000 C CNN
+F 1 "10nF" V 3239 4500 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 3438 4350 50  0001 C CNN
+F 3 "https://content.kemet.com/datasheets/KEM_C1002_X7R_SMD.pdf" H 3400 4500 50  0001 C CNN
+F 4 "C0805C103J5RAC7210" V 3400 4500 50  0001 C CNN "Part Number"
+F 5 "399-17616-2-ND" V 3400 4500 50  0001 C CNN "Digikey Number"
+F 6 "0.1" V 3400 4500 50  0001 C CNN "Price ($)"
+F 7 "10000pF ±5% 50V Ceramic Capacitor X7R 0805 (2012 Metric)" V 3400 4500 50  0001 C CNN "Comment"
+	1    3400 4500
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C28
+U 1 1 5FD5D5AB
+P 5500 4500
+F 0 "C28" V 5248 4500 50  0000 C CNN
+F 1 "10nF" V 5339 4500 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 5538 4350 50  0001 C CNN
+F 3 "https://content.kemet.com/datasheets/KEM_C1002_X7R_SMD.pdf" H 5500 4500 50  0001 C CNN
+F 4 "C0805C103J5RAC7210" V 5500 4500 50  0001 C CNN "Part Number"
+F 5 "399-17616-2-ND" V 5500 4500 50  0001 C CNN "Digikey Number"
+F 6 "0.1" V 5500 4500 50  0001 C CNN "Price ($)"
+F 7 "10000pF ±5% 50V Ceramic Capacitor X7R 0805 (2012 Metric)" V 5500 4500 50  0001 C CNN "Comment"
+	1    5500 4500
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C34
+U 1 1 5FD5DD2B
+P 7600 4500
+F 0 "C34" V 7348 4500 50  0000 C CNN
+F 1 "10nF" V 7439 4500 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 7638 4350 50  0001 C CNN
+F 3 "https://content.kemet.com/datasheets/KEM_C1002_X7R_SMD.pdf" H 7600 4500 50  0001 C CNN
+F 4 "C0805C103J5RAC7210" V 7600 4500 50  0001 C CNN "Part Number"
+F 5 "399-17616-2-ND" V 7600 4500 50  0001 C CNN "Digikey Number"
+F 6 "0.1" V 7600 4500 50  0001 C CNN "Price ($)"
+F 7 "10000pF ±5% 50V Ceramic Capacitor X7R 0805 (2012 Metric)" V 7600 4500 50  0001 C CNN "Comment"
+	1    7600 4500
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C23
+U 1 1 5FD5E511
+P 4450 1500
+F 0 "C23" H 4542 1546 50  0000 L CNN
+F 1 "10nF" H 4542 1455 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 4450 1500 50  0001 C CNN
+F 3 "https://content.kemet.com/datasheets/KEM_C1002_X7R_SMD.pdf" H 4450 1500 50  0001 C CNN
+F 4 "C0805C103J5RAC7210" H 4450 1500 50  0001 C CNN "Part Number"
+F 5 "399-17616-2-ND" H 4450 1500 50  0001 C CNN "Digikey Number"
+F 6 "0.1" H 4450 1500 50  0001 C CNN "Price ($)"
+F 7 "10000pF ±5% 50V Ceramic Capacitor X7R 0805 (2012 Metric)" H 4450 1500 50  0001 C CNN "Comment"
+	1    4450 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C29
+U 1 1 5FD5E9D3
+P 6550 1500
+F 0 "C29" H 6642 1546 50  0000 L CNN
+F 1 "10nF" H 6642 1455 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 6550 1500 50  0001 C CNN
+F 3 "https://content.kemet.com/datasheets/KEM_C1002_X7R_SMD.pdf" H 6550 1500 50  0001 C CNN
+F 4 "C0805C103J5RAC7210" H 6550 1500 50  0001 C CNN "Part Number"
+F 5 "399-17616-2-ND" H 6550 1500 50  0001 C CNN "Digikey Number"
+F 6 "0.1" H 6550 1500 50  0001 C CNN "Price ($)"
+F 7 "10000pF ±5% 50V Ceramic Capacitor X7R 0805 (2012 Metric)" H 6550 1500 50  0001 C CNN "Comment"
+	1    6550 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C35
+U 1 1 5FD5EE44
+P 8650 1500
+F 0 "C35" H 8742 1546 50  0000 L CNN
+F 1 "10nF" H 8742 1455 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 8650 1500 50  0001 C CNN
+F 3 "https://content.kemet.com/datasheets/KEM_C1002_X7R_SMD.pdf" H 8650 1500 50  0001 C CNN
+F 4 "C0805C103J5RAC7210" H 8650 1500 50  0001 C CNN "Part Number"
+F 5 "399-17616-2-ND" H 8650 1500 50  0001 C CNN "Digikey Number"
+F 6 "0.1" H 8650 1500 50  0001 C CNN "Price ($)"
+F 7 "10000pF ±5% 50V Ceramic Capacitor X7R 0805 (2012 Metric)" H 8650 1500 50  0001 C CNN "Comment"
+	1    8650 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C18
+U 1 1 5FD5F5DF
+P 2350 3000
+F 0 "C18" H 2442 3046 50  0000 L CNN
+F 1 "10nF" H 2442 2955 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 2350 3000 50  0001 C CNN
+F 3 "https://content.kemet.com/datasheets/KEM_C1002_X7R_SMD.pdf" H 2350 3000 50  0001 C CNN
+F 4 "C0805C103J5RAC7210" H 2350 3000 50  0001 C CNN "Part Number"
+F 5 "399-17616-2-ND" H 2350 3000 50  0001 C CNN "Digikey Number"
+F 6 "0.1" H 2350 3000 50  0001 C CNN "Price ($)"
+F 7 "10000pF ±5% 50V Ceramic Capacitor X7R 0805 (2012 Metric)" H 2350 3000 50  0001 C CNN "Comment"
+	1    2350 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C24
+U 1 1 5FD5FEF4
+P 4450 3000
+F 0 "C24" H 4542 3046 50  0000 L CNN
+F 1 "10nF" H 4542 2955 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 4450 3000 50  0001 C CNN
+F 3 "https://content.kemet.com/datasheets/KEM_C1002_X7R_SMD.pdf" H 4450 3000 50  0001 C CNN
+F 4 "C0805C103J5RAC7210" H 4450 3000 50  0001 C CNN "Part Number"
+F 5 "399-17616-2-ND" H 4450 3000 50  0001 C CNN "Digikey Number"
+F 6 "0.1" H 4450 3000 50  0001 C CNN "Price ($)"
+F 7 "10000pF ±5% 50V Ceramic Capacitor X7R 0805 (2012 Metric)" H 4450 3000 50  0001 C CNN "Comment"
+	1    4450 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C30
+U 1 1 5FD603D1
+P 6550 3000
+F 0 "C30" H 6642 3046 50  0000 L CNN
+F 1 "10nF" H 6642 2955 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 6550 3000 50  0001 C CNN
+F 3 "https://content.kemet.com/datasheets/KEM_C1002_X7R_SMD.pdf" H 6550 3000 50  0001 C CNN
+F 4 "C0805C103J5RAC7210" H 6550 3000 50  0001 C CNN "Part Number"
+F 5 "399-17616-2-ND" H 6550 3000 50  0001 C CNN "Digikey Number"
+F 6 "0.1" H 6550 3000 50  0001 C CNN "Price ($)"
+F 7 "10000pF ±5% 50V Ceramic Capacitor X7R 0805 (2012 Metric)" H 6550 3000 50  0001 C CNN "Comment"
+	1    6550 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C36
+U 1 1 5FD608AE
+P 8650 3000
+F 0 "C36" H 8742 3046 50  0000 L CNN
+F 1 "10nF" H 8742 2955 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 8650 3000 50  0001 C CNN
+F 3 "https://content.kemet.com/datasheets/KEM_C1002_X7R_SMD.pdf" H 8650 3000 50  0001 C CNN
+F 4 "C0805C103J5RAC7210" H 8650 3000 50  0001 C CNN "Part Number"
+F 5 "399-17616-2-ND" H 8650 3000 50  0001 C CNN "Digikey Number"
+F 6 "0.1" H 8650 3000 50  0001 C CNN "Price ($)"
+F 7 "10000pF ±5% 50V Ceramic Capacitor X7R 0805 (2012 Metric)" H 8650 3000 50  0001 C CNN "Comment"
+	1    8650 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C19
+U 1 1 5FD60F8C
+P 2350 4500
+F 0 "C19" H 2442 4546 50  0000 L CNN
+F 1 "10nF" H 2442 4455 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 2350 4500 50  0001 C CNN
+F 3 "https://content.kemet.com/datasheets/KEM_C1002_X7R_SMD.pdf" H 2350 4500 50  0001 C CNN
+F 4 "C0805C103J5RAC7210" H 2350 4500 50  0001 C CNN "Part Number"
+F 5 "399-17616-2-ND" H 2350 4500 50  0001 C CNN "Digikey Number"
+F 6 "0.1" H 2350 4500 50  0001 C CNN "Price ($)"
+F 7 "10000pF ±5% 50V Ceramic Capacitor X7R 0805 (2012 Metric)" H 2350 4500 50  0001 C CNN "Comment"
+	1    2350 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C25
+U 1 1 5FD61943
+P 4450 4500
+F 0 "C25" H 4542 4546 50  0000 L CNN
+F 1 "10nF" H 4542 4455 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 4450 4500 50  0001 C CNN
+F 3 "https://content.kemet.com/datasheets/KEM_C1002_X7R_SMD.pdf" H 4450 4500 50  0001 C CNN
+F 4 "C0805C103J5RAC7210" H 4450 4500 50  0001 C CNN "Part Number"
+F 5 "399-17616-2-ND" H 4450 4500 50  0001 C CNN "Digikey Number"
+F 6 "0.1" H 4450 4500 50  0001 C CNN "Price ($)"
+F 7 "10000pF ±5% 50V Ceramic Capacitor X7R 0805 (2012 Metric)" H 4450 4500 50  0001 C CNN "Comment"
+	1    4450 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C31
+U 1 1 5FD6219B
+P 6550 4500
+F 0 "C31" H 6642 4546 50  0000 L CNN
+F 1 "10nF" H 6642 4455 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 6550 4500 50  0001 C CNN
+F 3 "https://content.kemet.com/datasheets/KEM_C1002_X7R_SMD.pdf" H 6550 4500 50  0001 C CNN
+F 4 "C0805C103J5RAC7210" H 6550 4500 50  0001 C CNN "Part Number"
+F 5 "399-17616-2-ND" H 6550 4500 50  0001 C CNN "Digikey Number"
+F 6 "0.1" H 6550 4500 50  0001 C CNN "Price ($)"
+F 7 "10000pF ±5% 50V Ceramic Capacitor X7R 0805 (2012 Metric)" H 6550 4500 50  0001 C CNN "Comment"
+	1    6550 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C37
+U 1 1 5FD627F2
+P 8650 4500
+F 0 "C37" H 8742 4546 50  0000 L CNN
+F 1 "10nF" H 8742 4455 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 8650 4500 50  0001 C CNN
+F 3 "https://content.kemet.com/datasheets/KEM_C1002_X7R_SMD.pdf" H 8650 4500 50  0001 C CNN
+F 4 "C0805C103J5RAC7210" H 8650 4500 50  0001 C CNN "Part Number"
+F 5 "399-17616-2-ND" H 8650 4500 50  0001 C CNN "Digikey Number"
+F 6 "0.1" H 8650 4500 50  0001 C CNN "Price ($)"
+F 7 "10000pF ±5% 50V Ceramic Capacitor X7R 0805 (2012 Metric)" H 8650 4500 50  0001 C CNN "Comment"
+	1    8650 4500
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

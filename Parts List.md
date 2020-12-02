@@ -3,7 +3,13 @@
 - Resetable PTC Fuse 300mA: [0ZCF0030FF2C](https://belfuse.com/resources/datasheets/circuitprotection/ds-cp-0zcf-series.pdf)
 
 ## Capacitors
-- 
+- 10nF 50V X7R 0805 Caps: [C0805C103J5RAC7210](https://content.kemet.com/datasheets/KEM_C1002_X7R_SMD.pdf)
+- 33nF 50V X7R 0805 Cap: [C0805C333K5RACTU](https://content.kemet.com/datasheets/KEM_C1002_X7R_SMD.pdf)
+- 0.1uF 16V Y5V 0805 Caps: [C0805C104Z4VACTU](https://content.kemet.com/datasheets/KEM_C1005_Y5V_SMD.pdf)
+- 1uF 16V Y5V 0805 Caps: [C0805C105Z4VACTU](https://content.kemet.com/datasheets/KEM_C1005_Y5V_SMD.pdf)
+- 2.2uF 100V X7S 1206 Cin Cap: [HMK316AC7225KL-TE](https://www.yuden.co.jp/productdata/catalog/mlcc06_e.pdf)
+- 10uF 10V X5R 0805 Cap: [C0805C106K8PACTU](https://content.kemet.com/datasheets/KEM_C1006_X5R_SMD.pdf)
+- 47uF 6.3V X5R 1206 Cout Cap: [JMK316ABJ476MLHT](https://ds.yuden.co.jp/TYCOMPAS/ut/detail?pn=JMK316ABJ476MLHT%20%20&u=M)
 
 ## Inductors
 - Buck Converter Inductor 100uH: [1267AY-101M=P3](https://www.murata.com/~/media/webrenewal/products/inductor/chip/tokoproducts/wirewoundferritetypeforpl/m_dg8040c.ashx?la=en)
