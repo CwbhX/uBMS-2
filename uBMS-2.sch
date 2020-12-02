@@ -1729,7 +1729,7 @@ U 1 1 5FD86FAC
 P 11450 850
 F 0 "L1" V 11640 850 50  0000 C CNN
 F 1 "100uH" V 11549 850 50  0000 C CNN
-F 2 "" H 11450 850 50  0001 C CNN
+F 2 "ClementsFootprints:1267AY-101M=P3" H 11450 850 50  0001 C CNN
 F 3 "https://www.murata.com/~/media/webrenewal/products/inductor/chip/tokoproducts/wirewoundferritetypeforpl/m_dg8040c.ashx?la=en" H 11450 850 50  0001 C CNN
 F 4 "1267AY-101M=P3" V 11450 850 50  0001 C CNN "Part Number"
 F 5 "490-10826-2-ND" V 11450 850 50  0001 C CNN "Digikey Number"
