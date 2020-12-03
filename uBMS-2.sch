@@ -2818,8 +2818,6 @@ F 7 "1µF -20%, +80% 16V Ceramic Capacitor Y5V (F) 0805 (2012 Metric)" H 10600 2
 	1    10600 2400
 	1    0    0    -1  
 $EndComp
-Text Notes 2250 4900 0    79   ~ 16
-ADD BUTTONS
 $Comp
 L ClementsSymbols:DX07S016JA1R1500 J1
 U 1 1 5FE878A2
