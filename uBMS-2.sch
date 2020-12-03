@@ -1263,40 +1263,22 @@ $EndComp
 Wire Wire Line
 	13900 750  13950 750 
 $Comp
-L Lafayette_Electric_Car_Internals:PushButton BTN3
-U 1 1 5F487384
-P 5750 7000
-F 0 "BTN3" H 5750 7285 50  0000 C CNN
-F 1 "Input_1" H 5750 7194 50  0000 C CNN
-F 2 "Button_Switch_SMD:PTS636_SM43_SMTR_LFS_6mm_3,5mm" H 6000 7200 50  0001 C CNN
-F 3 "https://media.digikey.com/pdf/Data%20Sheets/RAFI%20PDF's/Racon_PCB_Tactile_Switches_Cat.pdf" H 6000 7200 50  0001 C CNN
-F 4 "Digikey" H 5550 7350 50  0001 C CNN "Vendor"
-F 5 "1715-1676-1-ND" H 5700 7350 50  0001 C CNN "Vendor Part"
-F 6 "RAFI USA" H 5550 7350 50  0001 C CNN "Manufacturer"
-F 7 "1.14100.5030000" H 5700 7350 50  0001 C CNN "Manufacturer Part"
-	1    5750 7000
-	0    -1   1    0   
-$EndComp
-$Comp
 L Device:R_Small R29
 U 1 1 5F4A0A08
-P 6000 7400
-F 0 "R29" V 6100 7350 50  0000 C CNN
-F 1 "4.7k" V 5895 7400 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6000 7400 50  0001 C CNN
-F 3 "~" H 6000 7400 50  0001 C CNN
-	1    6000 7400
+P 5850 7650
+F 0 "R29" V 5950 7600 50  0000 C CNN
+F 1 "4.7k" V 5745 7650 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 5850 7650 50  0001 C CNN
+F 3 "~" H 5850 7650 50  0001 C CNN
+	1    5850 7650
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	6000 7300 6000 7250
+	5850 7550 5850 7500
 Wire Wire Line
-	6000 7250 5750 7250
+	5850 7500 5725 7500
 Wire Wire Line
-	5750 7250 5750 7200
-Wire Wire Line
-	5750 7300 5750 7250
-Connection ~ 5750 7250
+	5600 7550 5600 7500
 $Comp
 L power:+3V3 #PWR034
 U 1 1 5F4CFC75
@@ -1311,29 +1293,29 @@ $EndComp
 $Comp
 L power:GND #PWR038
 U 1 1 5F4E72AE
-P 5900 7550
-F 0 "#PWR038" H 5900 7300 50  0001 C CNN
-F 1 "GND" H 5750 7500 50  0000 C CNN
-F 2 "" H 5900 7550 50  0001 C CNN
-F 3 "" H 5900 7550 50  0001 C CNN
-	1    5900 7550
+P 5750 7800
+F 0 "#PWR038" H 5750 7550 50  0001 C CNN
+F 1 "GND" H 5600 7750 50  0000 C CNN
+F 2 "" H 5750 7800 50  0001 C CNN
+F 3 "" H 5750 7800 50  0001 C CNN
+	1    5750 7800
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6000 7550 6000 7500
+	5850 7800 5850 7750
 Wire Wire Line
-	5750 7550 5750 7500
+	5600 7800 5600 7750
 Wire Wire Line
-	5900 7550 6000 7550
+	5750 7800 5850 7800
 Wire Wire Line
-	5750 7550 5900 7550
-Connection ~ 5900 7550
-Text Label 6050 7250 0    50   ~ 0
+	5600 7800 5750 7800
+Connection ~ 5750 7800
+Text Label 5900 7500 0    50   ~ 0
 BTN_1
 Wire Wire Line
-	6050 7250 6000 7250
-Connection ~ 6000 7250
-Text Notes 6350 7750 2    50   Italic 10
+	5900 7500 5850 7500
+Connection ~ 5850 7500
+Text Notes 8125 7900 2    50   Italic 10
 Buttons
 $Comp
 L Device:R_Small R20
@@ -1350,8 +1332,6 @@ Wire Wire Line
 	5750 6700 5750 6800
 Wire Wire Line
 	5750 6500 5750 6400
-Wire Notes Line
-	5350 6150 5350 7750
 Wire Wire Line
 	4350 4300 4350 4250
 Wire Wire Line
@@ -2045,38 +2025,38 @@ Wire Wire Line
 	4800 1100 4850 1100
 Text Label 4800 1100 2    50   ~ 0
 VBUS
-Text Label 8750 850  0    50   ~ 0
+Text Label 9150 850  0    50   ~ 0
 VBUS
 Wire Wire Line
 	4800 1400 4850 1400
 Text Label 4800 1400 2    50   ~ 10
 UART_TX
 Wire Wire Line
-	8150 850  7950 850 
+	8550 850  8350 850 
 $Comp
 L power:+5V #PWR012
 U 1 1 606CAE3D
-P 7950 800
-F 0 "#PWR012" H 7950 650 50  0001 C CNN
-F 1 "+5V" H 7965 973 50  0000 C CNN
-F 2 "" H 7950 800 50  0001 C CNN
-F 3 "" H 7950 800 50  0001 C CNN
-	1    7950 800 
+P 8350 800
+F 0 "#PWR012" H 8350 650 50  0001 C CNN
+F 1 "+5V" H 8365 973 50  0000 C CNN
+F 2 "" H 8350 800 50  0001 C CNN
+F 3 "" H 8350 800 50  0001 C CNN
+	1    8350 800 
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:D_Schottky D1
 U 1 1 606AB993
-P 8300 850
-F 0 "D1" H 8300 750 50  0000 C CNN
-F 1 "RB162VAM-20TR" H 8400 1000 50  0000 C CNN
-F 2 "Diode_SMD:D_TUMD2" H 8300 850 50  0001 C CNN
-F 3 "https://d1d2qsbl8m0m72.cloudfront.net/en/products/databook/datasheet/discrete/diode/schottky_barrier/rb162vam-20tr-e.pdf" H 8300 850 50  0001 C CNN
-F 4 "RB162VAM-20TR" H 8300 850 50  0001 C CNN "Part Number"
-F 5 "RB162VAM-20TRTR-ND" H 8300 850 50  0001 C CNN "Digikey Number"
-F 6 "0.35" H 8300 850 50  0001 C CNN "Price ($)"
-F 7 "DIODE SCHOTTKY 20V 1A TUMD2M" H 8300 850 50  0001 C CNN "Comment"
-	1    8300 850 
+P 8700 850
+F 0 "D1" H 8700 750 50  0000 C CNN
+F 1 "RB162VAM-20TR" H 8800 1000 50  0000 C CNN
+F 2 "Diode_SMD:D_TUMD2" H 8700 850 50  0001 C CNN
+F 3 "https://d1d2qsbl8m0m72.cloudfront.net/en/products/databook/datasheet/discrete/diode/schottky_barrier/rb162vam-20tr-e.pdf" H 8700 850 50  0001 C CNN
+F 4 "RB162VAM-20TR" H 8700 850 50  0001 C CNN "Part Number"
+F 5 "RB162VAM-20TRTR-ND" H 8700 850 50  0001 C CNN "Digikey Number"
+F 6 "0.35" H 8700 850 50  0001 C CNN "Price ($)"
+F 7 "DIODE SCHOTTKY 20V 1A TUMD2M" H 8700 850 50  0001 C CNN "Comment"
+	1    8700 850 
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -2400,12 +2380,12 @@ F 3 "https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32_
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7950 800  7950 850 
+	8350 800  8350 850 
 Wire Wire Line
-	8650 900  8650 850 
-Connection ~ 8650 850 
+	9050 900  9050 850 
+Connection ~ 9050 850 
 Wire Wire Line
-	8650 850  8750 850 
+	9050 850  9150 850 
 Wire Wire Line
 	5550 850  5550 800 
 Wire Notes Line
@@ -2452,72 +2432,21 @@ F 3 "" H 5550 800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8500 850  8650 850 
+	8900 850  9050 850 
 Wire Wire Line
-	8500 850  8450 850 
-Connection ~ 8500 850 
+	8900 850  8850 850 
+Connection ~ 8900 850 
 Wire Wire Line
 	4000 2450 4850 2450
 Wire Wire Line
 	4850 1200 4350 1200
-Text Notes 8450 1400 0    50   ~ 10
+Text Notes 7000 750  0    50   ~ 10
 Q: IS VBUS 5v Tolerant?
 NoConn ~ 5850 1650
 Text Notes 8800 3000 0    50   Italic 10
 USB-C & UART
 Wire Notes Line
 	9400 550  9400 3000
-Wire Wire Line
-	8350 2850 8350 2800
-Connection ~ 7850 2800
-Wire Wire Line
-	7550 2800 7850 2800
-Wire Wire Line
-	8350 2800 8900 2800
-Connection ~ 8350 2800
-Connection ~ 8900 2800
-Wire Wire Line
-	9150 2800 8900 2800
-Wire Wire Line
-	9150 2200 9150 2800
-Wire Wire Line
-	8900 2800 8900 1900
-Wire Wire Line
-	7850 2800 8350 2800
-Wire Wire Line
-	8450 1450 9150 1450
-Wire Wire Line
-	9150 1900 9150 1450
-Wire Wire Line
-	8900 1550 8450 1550
-Wire Wire Line
-	8900 1600 8900 1550
-$Comp
-L power:GND #PWR088
-U 1 1 60F28E1A
-P 8350 2850
-F 0 "#PWR088" H 8350 2600 50  0001 C CNN
-F 1 "GND" H 8200 2800 50  0000 C CNN
-F 2 "" H 8350 2850 50  0001 C CNN
-F 3 "" H 8350 2850 50  0001 C CNN
-	1    8350 2850
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:USB_C_Receptacle_USB2.0 J1
-U 1 1 60128930
-P 7850 1850
-F 0 "J1" H 7900 2600 50  0000 R CNN
-F 1 "USB_C_Receptacle_USB2.0" V 7350 2350 50  0000 R CNN
-F 2 "ClementsFootprints:DX07S016JA1R1500" H 8000 1850 50  0001 C CNN
-F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 8000 1850 50  0001 C CNN
-F 4 "DX07S016JA1R1500" H 7850 1850 50  0001 C CNN "Part Number"
-F 5 "670-DX07S016JA1R1500TR-ND" H 7850 1850 50  0001 C CNN "Digikey Number"
-F 6 "1.51" H 7850 1850 50  0001 C CNN "Price ($)"
-F 7 "USB-C (USB TYPE-C) USB 2.0 Receptacle Connector 24 (16+8 Dummy) Position Surface Mount, Right Angle; Through Hole" H 7850 1850 50  0001 C CNN "Comment"
-	1    7850 1850
-	1    0    0    -1  
-$EndComp
 $Comp
 L ClementsSymbols:CP2102N-A02-GQFN24 U12
 U 1 1 6018DD6E
@@ -2533,22 +2462,14 @@ F 7 "USB Bridge, USB to UART USB 2.0 UART Interface 24-QFN (4x4)" H 5350 1850 50
 	1    5350 1850
 	1    0    0    -1  
 $EndComp
-Text Label 8500 2050 0    50   ~ 0
+Text Label 7600 1650 2    50   ~ 0
 USB_D+
-Text Label 8500 1950 0    50   ~ 0
-USB_D+
-Text Label 8500 1850 0    50   ~ 0
-USB_D-
-Text Label 8500 1750 0    50   ~ 0
+Text Label 7600 1550 2    50   ~ 0
 USB_D-
 Wire Wire Line
-	8450 1750 8500 1750
+	7650 1550 7600 1550
 Wire Wire Line
-	8450 1850 8500 1850
-Wire Wire Line
-	8450 1950 8500 1950
-Wire Wire Line
-	8450 2050 8500 2050
+	7650 1650 7600 1650
 Text Label 5900 2050 0    50   ~ 0
 DTR
 Wire Wire Line
@@ -2560,35 +2481,31 @@ Wire Wire Line
 $Comp
 L Device:R R88
 U 1 1 6059EE1A
-P 9150 2050
-F 0 "R88" H 9080 2004 50  0000 R CNN
-F 1 "5.1k" H 9080 2095 50  0000 R CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 9080 2050 50  0001 C CNN
-F 3 "~" H 9150 2050 50  0001 C CNN
-	1    9150 2050
+P 7600 1150
+F 0 "R88" H 7530 1104 50  0000 R CNN
+F 1 "5.1k" H 7530 1195 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 7530 1150 50  0001 C CNN
+F 3 "~" H 7600 1150 50  0001 C CNN
+	1    7600 1150
 	-1   0    0    1   
 $EndComp
 $Comp
 L Device:R R30
 U 1 1 6059F86B
-P 8900 1750
-F 0 "R30" H 8830 1704 50  0000 R CNN
-F 1 "5.1k" H 8830 1795 50  0000 R CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 8830 1750 50  0001 C CNN
-F 3 "~" H 8900 1750 50  0001 C CNN
-	1    8900 1750
+P 7600 2050
+F 0 "R30" H 7530 2004 50  0000 R CNN
+F 1 "5.1k" H 7530 2095 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 7530 2050 50  0001 C CNN
+F 3 "~" H 7600 2050 50  0001 C CNN
+	1    7600 2050
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	8450 1250 8500 1250
+	8850 1250 8900 1250
 Wire Wire Line
-	8500 1250 8500 850 
-Wire Wire Line
-	7850 2750 7850 2800
-Wire Wire Line
-	7550 2750 7550 2800
-NoConn ~ 8450 2450
-NoConn ~ 8450 2350
+	8900 1250 8900 850 
+NoConn ~ 7650 1450
+NoConn ~ 7650 1750
 $Comp
 L power:GND #PWR087
 U 1 1 607E5D7E
@@ -2607,23 +2524,23 @@ Wire Wire Line
 $Comp
 L Device:R R22
 U 1 1 60869556
-P 8650 1050
-F 0 "R22" H 8580 1004 50  0000 R CNN
-F 1 "10k" H 8580 1095 50  0000 R CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 8580 1050 50  0001 C CNN
-F 3 "~" H 8650 1050 50  0001 C CNN
-	1    8650 1050
+P 9050 1050
+F 0 "R22" H 8980 1004 50  0000 R CNN
+F 1 "10k" H 8980 1095 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 8980 1050 50  0001 C CNN
+F 3 "~" H 9050 1050 50  0001 C CNN
+	1    9050 1050
 	-1   0    0    1   
 $EndComp
 $Comp
 L power:GND #PWR030
 U 1 1 6088A442
-P 8650 1200
-F 0 "#PWR030" H 8650 950 50  0001 C CNN
-F 1 "GND" H 8800 1150 50  0000 C CNN
-F 2 "" H 8650 1200 50  0001 C CNN
-F 3 "" H 8650 1200 50  0001 C CNN
-	1    8650 1200
+P 8950 2050
+F 0 "#PWR030" H 8950 1800 50  0001 C CNN
+F 1 "GND" H 9100 2000 50  0000 C CNN
+F 2 "" H 8950 2050 50  0001 C CNN
+F 3 "" H 8950 2050 50  0001 C CNN
+	1    8950 2050
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -2647,78 +2564,72 @@ Wire Notes Line
 	550  550  550  6050
 Wire Notes Line
 	2750 6150 2750 7400
-Wire Notes Line
-	6350 7750 6350 6150
-Wire Notes Line
-	6350 7750 5350 7750
-Wire Notes Line
-	5350 6150 6350 6150
 $Comp
 L Device:D_Zener D4
 U 1 1 5FD2A087
-P 6150 2450
-F 0 "D4" V 6104 2530 50  0000 L CNN
-F 1 "TPD1E10B06QDPYRQ1" H 5850 2350 50  0000 L CNN
-F 2 "Diode_SMD:D_0402_1005Metric" H 6150 2450 50  0001 C CNN
-F 3 "https://www.ti.com/lit/ds/symlink/tpd1e10b06-q1.pdf?HQS=TI-null-null-digikeymode-df-pf-null-wwe&ts=1606712128437" H 6150 2450 50  0001 C CNN
-F 4 "TPD1E10B06QDPYRQ1" V 6150 2450 50  0001 C CNN "Part Number"
-F 5 "296-TPD1E10B06QDPYRQ1TR-ND" V 6150 2450 50  0001 C CNN "Digikey Number"
-F 6 "0.41" V 6150 2450 50  0001 C CNN "Price ($)"
-F 7 "TVS DIODE 5.5V 14V 2X1SON" V 6150 2450 50  0001 C CNN "Comment"
-	1    6150 2450
+P 6300 2450
+F 0 "D4" V 6254 2530 50  0000 L CNN
+F 1 "TPD1E10B06QDPYRQ1" H 6000 2350 50  0000 L CNN
+F 2 "Diode_SMD:D_0402_1005Metric" H 6300 2450 50  0001 C CNN
+F 3 "https://www.ti.com/lit/ds/symlink/tpd1e10b06-q1.pdf?HQS=TI-null-null-digikeymode-df-pf-null-wwe&ts=1606712128437" H 6300 2450 50  0001 C CNN
+F 4 "TPD1E10B06QDPYRQ1" V 6300 2450 50  0001 C CNN "Part Number"
+F 5 "296-TPD1E10B06QDPYRQ1TR-ND" V 6300 2450 50  0001 C CNN "Digikey Number"
+F 6 "0.41" V 6300 2450 50  0001 C CNN "Price ($)"
+F 7 "TVS DIODE 5.5V 14V 2X1SON" V 6300 2450 50  0001 C CNN "Comment"
+	1    6300 2450
 	0    1    1    0   
 $EndComp
-Text Label 6150 2150 0    50   ~ 0
+Text Label 6300 2150 0    50   ~ 0
 USB_D+
-Text Label 6600 2150 0    50   ~ 0
+Text Label 6750 2150 0    50   ~ 0
 USB_D-
-Text Label 7050 2150 0    50   ~ 0
+Text Label 7200 2150 0    50   ~ 0
 VBUS
 $Comp
 L power:GND #PWR092
 U 1 1 5FD52666
-P 6150 2700
-F 0 "#PWR092" H 6150 2450 50  0001 C CNN
-F 1 "GND" H 6000 2650 50  0000 C CNN
-F 2 "" H 6150 2700 50  0001 C CNN
-F 3 "" H 6150 2700 50  0001 C CNN
-	1    6150 2700
+P 6300 2700
+F 0 "#PWR092" H 6300 2450 50  0001 C CNN
+F 1 "GND" H 6150 2650 50  0000 C CNN
+F 2 "" H 6300 2700 50  0001 C CNN
+F 3 "" H 6300 2700 50  0001 C CNN
+	1    6300 2700
 	-1   0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR093
 U 1 1 5FD52BAA
-P 6600 2700
-F 0 "#PWR093" H 6600 2450 50  0001 C CNN
-F 1 "GND" H 6450 2650 50  0000 C CNN
-F 2 "" H 6600 2700 50  0001 C CNN
-F 3 "" H 6600 2700 50  0001 C CNN
-	1    6600 2700
+P 6750 2700
+F 0 "#PWR093" H 6750 2450 50  0001 C CNN
+F 1 "GND" H 6600 2650 50  0000 C CNN
+F 2 "" H 6750 2700 50  0001 C CNN
+F 3 "" H 6750 2700 50  0001 C CNN
+	1    6750 2700
 	-1   0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR094
 U 1 1 5FD52FB7
-P 7050 2700
-F 0 "#PWR094" H 7050 2450 50  0001 C CNN
-F 1 "GND" H 6900 2650 50  0000 C CNN
-F 2 "" H 7050 2700 50  0001 C CNN
-F 3 "" H 7050 2700 50  0001 C CNN
-	1    7050 2700
+P 7200 2700
+F 0 "#PWR094" H 7200 2450 50  0001 C CNN
+F 1 "GND" H 7050 2650 50  0000 C CNN
+F 2 "" H 7200 2700 50  0001 C CNN
+F 3 "" H 7200 2700 50  0001 C CNN
+	1    7200 2700
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	7050 2600 7050 2700
+	7200 2600 7200 2700
 Wire Wire Line
-	6600 2600 6600 2700
+	6750 2600 6750 2700
 Wire Wire Line
-	6150 2600 6150 2700
+	6300 2600 6300 2700
 Wire Wire Line
-	7050 2150 7050 2300
+	7200 2150 7200 2300
 Wire Wire Line
-	6600 2150 6600 2300
+	6750 2150 6750 2300
 Wire Wire Line
-	6150 2150 6150 2300
+	6300 2150 6300 2300
 Wire Notes Line
 	3450 3000 9400 3000
 Wire Notes Line
@@ -2737,31 +2648,31 @@ $EndComp
 $Comp
 L Device:D_Zener D8
 U 1 1 5FF00358
-P 6600 2450
-F 0 "D8" V 6554 2530 50  0000 L CNN
-F 1 "TPD1E10B06QDPYRQ1" H 6300 2350 50  0000 L CNN
-F 2 "Diode_SMD:D_0402_1005Metric" H 6600 2450 50  0001 C CNN
-F 3 "https://www.ti.com/lit/ds/symlink/tpd1e10b06-q1.pdf?HQS=TI-null-null-digikeymode-df-pf-null-wwe&ts=1606712128437" H 6600 2450 50  0001 C CNN
-F 4 "TPD1E10B06QDPYRQ1" V 6600 2450 50  0001 C CNN "Part Number"
-F 5 "296-TPD1E10B06QDPYRQ1TR-ND" V 6600 2450 50  0001 C CNN "Digikey Number"
-F 6 "0.41" V 6600 2450 50  0001 C CNN "Price ($)"
-F 7 "TVS DIODE 5.5V 14V 2X1SON" V 6600 2450 50  0001 C CNN "Comment"
-	1    6600 2450
+P 6750 2450
+F 0 "D8" V 6704 2530 50  0000 L CNN
+F 1 "TPD1E10B06QDPYRQ1" H 6450 2350 50  0000 L CNN
+F 2 "Diode_SMD:D_0402_1005Metric" H 6750 2450 50  0001 C CNN
+F 3 "https://www.ti.com/lit/ds/symlink/tpd1e10b06-q1.pdf?HQS=TI-null-null-digikeymode-df-pf-null-wwe&ts=1606712128437" H 6750 2450 50  0001 C CNN
+F 4 "TPD1E10B06QDPYRQ1" V 6750 2450 50  0001 C CNN "Part Number"
+F 5 "296-TPD1E10B06QDPYRQ1TR-ND" V 6750 2450 50  0001 C CNN "Digikey Number"
+F 6 "0.41" V 6750 2450 50  0001 C CNN "Price ($)"
+F 7 "TVS DIODE 5.5V 14V 2X1SON" V 6750 2450 50  0001 C CNN "Comment"
+	1    6750 2450
 	0    1    1    0   
 $EndComp
 $Comp
 L Device:D_Zener D21
 U 1 1 5FF00A0E
-P 7050 2450
-F 0 "D21" V 7004 2530 50  0000 L CNN
-F 1 "TPD1E10B06QDPYRQ1" H 6750 2350 50  0000 L CNN
-F 2 "Diode_SMD:D_0402_1005Metric" H 7050 2450 50  0001 C CNN
-F 3 "https://www.ti.com/lit/ds/symlink/tpd1e10b06-q1.pdf?HQS=TI-null-null-digikeymode-df-pf-null-wwe&ts=1606712128437" H 7050 2450 50  0001 C CNN
-F 4 "TPD1E10B06QDPYRQ1" V 7050 2450 50  0001 C CNN "Part Number"
-F 5 "296-TPD1E10B06QDPYRQ1TR-ND" V 7050 2450 50  0001 C CNN "Digikey Number"
-F 6 "0.41" V 7050 2450 50  0001 C CNN "Price ($)"
-F 7 "TVS DIODE 5.5V 14V 2X1SON" V 7050 2450 50  0001 C CNN "Comment"
-	1    7050 2450
+P 7200 2450
+F 0 "D21" V 7154 2530 50  0000 L CNN
+F 1 "TPD1E10B06QDPYRQ1" H 6900 2350 50  0000 L CNN
+F 2 "Diode_SMD:D_0402_1005Metric" H 7200 2450 50  0001 C CNN
+F 3 "https://www.ti.com/lit/ds/symlink/tpd1e10b06-q1.pdf?HQS=TI-null-null-digikeymode-df-pf-null-wwe&ts=1606712128437" H 7200 2450 50  0001 C CNN
+F 4 "TPD1E10B06QDPYRQ1" V 7200 2450 50  0001 C CNN "Part Number"
+F 5 "296-TPD1E10B06QDPYRQ1TR-ND" V 7200 2450 50  0001 C CNN "Digikey Number"
+F 6 "0.41" V 7200 2450 50  0001 C CNN "Price ($)"
+F 7 "TVS DIODE 5.5V 14V 2X1SON" V 7200 2450 50  0001 C CNN "Comment"
+	1    7200 2450
 	0    1    1    0   
 $EndComp
 $Comp
@@ -2871,16 +2782,16 @@ $EndComp
 $Comp
 L Device:C_Small C4
 U 1 1 5FD675CC
-P 5750 7400
-F 0 "C4" H 5600 7450 50  0000 L CNN
-F 1 "0.1uF" H 5500 7300 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 5750 7400 50  0001 C CNN
-F 3 "https://content.kemet.com/datasheets/KEM_C1005_Y5V_SMD.pdf" H 5750 7400 50  0001 C CNN
-F 4 "C0805C104Z4VACTU" H 5750 7400 50  0001 C CNN "Part Number"
-F 5 "399-9159-2-ND" H 5750 7400 50  0001 C CNN "Digikey Number"
-F 6 "0.11" H 5750 7400 50  0001 C CNN "Price ($)"
-F 7 "0.1µF -20%, +80% 16V Ceramic Capacitor Y5V 0805 (2012 Metric)" H 5750 7400 50  0001 C CNN "Comment"
-	1    5750 7400
+P 5600 7650
+F 0 "C4" H 5450 7700 50  0000 L CNN
+F 1 "0.1uF" H 5375 7550 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 5600 7650 50  0001 C CNN
+F 3 "https://content.kemet.com/datasheets/KEM_C1005_Y5V_SMD.pdf" H 5600 7650 50  0001 C CNN
+F 4 "C0805C104Z4VACTU" H 5600 7650 50  0001 C CNN "Part Number"
+F 5 "399-9159-2-ND" H 5600 7650 50  0001 C CNN "Digikey Number"
+F 6 "0.11" H 5600 7650 50  0001 C CNN "Price ($)"
+F 7 "0.1µF -20%, +80% 16V Ceramic Capacitor Y5V 0805 (2012 Metric)" H 5600 7650 50  0001 C CNN "Comment"
+	1    5600 7650
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -2944,4 +2855,244 @@ F 7 "1µF -20%, +80% 16V Ceramic Capacitor Y5V (F) 0805 (2012 Metric)" H 10600 2
 	1    10600 2250
 	1    0    0    -1  
 $EndComp
+Text Notes 2250 4900 0    79   ~ 16
+ADD BUTTONS
+$Comp
+L ClementsSymbols:DX07S016JA1R1500 J1
+U 1 1 5FE878A2
+P 8250 1550
+F 0 "J1" H 8250 2117 50  0000 C CNN
+F 1 "DX07S016JA1R1500" H 8250 2026 50  0000 C CNN
+F 2 "ClementsFootprints:DX07S016JA1R1500" H 7850 850 50  0001 L BNN
+F 3 "https://www.jae.com/direct/topics/topics_file_download/?topics_id=91780&ext_no=04&_lang=en&v=2020041313384666992409" H 8250 1550 50  0001 L BNN
+F 4 "3.31 mm" H 9110 660 50  0001 L BNN "MAXIMUM_PACKAGE_HEIGHT"
+F 5 "1" H 9480 660 50  0001 L BNN "PARTREV"
+F 6 "JAE Industry Ltd." H 7850 760 50  0001 L BNN "MANUFACTURER"
+F 7 "Manufacturer Recommendations" H 7850 660 50  0001 L BNN "STANDARD"
+F 8 "DX07S016JA1R1500" H 8250 1550 50  0001 C CNN "Part Number"
+F 9 "670-DX07S016JA1R1500TR-ND" H 8250 1550 50  0001 C CNN "Digikey Number"
+F 10 "1.51" H 8250 1550 50  0001 C CNN "Price ($)"
+F 11 "USB-C (USB TYPE-C) USB 2.0 Receptacle Connector 24 (16+8 Dummy) Position Surface Mount, Right Angle; Through Hole" H 8250 1550 50  0001 C CNN "Comment"
+	1    8250 1550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8850 1850 8950 1850
+Wire Wire Line
+	8950 1850 8950 1950
+Wire Wire Line
+	8850 1950 8950 1950
+Connection ~ 8950 1950
+Wire Wire Line
+	8950 1950 8950 2050
+Wire Wire Line
+	7650 1850 7600 1850
+Wire Wire Line
+	7600 1850 7600 1900
+$Comp
+L power:GND #PWR096
+U 1 1 5FF69B76
+P 7600 2200
+F 0 "#PWR096" H 7600 1950 50  0001 C CNN
+F 1 "GND" H 7750 2150 50  0000 C CNN
+F 2 "" H 7600 2200 50  0001 C CNN
+F 3 "" H 7600 2200 50  0001 C CNN
+	1    7600 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7650 1350 7600 1350
+Wire Wire Line
+	7600 1350 7600 1300
+$Comp
+L power:GND #PWR095
+U 1 1 5FF9042B
+P 7450 1000
+F 0 "#PWR095" H 7450 750 50  0001 C CNN
+F 1 "GND" H 7600 950 50  0000 C CNN
+F 2 "" H 7450 1000 50  0001 C CNN
+F 3 "" H 7450 1000 50  0001 C CNN
+	1    7450 1000
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	7600 1000 7600 950 
+Wire Wire Line
+	7600 950  7450 950 
+Wire Wire Line
+	7450 950  7450 1000
+$Comp
+L power:GND #PWR098
+U 1 1 5FFB752E
+P 9050 1200
+F 0 "#PWR098" H 9050 950 50  0001 C CNN
+F 1 "GND" H 9200 1150 50  0000 C CNN
+F 2 "" H 9050 1200 50  0001 C CNN
+F 3 "" H 9050 1200 50  0001 C CNN
+	1    9050 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L ClementsSymbols:PTS815_SJK_250_SMTR_LFS SW1
+U 1 1 60032C52
+P 5750 7125
+F 0 "SW1" V 5750 7050 60  0000 L CNN
+F 1 "PTS815_SJK_250_SMTR_LFS" H 4825 6850 60  0000 L CNN
+F 2 "ClementsFootprints:PTS815 SJK 250 SMTR LFS" H 5750 7350 60  0001 C CNN
+F 3 "https://www.ckswitches.com/media/2728/pts815.pdf" H 4970 6925 60  0001 C CNN
+F 4 "PTS815_SJK_250_SMTR_LFS" H 5750 6625 50  0001 C CNN "Part Number"
+F 5 "CKN12216-2-ND" H 5750 6525 50  0001 C CNN "Digikey Number"
+F 6 "0.19" H 5750 6450 50  0001 C CNN "Price ($)"
+F 7 "Tactile Switch SPST-NO Top Actuated Surface Mount" H 5750 6725 50  0001 C CNN "Comment"
+	1    5750 7125
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5825 6800 5750 6800
+Connection ~ 5750 6800
+Wire Wire Line
+	5750 6800 5650 6800
+Wire Wire Line
+	5650 7450 5725 7450
+Wire Wire Line
+	5725 7500 5725 7450
+Connection ~ 5725 7500
+Wire Wire Line
+	5725 7500 5600 7500
+Connection ~ 5725 7450
+Wire Wire Line
+	5725 7450 5825 7450
+$Comp
+L ClementsSymbols:PTS815_SJK_250_SMTR_LFS SW2
+U 1 1 600F54B4
+P 6675 7125
+F 0 "SW2" V 6675 7050 60  0000 L CNN
+F 1 "PTS815_SJK_250_SMTR_LFS" H 6050 6850 60  0000 L CNN
+F 2 "ClementsFootprints:PTS815 SJK 250 SMTR LFS" H 6675 7350 60  0001 C CNN
+F 3 "https://www.ckswitches.com/media/2728/pts815.pdf" H 5895 6925 60  0001 C CNN
+F 4 "PTS815_SJK_250_SMTR_LFS" H 6675 6625 50  0001 C CNN "Part Number"
+F 5 "CKN12216-2-ND" H 6675 6525 50  0001 C CNN "Digikey Number"
+F 6 "0.19" H 6675 6450 50  0001 C CNN "Price ($)"
+F 7 "Tactile Switch SPST-NO Top Actuated Surface Mount" H 6675 6725 50  0001 C CNN "Comment"
+	1    6675 7125
+	0    1    1    0   
+$EndComp
+$Comp
+L ClementsSymbols:PTS815_SJK_250_SMTR_LFS SW3
+U 1 1 600F63C9
+P 7600 7125
+F 0 "SW3" V 7600 7050 60  0000 L CNN
+F 1 "PTS815_SJK_250_SMTR_LFS" H 6975 6850 60  0000 L CNN
+F 2 "ClementsFootprints:PTS815 SJK 250 SMTR LFS" H 7600 7350 60  0001 C CNN
+F 3 "https://www.ckswitches.com/media/2728/pts815.pdf" H 6820 6925 60  0001 C CNN
+F 4 "PTS815_SJK_250_SMTR_LFS" H 7600 6625 50  0001 C CNN "Part Number"
+F 5 "CKN12216-2-ND" H 7600 6525 50  0001 C CNN "Digikey Number"
+F 6 "0.19" H 7600 6450 50  0001 C CNN "Price ($)"
+F 7 "Tactile Switch SPST-NO Top Actuated Surface Mount" H 7600 6725 50  0001 C CNN "Comment"
+	1    7600 7125
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C38
+U 1 1 600F7352
+P 6925 7125
+F 0 "C38" H 6775 7175 50  0000 L CNN
+F 1 "0.1uF" H 6675 7025 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 6925 7125 50  0001 C CNN
+F 3 "https://content.kemet.com/datasheets/KEM_C1005_Y5V_SMD.pdf" H 6925 7125 50  0001 C CNN
+F 4 "C0805C104Z4VACTU" H 6925 7125 50  0001 C CNN "Part Number"
+F 5 "399-9159-2-ND" H 6925 7125 50  0001 C CNN "Digikey Number"
+F 6 "0.11" H 6925 7125 50  0001 C CNN "Price ($)"
+F 7 "0.1µF -20%, +80% 16V Ceramic Capacitor Y5V 0805 (2012 Metric)" H 6925 7125 50  0001 C CNN "Comment"
+	1    6925 7125
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C39
+U 1 1 600F7C39
+P 7850 7125
+F 0 "C39" H 7700 7175 50  0000 L CNN
+F 1 "0.1uF" H 7600 7025 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 7850 7125 50  0001 C CNN
+F 3 "https://content.kemet.com/datasheets/KEM_C1005_Y5V_SMD.pdf" H 7850 7125 50  0001 C CNN
+F 4 "C0805C104Z4VACTU" H 7850 7125 50  0001 C CNN "Part Number"
+F 5 "399-9159-2-ND" H 7850 7125 50  0001 C CNN "Digikey Number"
+F 6 "0.11" H 7850 7125 50  0001 C CNN "Price ($)"
+F 7 "0.1µF -20%, +80% 16V Ceramic Capacitor Y5V 0805 (2012 Metric)" H 7850 7125 50  0001 C CNN "Comment"
+	1    7850 7125
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR088
+U 1 1 600F83EA
+P 6750 7550
+F 0 "#PWR088" H 6750 7300 50  0001 C CNN
+F 1 "GND" H 6600 7500 50  0000 C CNN
+F 2 "" H 6750 7550 50  0001 C CNN
+F 3 "" H 6750 7550 50  0001 C CNN
+	1    6750 7550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR097
+U 1 1 600F8ECE
+P 7675 7550
+F 0 "#PWR097" H 7675 7300 50  0001 C CNN
+F 1 "GND" H 7525 7500 50  0000 C CNN
+F 2 "" H 7675 7550 50  0001 C CNN
+F 3 "" H 7675 7550 50  0001 C CNN
+	1    7675 7550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7675 7550 7675 7450
+Wire Wire Line
+	7675 7450 7500 7450
+Connection ~ 7675 7450
+Wire Wire Line
+	6750 7550 6750 7450
+Wire Wire Line
+	6750 7450 6575 7450
+Connection ~ 6750 7450
+Text Label 6750 6675 1    50   ~ 0
+ESP_IO0
+Wire Wire Line
+	6750 6675 6750 6800
+Wire Wire Line
+	6750 6800 6575 6800
+Connection ~ 6750 6800
+Wire Wire Line
+	6925 7025 6925 6800
+Wire Wire Line
+	6925 6800 6750 6800
+Wire Wire Line
+	6925 7225 6925 7450
+Wire Wire Line
+	6925 7450 6750 7450
+Text Label 7675 6675 1    50   ~ 0
+ESP_EN
+Wire Wire Line
+	7675 6675 7675 6800
+Wire Wire Line
+	7675 6800 7500 6800
+Connection ~ 7675 6800
+Wire Wire Line
+	7850 7025 7850 6800
+Wire Wire Line
+	7850 6800 7675 6800
+Wire Wire Line
+	7850 7225 7850 7450
+Wire Wire Line
+	7850 7450 7675 7450
+Wire Notes Line
+	5350 7925 8125 7925
+Wire Notes Line
+	8125 7925 8125 6150
+Wire Notes Line
+	5350 6150 5350 7925
+Wire Notes Line
+	5350 6150 8125 6150
+NoConn ~ 14750 2150
+NoConn ~ 14850 2150
+NoConn ~ 14950 2150
 $EndSCHEMATC
