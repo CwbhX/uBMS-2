@@ -895,10 +895,6 @@ NoConn ~ 1250 2650
 NoConn ~ 1250 2550
 NoConn ~ 1250 1550
 NoConn ~ 1250 1650
-Text Label 1250 6600 0    50   ~ 0
-V_IN
-Wire Wire Line
-	1250 6600 1150 6600
 $Comp
 L Connector_Generic:Conn_01x02 J2
 U 1 1 5FDA1C2F
@@ -1002,8 +998,6 @@ Wire Notes Line
 	2550 6250 2550 6850
 Wire Notes Line
 	1650 6900 1650 7600
-Text Label 1150 6600 2    50   ~ 0
-Batt_Pos
 $Comp
 L Device:R R7
 U 1 1 5F2F0639
@@ -3636,10 +3630,10 @@ NoConn ~ 9250 8400
 NoConn ~ 9500 8190
 NoConn ~ 9250 7980
 $Comp
-L Device:Polyfuse F?
+L Device:Polyfuse F1
 U 1 1 62AD4D6D
 P 9850 850
-F 0 "F?" V 9625 850 50  0000 C CNN
+F 0 "F1" V 9625 850 50  0000 C CNN
 F 1 "500mA PTC" V 9716 850 50  0000 C CNN
 F 2 "ClementsFootprints:0ZCJ0050FF2G_3216X125N" H 9900 650 50  0001 L CNN
 F 3 "https://www.belfuse.com/resources/datasheets/circuitprotection/ds-cp-0zcj-series.pdf" H 9850 850 50  0001 C CNN
@@ -3650,4 +3644,10 @@ F 7 "Polymeric PTC Resettable Fuse 8V 500mA Ih Surface Mount 1206 (3216 Metric),
 	1    9850 850 
 	0    1    1    0   
 $EndComp
+Text Label 1200 6625 2    50   ~ 0
+Batt_Pos
+Wire Wire Line
+	1300 6625 1200 6625
+Text Label 1300 6625 0    50   ~ 0
+V_IN
 $EndSCHEMATC
