@@ -654,21 +654,6 @@ Wire Wire Line
 	11600 2500 11600 2600
 Text Label 13150 750  2    50   ~ 0
 Batt_Pos
-$Comp
-L Device:Fuse F1
-U 1 1 5F24DB09
-P 9850 850
-F 0 "F1" V 9900 700 50  0000 C CNN
-F 1 "0ZCF0030FF2C" V 9650 850 50  0000 C CNN
-F 2 "Fuse:Fuse_2920_7451Metric_Pad2.10x5.45mm_HandSolder" V 9780 850 50  0001 C CNN
-F 3 "https://belfuse.com/resources/datasheets/circuitprotection/ds-cp-0zcf-series.pdf" H 9850 850 50  0001 C CNN
-F 4 "0ZCF0030FF2C" V 9750 900 50  0001 C CNN "Part Number"
-F 5 "507-1740-2-ND" V 9850 850 50  0001 C CNN "Digikey Number"
-F 6 "0.23" V 9850 850 50  0001 C CNN "Price ($)"
-F 7 "300mA PTC" V 9750 850 50  0000 C CNN "Comment"
-	1    9850 850 
-	0    1    1    0   
-$EndComp
 Text Label 13700 750  0    50   ~ 0
 SYS_Pos
 Wire Notes Line
@@ -3650,4 +3635,19 @@ Wire Wire Line
 NoConn ~ 9250 8400
 NoConn ~ 9500 8190
 NoConn ~ 9250 7980
+$Comp
+L Device:Polyfuse F?
+U 1 1 62AD4D6D
+P 9850 850
+F 0 "F?" V 9625 850 50  0000 C CNN
+F 1 "500mA PTC" V 9716 850 50  0000 C CNN
+F 2 "ClementsFootprints:0ZCJ0050FF2G_3216X125N" H 9900 650 50  0001 L CNN
+F 3 "https://www.belfuse.com/resources/datasheets/circuitprotection/ds-cp-0zcj-series.pdf" H 9850 850 50  0001 C CNN
+F 4 "0ZCJ0050FF2G" V 9850 850 50  0001 C CNN "Part Number"
+F 5 "507-1802-2-ND" V 9850 850 50  0001 C CNN "Digikey Number"
+F 6 "0.11" V 9850 850 50  0001 C CNN "Price ($)"
+F 7 "Polymeric PTC Resettable Fuse 8V 500mA Ih Surface Mount 1206 (3216 Metric), Concave" V 9850 850 50  0001 C CNN "Comment"
+	1    9850 850 
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC
