@@ -89,16 +89,12 @@ Text Label 12610 3835 0    50   ~ 0
 TempSense
 Text Label 12610 3935 0    50   ~ 0
 CurrentSense
-Text Label 12610 4035 0    50   ~ 0
-ExtADCInput
 Wire Wire Line
 	12610 3735 12560 3735
 Wire Wire Line
 	12610 3835 12560 3835
 Wire Wire Line
 	12610 3935 12560 3935
-Wire Wire Line
-	12610 4035 12560 4035
 Text Label 11710 3835 2    50   ~ 0
 SCL_5V
 Text Label 11710 3935 2    50   ~ 0
@@ -593,13 +589,13 @@ Wire Wire Line
 Wire Wire Line
 	7800 5875 7800 5775
 Connection ~ 7450 5875
-Text Label 10625 3575 0    50   ~ 0
-LED_BAT_G1
-Text Label 10625 3675 0    50   ~ 0
-LED_BAT_G2
-Text Label 10625 4075 0    50   ~ 0
-LED_BAT_Y2
 Text Label 10625 4175 0    50   ~ 0
+LED_BAT_G1
+Text Label 10625 4075 0    50   ~ 0
+LED_BAT_G2
+Text Label 10625 3675 0    50   ~ 0
+LED_BAT_Y2
+Text Label 10625 3575 0    50   ~ 0
 LED_BAT_R
 Text Label 8150 5175 1    50   ~ 0
 LED_BAT_G3
@@ -953,21 +949,6 @@ Text Notes 1600 6950 2    50   Italic 0
 Bridge for Power Input
 Wire Notes Line
 	1650 7600 2550 7600
-$Comp
-L Connector_Generic:Conn_01x01 J4
-U 1 1 6009B1C4
-P 800 7350
-F 0 "J4" H 718 7125 50  0000 C CNN
-F 1 "Conn_01x01" H 718 7216 50  0000 C CNN
-F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 800 7350 50  0001 C CNN
-F 3 "~" H 800 7350 50  0001 C CNN
-	1    800  7350
-	-1   0    0    1   
-$EndComp
-Text Label 1100 7350 0    50   ~ 0
-ExtADCInput
-Wire Wire Line
-	1100 7350 1000 7350
 Wire Notes Line
 	1600 7000 650  7000
 Wire Notes Line
@@ -3378,11 +3359,11 @@ Wire Wire Line
 Connection ~ 9525 4325
 Wire Wire Line
 	9525 4325 9525 4225
-Text Label 10625 3975 0    50   ~ 0
+Text Label 10625 3775 0    50   ~ 0
 LED_BAT_Y1
 Text Label 10625 3875 0    50   ~ 0
 LED_BAT_G4
-Text Label 10625 3775 0    50   ~ 0
+Text Label 10625 3975 0    50   ~ 0
 LED_BAT_G3
 Wire Wire Line
 	10625 3475 10575 3475
@@ -3404,7 +3385,7 @@ Text Label 8475 3450 0    50   ~ 0
 7A
 Wire Wire Line
 	8475 3450 8425 3450
-Text Label 8475 3550 0    50   ~ 0
+Text Label 8475 4150 0    50   ~ 0
 7B
 Text Label 8475 3650 0    50   ~ 0
 7C
@@ -3416,7 +3397,7 @@ Text Label 8475 3950 0    50   ~ 0
 7F
 Text Label 8475 4050 0    50   ~ 0
 7G
-Text Label 8475 4150 0    50   ~ 0
+Text Label 8475 3550 0    50   ~ 0
 7DP
 Wire Wire Line
 	8475 3550 8425 3550
@@ -3650,4 +3631,5 @@ Wire Wire Line
 	1300 6625 1200 6625
 Text Label 1300 6625 0    50   ~ 0
 V_IN
+NoConn ~ 12560 4035
 $EndSCHEMATC

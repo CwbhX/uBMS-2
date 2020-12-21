@@ -127,7 +127,7 @@ Wire Wire Line
 	10450 2300 10400 2300
 Wire Wire Line
 	10450 2200 10400 2200
-Text Label 2900 1650 0    50   ~ 0
+Text Label 2900 1850 0    50   ~ 0
 Cell1_P
 Wire Wire Line
 	2900 1650 2850 1650
@@ -516,27 +516,27 @@ F 3 "" H 7550 4350 50  0001 C CNN
 	1    7550 4350
 	1    0    0    -1  
 $EndComp
-Text Label 2900 1750 0    50   ~ 0
-Cell2_Sense
-Text Label 2900 1850 0    50   ~ 0
-Cell3_Sense
-Text Label 2900 1950 0    50   ~ 0
-Cell4_Sense
-Text Label 2900 2050 0    50   ~ 0
-Cell5_Sense
-Text Label 2900 2150 0    50   ~ 0
-Cell6_Sense
-Text Label 2900 2250 0    50   ~ 0
-Cell7_Sense
-Text Label 2900 2350 0    50   ~ 0
-Cell8_Sense
 Text Label 2900 2450 0    50   ~ 0
-Cell9_Sense
-Text Label 2900 2550 0    50   ~ 0
-Cell10_Sense
-Text Label 2900 2650 0    50   ~ 0
-Cell11_Sense
+Cell2_Sense
+Text Label 2900 2350 0    50   ~ 0
+Cell3_Sense
+Text Label 2900 1650 0    50   ~ 0
+Cell4_Sense
+Text Label 2900 2250 0    50   ~ 0
+Cell5_Sense
+Text Label 2900 1750 0    50   ~ 0
+Cell6_Sense
+Text Label 2900 2150 0    50   ~ 0
+Cell7_Sense
 Text Label 2900 2750 0    50   ~ 0
+Cell8_Sense
+Text Label 2900 2050 0    50   ~ 0
+Cell9_Sense
+Text Label 2900 2650 0    50   ~ 0
+Cell10_Sense
+Text Label 2900 1950 0    50   ~ 0
+Cell11_Sense
+Text Label 2900 2550 0    50   ~ 0
 Cell12_Sense
 Wire Wire Line
 	2850 2850 2900 2850

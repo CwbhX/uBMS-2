@@ -504,29 +504,29 @@ Wire Wire Line
 	7000 2700 7000 2750
 Wire Wire Line
 	7500 2700 7500 2750
-Text Label 2600 1500 0    50   ~ 0
+Text Label 2600 2300 0    50   ~ 0
 CellTemp_1
-Text Label 2600 1600 0    50   ~ 0
+Text Label 2600 2200 0    50   ~ 0
 CellTemp_2
-Text Label 2600 1700 0    50   ~ 0
+Text Label 2600 2400 0    50   ~ 0
 CellTemp_3
-Text Label 2600 1800 0    50   ~ 0
+Text Label 2600 2100 0    50   ~ 0
 CellTemp_4
-Text Label 2600 1900 0    50   ~ 0
+Text Label 2600 2500 0    50   ~ 0
 CellTemp_5
 Text Label 2600 2000 0    50   ~ 0
 CellTemp_6
-Text Label 2600 2100 0    50   ~ 0
-CellTemp_7
-Text Label 2600 2200 0    50   ~ 0
-CellTemp_8
-Text Label 2600 2300 0    50   ~ 0
-CellTemp_9
-Text Label 2600 2400 0    50   ~ 0
-CellTemp_10
-Text Label 2600 2500 0    50   ~ 0
-CellTemp_11
 Text Label 2600 2600 0    50   ~ 0
+CellTemp_7
+Text Label 2600 1900 0    50   ~ 0
+CellTemp_8
+Text Label 2600 2700 0    50   ~ 0
+CellTemp_9
+Text Label 2600 1800 0    50   ~ 0
+CellTemp_10
+Text Label 2600 2800 0    50   ~ 0
+CellTemp_11
+Text Label 2600 1700 0    50   ~ 0
 CellTemp_12
 Wire Wire Line
 	2500 1500 2600 1500
@@ -768,7 +768,7 @@ F 3 "" H 8000 3650 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	8000 3650 8000 3700
-Text Label 2600 2700 0    50   ~ 0
+Text Label 2600 1500 0    50   ~ 0
 Mosfet_Temp
 Wire Wire Line
 	4850 4050 5000 4050
@@ -800,7 +800,7 @@ Wire Wire Line
 	2000 3300 2000 3400
 Text Label 4850 4050 2    50   ~ 0
 Mosfet_Temp
-Text Label 2600 2800 0    50   ~ 0
+Text Label 2600 1600 0    50   ~ 0
 Balance_Temp
 Text Label 2600 2900 0    50   ~ 0
 Power_Temp
