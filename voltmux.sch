@@ -837,7 +837,11 @@ P 10100 2400
 F 0 "J5" H 10150 2917 50  0000 C CNN
 F 1 "Conn_02x07_Odd_Even" H 10150 2826 50  0000 C CNN
 F 2 "uBMS-2:Molex_Milli_Grid_0878325623_TopBottom" H 10100 2400 50  0001 C CNN
-F 3 "~" H 10100 2400 50  0001 C CNN
+F 3 "https://media.digikey.com/pdf/Data%20Sheets/Molex%20PDFs/87832-300_Pkg_Spec.pdf" H 10100 2400 50  0001 C CNN
+F 4 "0878325623" H 10100 2400 50  0001 C CNN "Part Number"
+F 5 "WM6815TR-ND" H 10100 2400 50  0001 C CNN "Digikey Number"
+F 6 "1.56" H 10100 2400 50  0001 C CNN "Price ($)"
+F 7 "Connector Header Surface Mount 14 position 0.079\" (2.00mm)" H 10100 2400 50  0001 C CNN "Comment"
 	1    10100 2400
 	1    0    0    -1  
 $EndComp

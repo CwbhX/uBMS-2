@@ -99,6 +99,10 @@ F 0 "Q4" H 2200 1350 50  0000 L CNN
 F 1 "FQD5N20L" H 1650 1650 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:TO-252-2" H 2850 1450 50  0001 C CNN
 F 3 "https://www.mouser.com/datasheet/2/149/FQD5N20L-266424.pdf" H 2150 1500 50  0001 C CNN
+F 4 "FQD5N20LTM" H 2150 1500 50  0001 C CNN "Part Number"
+F 5 "FQD5N20LTMTR-ND" H 2150 1500 50  0001 C CNN "Digikey Number"
+F 6 "0.59" H 2150 1500 50  0001 C CNN "Price ($)"
+F 7 "N-Channel 200V 3.8A (Tc) 2.5W (Ta), 37W (Tc) Surface Mount D-Pak" H 2150 1500 50  0001 C CNN "Comment"
 	1    2150 1500
 	1    0    0    -1  
 $EndComp
@@ -171,6 +175,10 @@ F 0 "Q5" H 4300 1350 50  0000 L CNN
 F 1 "FQD5N20L" H 3750 1650 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:TO-252-2" H 4950 1450 50  0001 C CNN
 F 3 "https://www.mouser.com/datasheet/2/149/FQD5N20L-266424.pdf" H 4250 1500 50  0001 C CNN
+F 4 "FQD5N20LTM" H 4250 1500 50  0001 C CNN "Part Number"
+F 5 "FQD5N20LTMTR-ND" H 4250 1500 50  0001 C CNN "Digikey Number"
+F 6 "0.59" H 4250 1500 50  0001 C CNN "Price ($)"
+F 7 "N-Channel 200V 3.8A (Tc) 2.5W (Ta), 37W (Tc) Surface Mount D-Pak" H 4250 1500 50  0001 C CNN "Comment"
 	1    4250 1500
 	1    0    0    -1  
 $EndComp
@@ -227,6 +235,10 @@ F 0 "Q6" H 6400 1350 50  0000 L CNN
 F 1 "FQD5N20L" H 5850 1650 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:TO-252-2" H 7050 1450 50  0001 C CNN
 F 3 "https://www.mouser.com/datasheet/2/149/FQD5N20L-266424.pdf" H 6350 1500 50  0001 C CNN
+F 4 "FQD5N20LTM" H 6350 1500 50  0001 C CNN "Part Number"
+F 5 "FQD5N20LTMTR-ND" H 6350 1500 50  0001 C CNN "Digikey Number"
+F 6 "0.59" H 6350 1500 50  0001 C CNN "Price ($)"
+F 7 "N-Channel 200V 3.8A (Tc) 2.5W (Ta), 37W (Tc) Surface Mount D-Pak" H 6350 1500 50  0001 C CNN "Comment"
 	1    6350 1500
 	1    0    0    -1  
 $EndComp
@@ -283,6 +295,10 @@ F 0 "Q7" H 8500 1350 50  0000 L CNN
 F 1 "FQD5N20L" H 8000 1650 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:TO-252-2" H 9150 1450 50  0001 C CNN
 F 3 "https://www.mouser.com/datasheet/2/149/FQD5N20L-266424.pdf" H 8450 1500 50  0001 C CNN
+F 4 "FQD5N20LTM" H 8450 1500 50  0001 C CNN "Part Number"
+F 5 "FQD5N20LTMTR-ND" H 8450 1500 50  0001 C CNN "Digikey Number"
+F 6 "0.59" H 8450 1500 50  0001 C CNN "Price ($)"
+F 7 "N-Channel 200V 3.8A (Tc) 2.5W (Ta), 37W (Tc) Surface Mount D-Pak" H 8450 1500 50  0001 C CNN "Comment"
 	1    8450 1500
 	1    0    0    -1  
 $EndComp
@@ -339,6 +355,10 @@ F 0 "Q8" H 2200 2850 50  0000 L CNN
 F 1 "FQD5N20L" H 1650 3150 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:TO-252-2" H 2850 2950 50  0001 C CNN
 F 3 "https://www.mouser.com/datasheet/2/149/FQD5N20L-266424.pdf" H 2150 3000 50  0001 C CNN
+F 4 "FQD5N20LTM" H 2150 3000 50  0001 C CNN "Part Number"
+F 5 "FQD5N20LTMTR-ND" H 2150 3000 50  0001 C CNN "Digikey Number"
+F 6 "0.59" H 2150 3000 50  0001 C CNN "Price ($)"
+F 7 "N-Channel 200V 3.8A (Tc) 2.5W (Ta), 37W (Tc) Surface Mount D-Pak" H 2150 3000 50  0001 C CNN "Comment"
 	1    2150 3000
 	1    0    0    -1  
 $EndComp
@@ -395,6 +415,10 @@ F 0 "Q9" H 4300 2850 50  0000 L CNN
 F 1 "FQD5N20L" H 3750 3150 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:TO-252-2" H 4950 2950 50  0001 C CNN
 F 3 "https://www.mouser.com/datasheet/2/149/FQD5N20L-266424.pdf" H 4250 3000 50  0001 C CNN
+F 4 "FQD5N20LTM" H 4250 3000 50  0001 C CNN "Part Number"
+F 5 "FQD5N20LTMTR-ND" H 4250 3000 50  0001 C CNN "Digikey Number"
+F 6 "0.59" H 4250 3000 50  0001 C CNN "Price ($)"
+F 7 "N-Channel 200V 3.8A (Tc) 2.5W (Ta), 37W (Tc) Surface Mount D-Pak" H 4250 3000 50  0001 C CNN "Comment"
 	1    4250 3000
 	1    0    0    -1  
 $EndComp
@@ -451,6 +475,10 @@ F 0 "Q10" H 6400 2850 50  0000 L CNN
 F 1 "FQD5N20L" H 5850 3150 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:TO-252-2" H 7050 2950 50  0001 C CNN
 F 3 "https://www.mouser.com/datasheet/2/149/FQD5N20L-266424.pdf" H 6350 3000 50  0001 C CNN
+F 4 "FQD5N20LTM" H 6350 3000 50  0001 C CNN "Part Number"
+F 5 "FQD5N20LTMTR-ND" H 6350 3000 50  0001 C CNN "Digikey Number"
+F 6 "0.59" H 6350 3000 50  0001 C CNN "Price ($)"
+F 7 "N-Channel 200V 3.8A (Tc) 2.5W (Ta), 37W (Tc) Surface Mount D-Pak" H 6350 3000 50  0001 C CNN "Comment"
 	1    6350 3000
 	1    0    0    -1  
 $EndComp
@@ -507,6 +535,10 @@ F 0 "Q11" H 8500 2850 50  0000 L CNN
 F 1 "FQD5N20L" H 7950 3150 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:TO-252-2" H 9150 2950 50  0001 C CNN
 F 3 "https://www.mouser.com/datasheet/2/149/FQD5N20L-266424.pdf" H 8450 3000 50  0001 C CNN
+F 4 "FQD5N20LTM" H 8450 3000 50  0001 C CNN "Part Number"
+F 5 "FQD5N20LTMTR-ND" H 8450 3000 50  0001 C CNN "Digikey Number"
+F 6 "0.59" H 8450 3000 50  0001 C CNN "Price ($)"
+F 7 "N-Channel 200V 3.8A (Tc) 2.5W (Ta), 37W (Tc) Surface Mount D-Pak" H 8450 3000 50  0001 C CNN "Comment"
 	1    8450 3000
 	1    0    0    -1  
 $EndComp
@@ -563,6 +595,10 @@ F 0 "Q12" H 2200 4350 50  0000 L CNN
 F 1 "FQD5N20L" H 1650 4650 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:TO-252-2" H 2850 4450 50  0001 C CNN
 F 3 "https://www.mouser.com/datasheet/2/149/FQD5N20L-266424.pdf" H 2150 4500 50  0001 C CNN
+F 4 "FQD5N20LTM" H 2150 4500 50  0001 C CNN "Part Number"
+F 5 "FQD5N20LTMTR-ND" H 2150 4500 50  0001 C CNN "Digikey Number"
+F 6 "0.59" H 2150 4500 50  0001 C CNN "Price ($)"
+F 7 "N-Channel 200V 3.8A (Tc) 2.5W (Ta), 37W (Tc) Surface Mount D-Pak" H 2150 4500 50  0001 C CNN "Comment"
 	1    2150 4500
 	1    0    0    -1  
 $EndComp
@@ -619,6 +655,10 @@ F 0 "Q13" H 4300 4350 50  0000 L CNN
 F 1 "FQD5N20L" H 3750 4650 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:TO-252-2" H 4950 4450 50  0001 C CNN
 F 3 "https://www.mouser.com/datasheet/2/149/FQD5N20L-266424.pdf" H 4250 4500 50  0001 C CNN
+F 4 "FQD5N20LTM" H 4250 4500 50  0001 C CNN "Part Number"
+F 5 "FQD5N20LTMTR-ND" H 4250 4500 50  0001 C CNN "Digikey Number"
+F 6 "0.59" H 4250 4500 50  0001 C CNN "Price ($)"
+F 7 "N-Channel 200V 3.8A (Tc) 2.5W (Ta), 37W (Tc) Surface Mount D-Pak" H 4250 4500 50  0001 C CNN "Comment"
 	1    4250 4500
 	1    0    0    -1  
 $EndComp
@@ -668,17 +708,6 @@ Cell10_P
 Wire Wire Line
 	4250 4300 4250 4150
 $Comp
-L uBMS-Parts:FQD5N20L Q14
-U 1 1 5F7BAE82
-P 6350 4500
-F 0 "Q14" H 6400 4350 50  0000 L CNN
-F 1 "FQD5N20L" H 5850 4650 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:TO-252-2" H 7050 4450 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/149/FQD5N20L-266424.pdf" H 6350 4500 50  0001 C CNN
-	1    6350 4500
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:R R86
 U 1 1 5F7BAE88
 P 5700 4700
@@ -721,8 +750,6 @@ Wire Wire Line
 	5950 4850 6350 4850
 Text Label 6350 4150 0    50   ~ 0
 Cell11_P
-Wire Wire Line
-	6350 4300 6350 4150
 $Comp
 L uBMS-Parts:FQD5N20L Q15
 U 1 1 5F7BAEAF
@@ -731,6 +758,10 @@ F 0 "Q15" H 8500 4350 50  0000 L CNN
 F 1 "FQD5N20L" H 7950 4650 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:TO-252-2" H 9150 4450 50  0001 C CNN
 F 3 "https://www.mouser.com/datasheet/2/149/FQD5N20L-266424.pdf" H 8450 4500 50  0001 C CNN
+F 4 "FQD5N20LTM" H 8450 4500 50  0001 C CNN "Part Number"
+F 5 "FQD5N20LTMTR-ND" H 8450 4500 50  0001 C CNN "Digikey Number"
+F 6 "0.59" H 8450 4500 50  0001 C CNN "Price ($)"
+F 7 "N-Channel 200V 3.8A (Tc) 2.5W (Ta), 37W (Tc) Surface Mount D-Pak" H 8450 4500 50  0001 C CNN "Comment"
 	1    8450 4500
 	1    0    0    -1  
 $EndComp
@@ -889,7 +920,11 @@ P 10350 3150
 F 0 "J7" H 10400 3667 50  0000 C CNN
 F 1 "Conn_02x07_Odd_Even" H 10400 3576 50  0000 C CNN
 F 2 "uBMS-2:Molex_Milli_Grid_0878325623_TopBottom" H 10350 3150 50  0001 C CNN
-F 3 "~" H 10350 3150 50  0001 C CNN
+F 3 "https://media.digikey.com/pdf/Data%20Sheets/Molex%20PDFs/87832-300_Pkg_Spec.pdf" H 10350 3150 50  0001 C CNN
+F 4 "0878325623" H 10350 3150 50  0001 C CNN "Part Number"
+F 5 "WM6815TR-ND" H 10350 3150 50  0001 C CNN "Digikey Number"
+F 6 "1.56" H 10350 3150 50  0001 C CNN "Price ($)"
+F 7 "Connector Header Surface Mount 14 position 0.079\" (2.00mm)" H 10350 3150 50  0001 C CNN "Comment"
 	1    10350 3150
 	1    0    0    -1  
 $EndComp
@@ -1015,12 +1050,10 @@ Wire Wire Line
 	6550 4400 6550 4300
 Wire Wire Line
 	6550 4300 6350 4300
-Connection ~ 6350 4300
 Wire Wire Line
 	6550 4600 6550 4700
 Wire Wire Line
 	6550 4700 6350 4700
-Connection ~ 6350 4700
 Wire Wire Line
 	8650 4400 8650 4300
 Wire Wire Line
@@ -1359,6 +1392,25 @@ F 5 "399-17616-2-ND" H 8650 4500 50  0001 C CNN "Digikey Number"
 F 6 "0.1" H 8650 4500 50  0001 C CNN "Price ($)"
 F 7 "10000pF ±5% 50V Ceramic Capacitor X7R 0805 (2012 Metric)" H 8650 4500 50  0001 C CNN "Comment"
 	1    8650 4500
+	1    0    0    -1  
+$EndComp
+Connection ~ 6350 4700
+Connection ~ 6350 4300
+Wire Wire Line
+	6350 4300 6350 4150
+$Comp
+L uBMS-Parts:FQD5N20L Q14
+U 1 1 5F7BAE82
+P 6350 4500
+F 0 "Q14" H 6400 4350 50  0000 L CNN
+F 1 "FQD5N20L" H 5850 4650 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:TO-252-2" H 7050 4450 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/149/FQD5N20L-266424.pdf" H 6350 4500 50  0001 C CNN
+F 4 "FQD5N20LTM" H 6350 4500 50  0001 C CNN "Part Number"
+F 5 "FQD5N20LTMTR-ND" H 6350 4500 50  0001 C CNN "Digikey Number"
+F 6 "0.59" H 6350 4500 50  0001 C CNN "Price ($)"
+F 7 "N-Channel 200V 3.8A (Tc) 2.5W (Ta), 37W (Tc) Surface Mount D-Pak" H 6350 4500 50  0001 C CNN "Comment"
+	1    6350 4500
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
