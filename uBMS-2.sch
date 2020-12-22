@@ -42,6 +42,10 @@ F 0 "U2" H 11910 4285 50  0000 C CNN
 F 1 "ADS1115IDGS" H 11860 3485 50  0000 C CNN
 F 2 "Package_SO:TSSOP-10_3x3mm_P0.5mm" H 12160 3335 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/ads1113.pdf" H 12110 2935 50  0001 C CNN
+F 4 "ADS1115IDGSR" H 12160 3835 50  0001 C CNN "Part Number"
+F 5 "296-38849-2-ND" H 12160 3835 50  0001 C CNN "Digikey Number"
+F 6 "5.30" H 12160 3835 50  0001 C CNN "Price ($)"
+F 7 "16 Bit Analog to Digital Converter 2, 4 Input 1 Sigma-Delta 10-VSSOP" H 12160 3835 50  0001 C CNN "Comment"
 	1    12160 3835
 	-1   0    0    -1  
 $EndComp
@@ -123,6 +127,10 @@ F 0 "U3" H 10350 1950 50  0000 C CNN
 F 1 "TLV1117-33" H 10200 2351 50  0000 C CNN
 F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 10200 2200 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tlv1117.pdf" H 10200 2200 50  0001 C CNN
+F 4 "TLV1117LV33DCYR" H 10200 2200 50  0001 C CNN "Part Number"
+F 5 "296-28778-2-ND" H 10200 2200 50  0001 C CNN "Digikey Number"
+F 6 "0.42" H 10200 2200 50  0001 C CNN "Price ($)"
+F 7 "Linear Voltage Regulator IC  1 Output  1A SOT-223-4" H 10200 2200 50  0001 C CNN "Comment"
 	1    10200 2200
 	1    0    0    -1  
 $EndComp
@@ -316,6 +324,10 @@ F 0 "U9" H 9975 6092 50  0000 C CNN
 F 1 "VDMG10C0" H 9975 6001 50  0000 C CNN
 F 2 "Display_7Segment:VDMG10C0" H 9975 5425 50  0001 C CNN
 F 3 "https://www.vishay.com/docs/84196/vdmx10x0.pdf" H 9975 5425 50  0001 C CNN
+F 4 "VDMG10C0" H 9975 5425 50  0001 C CNN "Part Number"
+F 5 "VDMG10C0TR-ND" H 9975 5425 50  0001 C CNN "Digikey Number"
+F 6 "1.75" H 9975 5425 50  0001 C CNN "Price ($)"
+F 7 "Display Modules - LED Character and Numeric Green 7-Segment 1 Character Common Cathode 2V 20mA 0.591\" H x 0.386\" W x 0.124\" D (15.00mm x 9.80mm x 3.15mm) 10-SMD, No Lead" H 9975 5425 50  0001 C CNN "Comment"
 	1    9975 5425
 	1    0    0    -1  
 $EndComp
@@ -672,6 +684,10 @@ F 0 "U6" H 13700 1300 50  0000 C CNN
 F 1 "TSC2012IDT" H 13150 1200 50  0000 C CNN
 F 2 "Package_SO:SO-8_3.9x4.9mm_P1.27mm" H 14250 1200 50  0001 C CNN
 F 3 "https://www.st.com/resource/en/datasheet/tsc2012.pdf" H 13450 1650 50  0001 C CNN
+F 4 "TSC2012IDT" H 13450 1650 50  0001 C CNN "Part Number"
+F 5 "497-TSC2012IDTTR-ND" H 13450 1650 50  0001 C CNN "Digikey Number"
+F 6 "0.93" H 13450 1650 50  0001 C CNN "Price ($)"
+F 7 "Current Sense Amplifier 1 Circuit  8-SOIC" H 13450 1650 50  0001 C CNN "Comment"
 	1    13450 1650
 	1    0    0    -1  
 $EndComp
@@ -1074,6 +1090,10 @@ F 0 "U4" V 12796 1230 50  0000 R CNN
 F 1 "TL431DBZ" V 12650 1300 50  0000 R CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 12750 1150 50  0001 C CIN
 F 3 "http://www.ti.com/lit/ds/symlink/tl431.pdf" H 12750 1300 50  0001 C CIN
+F 4 "TL431ACDBZR" V 12750 1300 50  0001 C CNN "Part Number"
+F 5 "296-17328-2-ND" V 12750 1300 50  0001 C CNN "Digkey Number"
+F 6 "0.36" V 12750 1300 50  0001 C CNN "Price ($)"
+F 7 "Shunt Voltage Reference IC 36V ±1%  SOT-23-3" V 12750 1300 50  0001 C CNN "Comment"
 	1    12750 1300
 	0    -1   -1   0   
 $EndComp
@@ -2227,13 +2247,17 @@ F 0 "U13" H 5000 4670 50  0000 C CNN
 F 1 "SN74HC595BRWNR" H 5000 4579 50  0000 C CNN
 F 2 "ClementsFootprints:QFN40P250X250X50-17N" H 4500 3050 50  0001 L BNN
 F 3 "https://www.ti.com/lit/ds/symlink/sn74hc595b.pdf?HQS=TI-null-null-digikeymode-df-pf-null-wwe&ts=1607732633037" H 5000 4000 50  0001 L BNN
-F 4 "Texas Instruments" H 4700 3150 50  0001 L BNN "MF"
-F 5 "XFQFN-16 Texas Instruments" H 4450 2950 50  0001 L BNN "PACKAGE"
-F 6 "8-Bit Shift Registers With 3-State Output 16-X1QFN -55 to 125" H 4050 3250 50  0001 L BNN "DESCRIPTION"
-F 7 "SN74HC595BRWNR" H 4650 2850 50  0001 L BNN "MP"
-F 8 "IPC-7351B" H 4800 2750 50  0001 L BNN "STANDARD"
-F 9 "0.27 USD" H 4850 2650 50  0001 L BNN "PRICE"
-F 10 "Good" H 4900 2550 50  0001 L BNN "AVAILABILITY"
+F 4 "SN74HC595BRWNR" H 5000 4000 50  0001 C CNN "Part Number"
+F 5 "296-44070-2-ND" H 5000 4000 50  0001 C CNN "Digikey Number"
+F 6 "0.49" H 5000 4000 50  0001 C CNN "Price ($)"
+F 7 "Texas Instruments" H 4700 3150 50  0001 L BNN "MF"
+F 8 "XFQFN-16 Texas Instruments" H 4450 2950 50  0001 L BNN "PACKAGE"
+F 9 "8-Bit Shift Registers With 3-State Output 16-X1QFN -55 to 125" H 4050 3250 50  0001 L BNN "DESCRIPTION"
+F 10 "SN74HC595BRWNR" H 4650 2850 50  0001 L BNN "MP"
+F 11 "IPC-7351B" H 4800 2750 50  0001 L BNN "STANDARD"
+F 12 "0.27 USD" H 4850 2650 50  0001 L BNN "PRICE"
+F 13 "Good" H 4900 2550 50  0001 L BNN "AVAILABILITY"
+F 14 "Shift Shift Register 1 Element 8 Bit 16-X1QFN (2.5x2.5)" H 5000 4000 50  0001 C CNN "Comment"
 	1    5000 4000
 	1    0    0    -1  
 $EndComp

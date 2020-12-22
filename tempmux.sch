@@ -23,6 +23,10 @@ F 0 "U11" H 2000 2200 50  0000 C CNN
 F 1 "CD74HC4067SM" H 1600 3100 50  0000 C CNN
 F 2 "Package_SO:SSOP-24_5.3x8.2mm_P0.65mm" H 3050 1200 50  0001 C CIN
 F 3 "http://www.ti.com/lit/ds/symlink/cd74hc4067.pdf" H 1650 3050 50  0001 C CNN
+F 4 "CD74HC4067SM96" H 2000 2200 50  0001 C CNN "Part Number"
+F 5 "296-9226-2-ND" H 2000 2200 50  0001 C CNN "Digikey Number"
+F 6 "0.79" H 2000 2200 50  0001 C CNN "Price ($)"
+F 7 "1 Circuit IC Switch 16:1 160Ohm 24-SSOP" H 2000 2200 50  0001 C CNN "Comment"
 	1    2000 2200
 	1    0    0    -1  
 $EndComp
