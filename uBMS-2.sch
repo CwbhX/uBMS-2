@@ -1368,8 +1368,8 @@ $Comp
 L Device:R R21
 U 1 1 609A3948
 P 4350 1050
-F 0 "R21" H 4420 1096 50  0000 L CNN
-F 1 "10k" H 4420 1005 50  0000 L CNN
+F 0 "R21" H 4400 1200 50  0000 L CNN
+F 1 "10k" H 4400 950 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 4280 1050 50  0001 C CNN
 F 3 "~" H 4350 1050 50  0001 C CNN
 	1    4350 1050
@@ -1380,28 +1380,14 @@ Wire Wire Line
 Connection ~ 5650 850 
 Wire Wire Line
 	5900 850  5650 850 
-Connection ~ 5550 850 
 Wire Wire Line
 	5650 850  5550 850 
 Wire Wire Line
 	5650 900  5650 850 
 Wire Wire Line
 	5550 900  5550 850 
-$Comp
-L power:+5V #PWR09
-U 1 1 608AC3A7
-P 4350 800
-F 0 "#PWR09" H 4350 650 50  0001 C CNN
-F 1 "+5V" H 4365 973 50  0000 C CNN
-F 2 "" H 4350 800 50  0001 C CNN
-F 3 "" H 4350 800 50  0001 C CNN
-	1    4350 800 
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4800 1100 4850 1100
-Text Label 4800 1100 2    50   ~ 0
-VBUS
 Text Label 9150 850  0    50   ~ 0
 VBUS
 Wire Wire Line
@@ -1618,13 +1604,6 @@ F 3 "https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32_
 $EndComp
 Wire Wire Line
 	8350 800  8350 850 
-Wire Wire Line
-	9050 900  9050 850 
-Connection ~ 9050 850 
-Wire Wire Line
-	9050 850  9150 850 
-Wire Wire Line
-	5550 850  5550 800 
 Wire Notes Line
 	3450 3000 3450 550 
 Wire Notes Line
@@ -1652,22 +1631,7 @@ Wire Wire Line
 	5000 800  5000 850 
 Connection ~ 5000 850 
 Wire Wire Line
-	4000 850  5000 850 
-Wire Wire Line
-	4350 800  4350 900 
-$Comp
-L power:+5V #PWR011
-U 1 1 6124D36A
-P 5550 800
-F 0 "#PWR011" H 5550 650 50  0001 C CNN
-F 1 "+5V" H 5565 973 50  0000 C CNN
-F 2 "" H 5550 800 50  0001 C CNN
-F 3 "" H 5550 800 50  0001 C CNN
-	1    5550 800 
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8900 850  9050 850 
+	4000 850  4350 850 
 Wire Wire Line
 	8900 850  8850 850 
 Connection ~ 8900 850 
@@ -1675,8 +1639,6 @@ Wire Wire Line
 	4000 2450 4850 2450
 Wire Wire Line
 	4850 1200 4350 1200
-Text Notes 7000 750  0    50   ~ 10
-Q: IS VBUS 5v Tolerant?
 NoConn ~ 5850 1650
 Text Notes 8800 3000 0    50   Italic 10
 USB-C & UART
@@ -1756,17 +1718,6 @@ Text Label 5900 1950 0    50   ~ 10
 UART_RX
 Wire Wire Line
 	5900 1950 5850 1950
-$Comp
-L Device:R R22
-U 1 1 60869556
-P 9050 1050
-F 0 "R22" H 8980 1004 50  0000 R CNN
-F 1 "10k" H 8980 1095 50  0000 R CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 8980 1050 50  0001 C CNN
-F 3 "~" H 9050 1050 50  0001 C CNN
-	1    9050 1050
-	-1   0    0    1   
-$EndComp
 $Comp
 L power:GND #PWR030
 U 1 1 6088A442
@@ -2048,17 +1999,6 @@ Wire Wire Line
 	7600 950  7450 950 
 Wire Wire Line
 	7450 950  7450 1000
-$Comp
-L power:GND #PWR098
-U 1 1 5FFB752E
-P 9050 1200
-F 0 "#PWR098" H 9050 950 50  0001 C CNN
-F 1 "GND" H 9200 1150 50  0000 C CNN
-F 2 "" H 9050 1200 50  0001 C CNN
-F 3 "" H 9050 1200 50  0001 C CNN
-	1    9050 1200
-	1    0    0    -1  
-$EndComp
 $Comp
 L ClementsSymbols:PTS815_SJK_250_SMTR_LFS SW2
 U 1 1 600F54B4
@@ -3660,4 +3600,71 @@ Wire Wire Line
 Text Label 1300 6625 0    50   ~ 0
 V_IN
 NoConn ~ 12560 4035
+Wire Wire Line
+	5550 850  5450 850 
+Connection ~ 5550 850 
+Connection ~ 5450 850 
+Wire Wire Line
+	4350 900  4350 850 
+Connection ~ 4350 850 
+Wire Wire Line
+	4350 850  5000 850 
+$Comp
+L Device:R R105
+U 1 1 6012CE62
+P 6500 1000
+F 0 "R105" H 6570 1046 50  0000 L CNN
+F 1 "10k" H 6570 955 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 6430 1000 50  0001 C CNN
+F 3 "~" H 6500 1000 50  0001 C CNN
+	1    6500 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R106
+U 1 1 6012D8B1
+P 6500 1400
+F 0 "R106" H 6570 1446 50  0000 L CNN
+F 1 "10k" H 6570 1355 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 6430 1400 50  0001 C CNN
+F 3 "~" H 6500 1400 50  0001 C CNN
+	1    6500 1400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6500 1250 6500 1200
+$Comp
+L power:GND #PWR09
+U 1 1 6016963F
+P 6500 1550
+F 0 "#PWR09" H 6500 1300 50  0001 C CNN
+F 1 "GND" H 6650 1500 50  0000 C CNN
+F 2 "" H 6500 1550 50  0001 C CNN
+F 3 "" H 6500 1550 50  0001 C CNN
+	1    6500 1550
+	1    0    0    -1  
+$EndComp
+Text Label 6500 800  0    50   ~ 0
+VBUS
+Wire Wire Line
+	6500 800  6500 850 
+Text Label 6550 1200 0    50   ~ 0
+VBUS_3V3
+Wire Wire Line
+	6550 1200 6500 1200
+Connection ~ 6500 1200
+Wire Wire Line
+	6500 1200 6500 1150
+Text Label 4800 1100 2    50   ~ 0
+VBUS_3V3
+Wire Notes Line
+	6400 1650 6950 1650
+Wire Notes Line
+	6950 1650 6950 700 
+Wire Notes Line
+	6950 700  6400 700 
+Wire Notes Line
+	6400 700  6400 1650
+Wire Wire Line
+	8900 850  9150 850 
 $EndSCHEMATC
