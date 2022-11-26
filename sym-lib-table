@@ -1,4 +1,4 @@
 (sym_lib_table
-  (lib (name uBMS-Parts)(type Legacy)(uri ${KIPRJMOD}/uBMS-Parts.lib)(options "")(descr ""))
-  (lib (name uBMS-2-rescue)(type Legacy)(uri ${KIPRJMOD}/uBMS-2-rescue.lib)(options "")(descr ""))
+  (lib (name "uBMS-Parts")(type "KiCad")(uri "${KIPRJMOD}/uBMS-Parts.kicad_sym")(options "")(descr ""))
+  (lib (name "uBMS-2-rescue")(type "KiCad")(uri "${KIPRJMOD}/uBMS-2-rescue.kicad_sym")(options "")(descr ""))
 )

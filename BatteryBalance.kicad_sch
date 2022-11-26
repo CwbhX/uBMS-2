@@ -1779,7 +1779,7 @@
     (pin "9" (uuid 66dcc784-e0b4-4171-b6ec-1825faa8db59))
   )
 
-  (symbol (lib_id "power:GND") (at 245.11 72.39 0)
+  (symbol (lib_id "power:GND") (at 245.11 72.39 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-00005f78ca1c)
     (property "Reference" "#PWR086" (id 0) (at 245.11 78.74 0)
@@ -1892,7 +1892,7 @@
     (pin "2" (uuid edc6a220-0a66-44f6-91f1-47c95b962da6))
   )
 
-  (symbol (lib_id "power:GND") (at 54.61 48.26 0)
+  (symbol (lib_id "power:GND") (at 54.61 48.26 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-00005f793673)
     (property "Reference" "#PWR085" (id 0) (at 54.61 54.61 0)

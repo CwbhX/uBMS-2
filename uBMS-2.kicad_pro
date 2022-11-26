@@ -672,6 +672,14 @@
     [
       "00000000-0000-0000-0000-00005f70a721",
       "VoltageMultiplex"
+    ],
+    [
+      "cf4d0062-cec1-4260-9e9c-3d7fd16e9dcc",
+      "Power"
+    ],
+    [
+      "bf265d7e-0486-4ac9-8f4e-fe1a0d7ceaa3",
+      "Level Shifts"
     ]
   ],
   "text_variables": {}
