@@ -4,7 +4,7 @@
     "active_layer_preset": "",
     "auto_track_width": false,
     "hidden_nets": [],
-    "high_contrast_mode": 0,
+    "high_contrast_mode": 1,
     "net_color_mode": 1,
     "opacity": {
       "pads": 1.0,
@@ -21,8 +21,8 @@
       "lockedItems": false,
       "otherItems": false,
       "pads": false,
-      "text": false,
-      "tracks": false,
+      "text": true,
+      "tracks": true,
       "vias": false,
       "zones": false
     },
@@ -64,7 +64,7 @@
       36
     ],
     "visible_layers": "fffffff_ffffffff",
-    "zone_display_mode": 1
+    "zone_display_mode": 0
   },
   "meta": {
     "filename": "uBMS-2.kicad_prl",
