@@ -45,7 +45,7 @@
         "silk_text_upright": false,
         "zones": {
           "45_degree_only": false,
-          "min_clearance": 0.508
+          "min_clearance": 0.0
         }
       },
       "diff_pair_dimensions": [
@@ -608,10 +608,8 @@
           "unconnected-(U1-Pad27)",
           "unconnected-(U1-Pad28)",
           "unconnected-(U1-Pad29)",
-          "unconnected-(U1-Pad38)",
           "unconnected-(U2-Pad7)",
-          "unconnected-(U8-Pad15)",
-          "unconnected-(U8-Pad9)"
+          "unconnected-(U8-Pad15)"
         ],
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
